@@ -1,5 +1,6 @@
 "use strict"
 
+const header = document.querySelector("header")
 const menueOpenBtn = document.querySelector(".menue-bar");
 const closeOpenBtn = document.querySelector(".close-menue");
 const openMenue = document.querySelector(".header-link-bx")
@@ -7,12 +8,14 @@ const openMenue = document.querySelector(".header-link-bx")
 if(menueOpenBtn){
     menueOpenBtn.addEventListener('click', ()=>{
         openMenue.classList.add('active');
+        header.classList.add('active');
     })
 }
 
 if(closeOpenBtn){
     closeOpenBtn.addEventListener('click', ()=>{
         openMenue.classList.remove('active');
+        header.classList.remove('active');
     })
 }
 

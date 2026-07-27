@@ -14,6 +14,7 @@
     --rubik-font:"Rubik", sans-serif;
     --transition: 0.3s ease-in-out;
     --transition2: .35s ease;
+    --transition:0.45s ease-in-out ;
 }
 
 *{
@@ -65,6 +66,11 @@ header{
     background-color: var(--white-color);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    transition: 0.45s ease-in-out;
+}
+
+header.active{
+    display: none;
 }
 
 .logo-bx img{
@@ -140,13 +146,16 @@ nav ul li a:hover{
 }
 
 nav ul li a.contact-link{
-    background: var(--bg-shade);
     width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at 20% 20%, rgb(199 62 156), transparent 100%), radial-gradient(circle at 80% 30%, rgb(128 0 128 / 34%), transparent 30%), linear-gradient(180deg, rgb(255 0 200), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0) 1px, transparent 1px);
+    /* background: radial-gradient(circle at 20% 20%, rgb(199 62 156), transparent 100%), radial-gradient(circle at 80% 30%, rgb(128 0 128 / 34%), transparent 30%), linear-gradient(180deg, rgb(255 0 200), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0) 1px, transparent 1px); */
 
+    background: var(--font-color);
+    color: var(--white-color);
+    border-radius: 5rem;
+    line-height: 4rem;
 } 
 nav ul li {
     margin-bottom: 0.5rem;
@@ -197,7 +206,7 @@ nav ul li .header-link-acc .header-link-title:hover{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 0;
+    padding: 3rem 0;
     transform: translateY(-100%);
     visibility: hidden;
     opacity: 0;
@@ -215,7 +224,7 @@ nav ul li .header-link-acc .header-link-title:hover{
     background: var(--white-color);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 0.5rem;
     max-height: 578px;
     overflow-y:auto;
