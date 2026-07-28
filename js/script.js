@@ -58,3 +58,57 @@ accordions.forEach((accordion) => {
     });
 
 });
+
+
+
+// About us animation
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".text", {
+
+    fontSize: "2rem",
+
+    ease: "none",
+
+    scrollTrigger: {
+
+        trigger: ".about-sec",
+
+        start: "top 70%",
+
+        end: "bottom 30%",
+
+        scrub: true
+
+    }
+
+});
+
+
+
+// accordian
+
+
+const labels = document.querySelectorAll('.acc-bx');
+
+labels.forEach((item)=>{
+  item.addEventListener("click", ()=>{
+    const parent = item.parentElement;
+
+    const closeAcc = document.querySelectorAll('.acc-title');
+
+    closeAcc.forEach((close)=>{
+      close.addEventListener("click", () =>{
+        if(close !== parent){
+          parent.classList.remove('active');
+        }
+      })
+    })
+
+    
+    parent.classList.toggle('active');
+    
+  })
+})
+

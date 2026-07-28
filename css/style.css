@@ -4,11 +4,13 @@
     --font-color: #121212; 
     --white-color:#fff;
     --black:#121212;
-    --black-shade:#2f353e;
+    --black-shade:##1e1e1e;
     --bg-shade:rgba(230, 227, 255, 0.98);
     --sec-bg:#F9FAFB;
     --sec-bg2: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
     --inner-banner-bg: radial-gradient(900px 500px at 16% 20%, rgba(199, 62, 155, .18), transparent 55%), radial-gradient(760px 460px at 82% 18%, rgba(128, 0, 128, .14), transparent 58%), linear-gradient(180deg, #fff, #FAFAFC);
+
+    --border-color: linear-gradient(295deg, transparent, #ab01ab80, transparent);
 
     --oswald-font:"Oswald", sans-serif;
     --rubik-font:"Rubik", sans-serif;
@@ -42,6 +44,7 @@ a{
 }
 p{
     margin: 0;
+    padding: 0;
 }
 
 h2{
@@ -58,15 +61,64 @@ h2{
     padding: 3rem 0;
 }
 
+.btn-all{
+    display: block;
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    width: 180px;
+}
+
+.btn-all:hover {
+  color: white;
+}
+
+.btn-all::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn-all:hover::before {
+  width: 160%;
+}
+
+
+/* .heading-bx{
+
+} */
+
+
 
 /* ---- Header Section ---- */
 
 header{
-    padding: 2rem 0;
-    background-color: var(--white-color);
-    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgba(255, 251, 251, 0.569);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     transition: 0.45s ease-in-out;
+    z-index: 999;
 }
 
 header.active{
@@ -186,6 +238,7 @@ nav ul li .header-link-acc .header-link-title{
     justify-content: space-between;
     padding: 0 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 nav ul li .header-link-acc .header-link-title span{
@@ -211,6 +264,7 @@ nav ul li .header-link-acc .header-link-title:hover{
     visibility: hidden;
     opacity: 0;
     transition: 0.45s ease-in-out;
+    overflow-y:auto;
     z-index: 1000;
 }
 
@@ -340,4 +394,232 @@ footer{
 }
 
 
+/* --- Animated Circle --- */
 
+.background-animation{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+
+    background:
+    radial-gradient(circle at 20% 20%, rgba(199,62,155,.14), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(128,0,128,.10), transparent 35%),
+    linear-gradient(180deg,#fff,#fafafa);
+}
+
+.gradient-orb{
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    left:-220px;
+    top:-220px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle at 35% 35%,
+    rgba(255,255,255,.25),
+    transparent 30%),
+
+    conic-gradient(
+        from 0deg,
+
+        #ab01ab8f,
+
+        #c73e9c80,
+
+        #8a5cf69d,
+
+        #6c28d9af,
+
+        #ab01aba2
+    );
+
+    filter:blur(90px);
+
+    opacity:.75;
+
+    will-change:transform;
+
+    animation:
+
+    moveOrb 18s ease-in-out infinite alternate,
+
+    rotateOrb 28s linear infinite,
+
+    breathe 10s ease-in-out infinite;
+
+}
+
+@keyframes moveOrb{
+
+    0%{
+
+        transform:
+        translate(0,0);
+
+    }
+
+    100%{
+
+        transform:
+        translate(calc(100vw - 250px),
+        calc(100vh - 250px));
+
+    }
+
+}
+
+/* ---- Hero Section ---- */
+
+
+.hero-content-bx h1{
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+.hero-sec.sec-padding{
+    padding: 10rem 0 3rem;
+}
+
+.hero-stat-title{
+    font-size: 3rem;
+    color:var(--black);
+    color: #8b008b;
+    font-weight: bold;
+}
+
+.hero-stat-card p{
+    color: var(--black);
+    font-weight: 600;
+}
+
+.hero-stats-content-bx {
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+/* ------  About Us Section ----- */
+
+
+.about-sec{
+    min-height:415px;
+    display:flex;
+    align-items:center;
+    background-color: rgba(255, 251, 251, 0.11);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.about-content{
+    width:min(900px,90%);
+    margin:auto;
+    text-align:center;
+}
+
+.text{
+    font-size:8rem;
+    font-weight:bolder;
+    line-height:1;
+    color:#121212;
+    margin-bottom:25px;
+    transform-origin:center center;
+    will-change:transform;
+
+}
+
+.about-content p{
+    font-size:1.4rem;
+    color: var(--black);
+    max-width:900px;
+    margin:0 auto 30px;
+}
+
+.hero-abt-btn .btn-all{
+    margin: 2rem auto 0;
+}
+
+
+/* ---- What We Offer Section ---- */
+
+
+.acc-bx{
+    background: var(--white-color);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.acc-content{
+    padding:0 1rem;
+}
+
+
+.acc-content .acc-para{
+    margin-bottom:1rem;
+    font-size: 1.3rem;
+
+}
+
+.acc-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.acc-title::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(295deg, transparent, #ab01ab80, transparent);
+    display: none;
+}
+
+.acc-bx.active .acc-title::before{
+    display: block;
+}
+
+.stat-num{
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.acc-stat-card{
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 1px solid var(--black);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.acc-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .45s ease,
+    padding .45s ease;
+
+}
+
+.acc-bx.active .acc-content{
+    max-height:500px;
+}
+
+.acc-bx.active .acc-content{
+
+    padding:1.2rem;
+
+}
