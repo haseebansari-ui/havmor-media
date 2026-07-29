@@ -104,6 +104,20 @@ h2{
     margin-bottom: 3rem;
 }
 
+.heading-bx p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+small{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 2rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
 
 
 /* ---- Header Section ---- */
@@ -474,7 +488,8 @@ footer{
 
 /* ---- Hero Section ---- */
 .hero-sec{
-    background-color: rgba(255, 251, 251, 0.527);
+    /* background-color: rgba(255, 251, 251, 0.527); */
+    background: linear-gradient(180deg, rgb(255 251 251 / 53%), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgb(37 17 39 / 16%) 1px, transparent 2px) 0 0 / 200px 85px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -516,12 +531,10 @@ footer{
     min-height:415px;
     display:flex;
     align-items:center;
-    background-color: rgba(255, 251, 251, 0.527);
+    /* background-color: rgba(255, 251, 251, 0.527); */
+    background: linear-gradient(180deg, rgb(255 251 251 / 0%), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgb(37 17 39 / 16%) 1px, transparent 2px) 0 0 / 200px 85px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* background-color: rgba(255, 251, 251, 0.11);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
 }
 
 .about-content{
@@ -615,10 +628,21 @@ footer{
 /* ---- Interactive Ads Section ---- */
 
 .ads-sec{
-    background-color: rgba(255, 251, 251, 0.527);
+    /* background-color: rgba(255, 251, 251, 0.527); */
+    background: linear-gradient(180deg, rgb(255 251 251 / 20%), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgb(37 17 39 / 16%) 1px, transparent 2px) 0 0 / 200px 85px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+.ads-sec .heading-bx p{
+    padding-left: 300px;
+}
+
+.ads-sec .heading-bx h2{
+    margin-top: 2rem;
+}
+
+/* ----- Carousel Right to Left ----- */
 
 .carousel{
     overflow-x: hidden;
@@ -640,18 +664,18 @@ footer{
   animation-play-state: paused;
 }
 .test-card{
-    flex: 0 0 rem;
-    height: auto;
-    padding: 1.8rem;
+    flex: 0 0 28rem;
+    height: 300px;
     /* border:1px solid var(--bg-purple-shade2); */
     font-size: 3rem;
     border-radius: 1rem;
     text-align: center;
     align-content: center;
     width: 400px;
+    overflow: hidden;
 }
-.testimonial-sec .test-card{
-    box-shadow: 0 0 20px var(--box-shadow);
+.ads-sec .test-card{
+    box-shadow: 0 0 20p #ebeb;
 }
 .test-card p{
     font-size: 1.1rem;
@@ -663,23 +687,85 @@ footer{
     to{translate: -100%;}
 }
 
-.test-img-bx{
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-.test-img-bx img{
+
+/* ----- Carousel Left to Right ----- */
+
+.carousel2{
+    overflow-x: hidden;
     width: 100%;
-    height: 70px;
-    object-fit: cover;
+    display: flex;
 }
-.test-content {
+.carousel2::-webkit-scrollbar{
+    display: none;
+}
+.group2{
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    gap:1rem;
+    animation: spin2 40s linear infinite;
+    padding: 1rem 1rem 1rem 0;
 }
-.client-name{
-    font-size: 1.3rem;
+.carousel2:hover .group2 {
+  animation-play-state: paused;
+}
+.test-card2{
+    flex: 0 0 28rem;
+    height: 300px;
+    /* border:1px solid var(--bg-purple-shade2); */
+    font-size: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    align-content: center;
+    width: 400px;
+    overflow: hidden;
+}
+.ads-sec .test-card2{
+    box-shadow: 0 0 20px #ebeb;
+}
+.test-card2 p{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+@keyframes spin2 {
+    from{translate: -100%;}
+    to{translate: 0;}
+}
+
+.ads-img-bx img{
+    width: 100%;
+}
+
+/* ----- Video Section ----- */
+
+.video-sec{
+    background: linear-gradient(180deg, rgb(255 251 251 / 3%), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgb(37 17 39 / 16%) 1px, transparent 2px) 0 0 / 200px 85px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.video-sec .heading-bx h2{
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--black-shade);
+}
+
+.video-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bx{
+    height: 350px;
+    width: 800px;
+    border-radius: 1rem;
+    border: 1px solid rgba(59, 59, 59, 0.192);
+    overflow: hidden;
+}
+
+.video-bx video{
+    width: 100%;
 }
