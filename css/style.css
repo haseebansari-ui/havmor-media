@@ -710,7 +710,7 @@ footer{
   animation-play-state: paused;
 }
 .test-card2{
-    flex: 0 0 28rem;
+    flex: 0 0 35rem;
     height: 300px;
     /* border:1px solid var(--bg-purple-shade2); */
     font-size: 3rem;
@@ -736,6 +736,71 @@ footer{
 .ads-img-bx img{
     width: 100%;
 }
+
+
+/* ----- Carousel Text ----- */
+
+.carousel3{
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+}
+.carousel3::-webkit-scrollbar{
+    display: none;
+}
+.group3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    animation: spin3 40s linear infinite;
+    padding: 1rem 1rem 1rem 0;
+}
+/* .carousel3:hover .group {
+  animation-play-state: paused;
+} */
+.test-card3{
+    flex: 0 0 28rem;
+    height: auto;
+    /* border:1px solid var(--bg-purple-shade2); */
+    font-size: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    align-content: center;
+    width: 400px;
+    overflow: hidden;
+}
+.ads-sec .test-card3{
+    box-shadow: 0 0 20p #ebeb;
+}
+.test-card3 p{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+@keyframes spin3 {
+    from{translate: 0;}
+    to{translate: -100%;}
+}
+
+.carousel-title{
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carousel-title span i{
+    font-size: 3rem;
+}
+
+.carousel-main{
+    border-top: 1px solid var(--bg-shade);
+    border-bottom: 1px solid var(--bg-shade);
+}
+
+
 
 /* ----- Video Section ----- */
 
