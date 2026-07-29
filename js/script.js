@@ -87,16 +87,16 @@ gsap.to(".text", {
 
 
 
-// accordian
+/// accordian
 
 
-const labels = document.querySelectorAll('.acc-bx');
+const labels = document.querySelectorAll('.prss-title');
 
 labels.forEach((item)=>{
   item.addEventListener("click", ()=>{
     const parent = item.parentElement;
 
-    const closeAcc = document.querySelectorAll('.acc-title');
+    const closeAcc = document.querySelectorAll('.process-cntnt-bx');
 
     closeAcc.forEach((close)=>{
       close.addEventListener("click", () =>{
@@ -111,4 +111,5 @@ labels.forEach((item)=>{
     
   })
 })
+
 
