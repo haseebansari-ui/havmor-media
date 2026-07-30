@@ -302,8 +302,21 @@ nav ul li .header-link-acc .header-link-title:hover{
     backdrop-filter: blur(5px);
     padding: 1rem 1rem;
     border-radius: 0.5rem;
-    /* max-height: 578px; */
     overflow-y:auto;
+}
+
+.header-bg-color::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+.header-bg-color {
+    scrollbar-width: none;
+}
+
+/* IE & Edge Legacy */
+.header-bg-color {
+    -ms-overflow-style: none;
 }
 
 
@@ -560,6 +573,7 @@ footer{
     color:var(--black);
     color: #8b008b;
     font-weight: bold;
+    font-family: var(--oswald-font);
 }
 
 .hero-stat-card p{
@@ -567,7 +581,7 @@ footer{
 }
 
 .hero-stats-content-bx {
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid #adb3bf;
     margin-bottom: 2rem;
 }
 

@@ -134,6 +134,15 @@
         margin-bottom: 1.5rem;
     }
 
+    .video-sec .heading-bx h2 br{
+        display: none;
+    }
+
+    .video-sec .heading-bx h2{
+        font-weight: inherit;
+        text-align: left;
+    }
+
 }
 
 @media screen and (max-width: 579px){
