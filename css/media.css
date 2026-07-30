@@ -142,7 +142,9 @@
         bottom: 12px;
     }
 
-    
+    .other-srvc .offer-content {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 479px){
