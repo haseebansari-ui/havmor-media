@@ -345,43 +345,18 @@ nav ul li .header-link-acc .header-link-title:hover{
 /* ---- Footer ---- */
 
 footer{    
-    background: var(--white-color);
+    padding: 0 3rem 1rem;
+    /* background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px); */
+    background: linear-gradient(357deg,rgba(212, 6, 181, 0.84) 0%, rgba(255, 148, 237, 1) 35%, rgba(254, 252, 255, 1) 100%);
     border-top: 2px solid rgb(37 17 39 / 16%);
 }
 
 .ft-bg-color{
-    padding: 6rem 0 0;
-    background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
+    padding: 2rem 2rem 0;
+    background: var(--white-color);
+    border-radius: 1rem;
 }
 
-.footer-cnct{
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-.footer-cnct span{
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-
-.links-bx h6{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.links-bx ul li a{
-    color: var(--black);
-    font-size: 1.1rem;
-}
-
-.links-bx ul li{
-    margin-bottom: 0.5rem;
-}
-
-.support{
-    padding-left: 2rem;
-}
 
 .copy-right{
     text-align: center;
@@ -389,31 +364,75 @@ footer{
     margin-top: 5rem;
     padding: 2rem 0;
     border-top: 1px solid #adb2b9;
-    color: #242a56;
+    color: var(--black);
 }
 
-.ft-mail-link{
-    color: var(--black);
-    font-size: 1.1rem;
+
+.ft-para-cnct p{
+    max-width: 350px;
+}
+
+.ft-quick-link-bx ul{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    width: fit-content;
+    justify-content: end;
+    gap: 1rem;
 }
 
-.ft-mail-link span i{
-    font-size: 1.3rem;
-    color: var(--primary);
-}
-
-.ft-mail-link:hover{
+.ft-quick-link-bx ul li a{
+    text-transform: uppercase;
     color: var(--black);
 }
 
-.ft-mail-link span i:hover{
-    color: var(--primary);
+.ft-quick-link-bx ul li a:hover{
+    color: var(--black);
+}
+
+.ft-get-quote{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    padding: 0.5rem 2rem;
+    background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);;
+    border-radius: 3rem;
+    color: var(--black);
+    margin: 5rem 0 ;
+    letter-spacing: 1px;
+}
+
+.ft-get-quote:hover{
+    color: var(--black);
+    border-bottom: 1px solid var(--primary);
+}
+
+.lets-talk-cnct{
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.cmp-add-info{
+    margin-bottom: 1rem;
+}
+
+.cmp-add{
+    margin-bottom: 4.5rem;
+}
+
+.cmp-add-link .ft-get-quote{
+    width: 230px;
+    margin: 0;
+}
+
+.cmp-contact-link .ft-get-quote{
+    margin: 0;
+    width: 300px;
+}
+
+.cmp-contact-link .ft-get-quote:last-child{
+    margin: 1rem 0;
+    width: 250px;
 }
 
 
@@ -958,8 +977,8 @@ footer{
 }
 
 .process-cntnt-bx.active .prss-ctnt{
-    padding: 1rem 1rem 1rem 7rem;
-    max-height: 300px;
+    padding: 3rem 3rem 3rem 7rem;
+    max-height: 500px;
     visibility: visible;
     opacity: 1;
     transition: 0.5s ease-in-out;
