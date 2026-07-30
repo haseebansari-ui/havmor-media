@@ -1029,25 +1029,58 @@ footer{
     transition: 0.5s ease-in-out;
 }
 
-/* ============================
-        About page
-=============================== */
+/* ---- Trusted Client Section ---- */
 
-/* ---- ABout Banner Section ---- */
+/* --- Marquee Scroll --- */
 
-.abt-sec.sec-padding{
-    padding: 10rem 0 3rem;
+.trst-client-carousel{
+	display: flex;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+.trst-client-carousel::-webkit-scrollbar{
+	display: none;
+}
+.trst-client-group{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	animation: spin 20s infinite linear;
+	padding-right: 1rem;
+}
+/* .carousel:hover .group {
+  animation-play-state: paused;
+} */
+.trst-client-cards{
+	flex: 0 0 5rem;
+	text-align: center;
+	font-size: 2rem;
+	align-content:center;
+	border-radius: 1rem;
 }
 
-.abt-inn-bann-title{
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.5;
+@keyframes spin {
+	from {translate:0;}
+	to{translate: -100%;}
 }
 
-.abt-inn-bann-para p{
-    font-size: 1.3rem;
-    line-height: 1.8;
+.trst-client-cards img{
+	width: 185px;
 }
 
-.abt-sec
+
+.trust-sec .heading-bx{
+    text-align: center;
+}
+
+.trust-sec .heading-bx h2{
+    margin-top: 2rem;
+}
+
+.trust-sec{
+    background: rgba(255, 251, 251, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
