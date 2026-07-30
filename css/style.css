@@ -366,7 +366,7 @@ footer{
     /* background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px); */
     /* background: linear-gradient(357deg,rgba(212, 6, 181, 0.84) 0%, rgba(255, 148, 237, 1) 35%, rgba(254, 252, 255, 1) 100%); */
 
-    background: linear-gradient(357deg,rgba(117, 42, 107, 0.84) 0%, rgba(254, 252, 255, 1) 60%, rgba(254, 252, 255, 1) 100%);
+    background: linear-gradient(357deg,rgba(117, 42, 107, 0.84) 0%, rgba(254, 252, 255, 0.315) 60%, rgba(254, 252, 255, 0.315) 100%);
 
     /* border-top: 2px solid rgb(37 17 39 / 16%); */
 }
@@ -453,6 +453,28 @@ footer{
 .cmp-contact-link .ft-get-quote:last-child{
     margin: 1rem 0;
     width: 250px;
+}
+
+.social-links ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links ul li a{
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgb(201 201 201 / 98%);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links ul li a i{
+    color: var(--black);
+    font-size: 1.2rem;
 }
 
 
@@ -658,7 +680,7 @@ footer{
     position: absolute;
     bottom: 30px;
     left: 50%;
-    height: auto;
+    height: 285px;
     width: 500px;
     background: var(--bg-shade);
     padding: 40px;
@@ -877,7 +899,6 @@ footer{
 } */
 
 .video-sec .heading-bx h2{
-    font-weight: bold;
     font-size: 3.5rem;
     text-align: center;
     color: var(--black-shade);
@@ -1007,3 +1028,26 @@ footer{
     opacity: 1;
     transition: 0.5s ease-in-out;
 }
+
+/* ============================
+        About page
+=============================== */
+
+/* ---- ABout Banner Section ---- */
+
+.abt-sec.sec-padding{
+    padding: 10rem 0 3rem;
+}
+
+.abt-inn-bann-title{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.abt-inn-bann-para p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.abt-sec
