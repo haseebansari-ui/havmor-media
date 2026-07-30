@@ -160,4 +160,11 @@
     footer {
         padding: 0 0.5rem 1rem;
     }
+
+    .prss-head {
+        font-size: 1.3rem;
+        display: flex;
+        align-items: start;
+        gap: 1.8rem;
+    }
 }
