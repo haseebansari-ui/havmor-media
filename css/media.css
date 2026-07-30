@@ -1,0 +1,154 @@
+@media screen and (max-width: 990px) {
+  .header-bg-color{
+    max-height: 450px;
+  }
+  
+    .text{
+    font-size: 5rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+  }
+
+  .video-bx{
+    width: 90%;
+  }
+
+  .ft-quick-link-main{
+    margin-bottom: 2rem;
+    padding-left: 0;
+  }
+
+  .ft-quick-link-bx ul{
+    justify-content: start;
+  }
+
+  .lets-talk-bx{
+    margin-bottom: 3rem;
+  }
+
+  .cmp-add {
+    margin-bottom: 2.5rem;
+  }
+
+  .lets-talk-cnct {
+    font-size: 3rem;
+  }
+
+  .lets-talk-cnct br{
+    display: none;
+  }
+
+  .cmp-contact-info .cmp-add-info{
+    margin-bottom: 2.8rem;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+    .hero-content-bx h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .text br{
+        display: block;
+    }
+
+    .heading-bx h2 br{
+        display: none;
+        font-size: 2rem;
+    }
+
+    .heading-bx p{
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    .ads-sec .heading-bx p{
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    .video-sec .heading-bx h2{
+        font-size: 2.5rem;
+    }
+
+    .video-bx {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .video-bx video{
+        border-radius: 1rem;
+    }
+
+    .prss-head {
+        font-size: 1.3rem;
+    }
+
+    .prss-title{
+        padding: 1.5rem 2rem;
+    }
+
+    .prss-title .faq-plus i {
+        font-size: 1.3rem;
+    }
+
+    .prss-title .faq-minus i {
+        font-size: 1.3rem;
+    }
+
+    .prss-ctnt{
+        padding: 0 3rem;
+    }
+
+    .process-cntnt-bx.active .prss-ctnt {
+        padding: 2rem 3rem;
+    }
+
+    .ft-quick-link-bx ul{
+        flex-wrap: wrap;
+    }
+
+    .cmp-add-link .ft-get-quote{
+        margin: 0 0 3rem;
+    }
+
+    .copy-right{
+        margin-top: 2rem;
+    }
+
+    .hero-abt-btn .btn-all{
+        font-weight: inherit;
+        font-size: 16px;
+        width: 157px;
+    }
+
+    .offer-link .btn-all{
+        font-size: 16px;
+        width: 157px;
+    }
+
+    .cmp-contact-info .cmp-add-info {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 579px){
+    .offer-content {
+        width: 95%;
+        bottom: 12px;
+    }
+
+    
+}
+
+@media screen and (max-width: 479px){
+    footer {
+        padding: 0 0.5rem 1rem;
+    }
+}

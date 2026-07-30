@@ -347,7 +347,10 @@ nav ul li .header-link-acc .header-link-title:hover{
 footer{    
     padding: 0 3rem 1rem;
     /* background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px); */
-    background: linear-gradient(357deg,rgba(212, 6, 181, 0.84) 0%, rgba(255, 148, 237, 1) 35%, rgba(254, 252, 255, 1) 100%);
+    /* background: linear-gradient(357deg,rgba(212, 6, 181, 0.84) 0%, rgba(255, 148, 237, 1) 35%, rgba(254, 252, 255, 1) 100%); */
+
+    background: linear-gradient(357deg,rgba(117, 42, 107, 0.84) 0%, rgba(186, 143, 175, 1) 35%, rgba(254, 252, 255, 1) 100%);
+
     border-top: 2px solid rgb(37 17 39 / 16%);
 }
 
@@ -593,6 +596,10 @@ footer{
     transform-origin:center center;
     will-change:transform;
 
+}
+
+.text br{
+    display: none;
 }
 
 .about-content p{
