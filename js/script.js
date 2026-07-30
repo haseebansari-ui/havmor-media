@@ -1,6 +1,19 @@
 "use strict"
 
-const header = document.querySelector("header")
+
+// 	Scroll Header
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    header.classList.add("h-scroll");
+  } else {
+    header.classList.remove("h-scroll");
+  }
+});
+
+
 const menueOpenBtn = document.querySelector(".menue-bar");
 const closeOpenBtn = document.querySelector(".close-menue");
 const openMenue = document.querySelector(".header-link-bx")

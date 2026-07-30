@@ -133,15 +133,18 @@ header{
     left: 0;
     width: 100%;
     padding: 1rem 0;
-    background-color: rgba(255, 251, 251, 0.569);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     transition: 0.45s ease-in-out;
     z-index: 999;
 }
 
 header.active{
     display: none;
+}
+
+.h-scroll{
+    background-color: rgba(255, 251, 251, 0.569);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .logo-bx img{
@@ -350,15 +353,15 @@ footer{
     /* background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px); */
     /* background: linear-gradient(357deg,rgba(212, 6, 181, 0.84) 0%, rgba(255, 148, 237, 1) 35%, rgba(254, 252, 255, 1) 100%); */
 
-    background: linear-gradient(357deg,rgba(117, 42, 107, 0.84) 0%, rgba(186, 143, 175, 1) 35%, rgba(254, 252, 255, 1) 100%);
+    background: linear-gradient(357deg,rgba(117, 42, 107, 0.84) 0%, rgba(254, 252, 255, 1) 60%, rgba(254, 252, 255, 1) 100%);
 
-    border-top: 2px solid rgb(37 17 39 / 16%);
+    /* border-top: 2px solid rgb(37 17 39 / 16%); */
 }
 
 .ft-bg-color{
     padding: 2rem 2rem 0;
     background: var(--white-color);
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
 }
 
 
@@ -561,7 +564,6 @@ footer{
 
 .hero-stat-card p{
     color: var(--black);
-    font-weight: 600;
 }
 
 .hero-stats-content-bx {
