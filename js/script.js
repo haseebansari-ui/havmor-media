@@ -21,14 +21,14 @@ const openMenue = document.querySelector(".header-link-bx")
 if(menueOpenBtn){
     menueOpenBtn.addEventListener('click', ()=>{
         openMenue.classList.add('active');
-        header.classList.add('active');
+        // header.classList.add('active');
     })
 }
 
 if(closeOpenBtn){
     closeOpenBtn.addEventListener('click', ()=>{
         openMenue.classList.remove('active');
-        header.classList.remove('active');
+        // header.classList.remove('active');
     })
 }
 

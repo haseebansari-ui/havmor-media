@@ -137,9 +137,9 @@ header{
     z-index: 999;
 }
 
-header.active{
+/* header.active{
     display: none;
-}
+} */
 
 .h-scroll{
     background-color: rgba(255, 251, 251, 0.569);
@@ -185,7 +185,7 @@ header.active{
 .header-bx2{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .close-menue{
@@ -263,6 +263,7 @@ nav ul li .header-link-acc .header-link-title{
     cursor: pointer;
     font-family: "Andika", sans-serif;
     font-weight: 500;
+    font-size: 3rem;
 }
 
 nav ul li .header-link-acc .header-link-title span{
@@ -278,33 +279,32 @@ nav ul li .header-link-acc .header-link-title:hover{
 
 
 .header-link-bx{
-    background: rgb(0 0 0 / 50%);
+    background: rgba(0, 0, 0, 0.671);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 800px;
     height: 100vh;
-    padding: 3rem 0;
-    transform: translateY(-100%);
-    visibility: hidden;
+    transform: translateX(100%);
     opacity: 0;
+    visibility: hidden;
     transition: 0.45s ease-in-out;
     overflow-y:auto;
     z-index: 1000;
 }
 
 .header-link-bx.active{
-    transform: translateY(0%);
-    visibility: visible;
+    transform: translateX(0%);
     opacity: 1;
+    visibility: visible;
 }
 
+
 .header-bg-color{
-    background: var(--white-color);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    padding: 1rem 1rem;
-    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
     overflow-y:auto;
 }
 
