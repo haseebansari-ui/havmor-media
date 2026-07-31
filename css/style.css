@@ -205,7 +205,7 @@ header{
 }
 
 nav ul li a{
-    color: var(--black-shade);
+    color: var(--white-color);
     font-size: 3rem;
     padding: 0 1rem;
     width: 100%;
@@ -220,18 +220,16 @@ nav ul li a:hover{
     color: var(--black-shade);
 }
 
-nav ul li a.contact-link{
+/* nav ul li a.contact-link{
     width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: radial-gradient(circle at 20% 20%, rgb(199 62 156), transparent 100%), radial-gradient(circle at 80% 30%, rgb(128 0 128 / 34%), transparent 30%), linear-gradient(180deg, rgb(255 0 200), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0) 1px, transparent 1px); */
-
     background: var(--font-color);
     color: var(--white-color);
     border-radius: 5rem;
     line-height: 4rem;
-} 
+}  */
 nav ul li {
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
@@ -267,14 +265,19 @@ nav ul li .header-link-acc .header-link-title{
 }
 
 nav ul li .header-link-acc .header-link-title span{
-    color: var(--black-shade);
+    color: var(--white-color);
     font-size: 3rem;
     line-height: 5rem;
     display: block;
 }
 
+nav ul li .header-link-acc .header-link-title:hover span{
+    color: var(--black);
+}
+
 nav ul li .header-link-acc .header-link-title:hover{
     background: var(--bg-shade);
+    color: var(--black);
 }
 
 
