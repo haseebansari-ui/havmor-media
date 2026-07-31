@@ -206,7 +206,7 @@ header{
 
 nav ul li a{
     color: var(--black-shade);
-    font-size: 1.3rem;
+    font-size: 3rem;
     padding: 0 1rem;
     width: 100%;
     line-height: 5rem;
@@ -268,7 +268,7 @@ nav ul li .header-link-acc .header-link-title{
 
 nav ul li .header-link-acc .header-link-title span{
     color: var(--black-shade);
-    font-size: 1.3rem;
+    font-size: 3rem;
     line-height: 5rem;
     display: block;
 }
