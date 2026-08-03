@@ -75,7 +75,6 @@ main{
     padding: 10px 20px;
     font-size: 17px;
     cursor: pointer;
-    font-weight: bold;
     background: transparent;
     position: relative;
     transition: all 1s;
@@ -713,7 +712,10 @@ footer{
 /* ---- What We Offer Section ---- */
 
 .what-we-offer{
-    background: var(--bg-shade);
+    /* background: var(--bg-shade); */
+    background: rgb(199 199 199 / 55%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .what-we-offer .heading-bx h2{
     font-size: 3.5rem;
@@ -731,7 +733,13 @@ footer{
     width: 100%;
     height: 537px;
     object-fit: cover;
+    transform:scale(1);
+    transition: var(--transition);
 }
+
+.offer-img-bx:hover img{
+    transform:scale(1.1);
+} 
 
 .offer-content{
     position: absolute;
@@ -739,7 +747,7 @@ footer{
     left: 50%;
     height: 285px;
     width: 500px;
-    background: var(--bg-shade);
+    background: var(--white-color);
     padding: 40px;
     border-radius: 0.8rem;
     transform: translateX(-50%);
@@ -1036,7 +1044,11 @@ footer{
 }
 
 
-.process-cntnt-bx.active .prss-title::before{
+/* .process-cntnt-bx.active .prss-title::before{
+    background: linear-gradient(45deg, transparent, var(--primary), transparent);
+} */
+
+.process-cntnt-bx:hover .prss-title::before{
     background: linear-gradient(45deg, transparent, var(--primary), transparent);
 }
 
@@ -1051,20 +1063,29 @@ footer{
 .prss-title .faq-minus{
     display: none;
     color: var(--black);
-    transition: var(--transition);
+    transition: var(--transition-smooth);
 }
 
-.process-cntnt-bx.active .prss-title .faq-minus{
+/* .process-cntnt-bx.active .prss-title .faq-minus{
+    display: block;
+} */
+
+.process-cntnt-bx:hover .prss-title .faq-minus{
     display: block;
 }
 
-.process-cntnt-bx.active .prss-title .faq-plus{
+/* .process-cntnt-bx.active .prss-title .faq-plus{
     transition: var(--transition);
+    display: none;
+} */
+
+.process-cntnt-bx:hover .prss-title .faq-plus{
+    transition: var(--transition-smooth);
     display: none;
 }
 
 .prss-ctnt{
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2rem;
     max-height: 0;
     visibility: hidden;
     opacity: 0;
@@ -1072,8 +1093,16 @@ footer{
     transition: 0.5s ease-in-out;
 }
 
-.process-cntnt-bx.active .prss-ctnt{
+/* .process-cntnt-bx.active .prss-ctnt{
     padding: 1rem 2rem 2rem 2rem;
+    max-height: 300px;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+} */
+
+.process-cntnt-bx:hover .prss-ctnt{
+    padding: 1rem 0 2rem 2rem;
     max-height: 300px;
     visibility: visible;
     opacity: 1;

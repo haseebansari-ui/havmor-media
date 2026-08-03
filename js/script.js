@@ -103,27 +103,27 @@ gsap.to(".text", {
 /// accordian
 
 
-const labels = document.querySelectorAll('.prss-title');
+// const labels = document.querySelectorAll('.prss-title');
 
-labels.forEach((item)=>{
-  item.addEventListener("click", ()=>{
-    const parent = item.parentElement;
+// labels.forEach((item)=>{
+//   item.addEventListener("click", ()=>{
+//     const parent = item.parentElement;
 
-    const closeAcc = document.querySelectorAll('.process-cntnt-bx');
+//     const closeAcc = document.querySelectorAll('.process-cntnt-bx');
 
-    closeAcc.forEach((close)=>{
-      close.addEventListener("click", () =>{
-        if(close !== parent){
-          parent.classList.remove('active');
-        }
-      })
-    })
+//     closeAcc.forEach((close)=>{
+//       close.addEventListener("click", () =>{
+//         if(close !== parent){
+//           parent.classList.remove('active');
+//         }
+//       })
+//     })
 
     
-    parent.classList.toggle('active');
+//     parent.classList.toggle('active');
     
-  })
-})
+//   })
+// })
 
 
 // Case study Animation 
