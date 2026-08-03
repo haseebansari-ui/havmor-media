@@ -199,7 +199,10 @@
     }
 
     .cmp-contact-link .ft-mail {
-        margin: 0;
         width: 275px;
+    }
+
+    .login-btn .btn-all{
+        width: 73px;
     }
 }
