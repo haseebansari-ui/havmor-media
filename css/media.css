@@ -205,4 +205,8 @@
     .login-btn .btn-all{
         width: 73px;
     }
+
+    .logo-bx img {
+        width: 150px;
+    }
 }
