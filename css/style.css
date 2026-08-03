@@ -339,7 +339,8 @@ nav ul li .header-link-acc .header-link-title:hover{
     position: fixed;
     top: 0;
     right: 0;
-    width: 800px;
+    /* width: 800px; */
+    width: 952px;
     height: 100vh;
     transform: translateX(100%);
     opacity: 0;
