@@ -193,4 +193,13 @@
     .sticky-card {
         padding: 15px;
     }
+
+    .offer-content{
+        height: auto;
+    }
+
+    .cmp-contact-link .mail {
+        margin: 0;
+        width: 275px;
+    }
 }
