@@ -42,16 +42,8 @@
     margin-bottom: 2.8rem;
   }
 
-  .casestudy-sec .heading-bx p , .ads-sec .heading-bx p{
+  .casestudy-sec .heading-bx p{
     padding: 0;
-  }
-
-  .header-link-bx{
-    width: 100%;
-  }
-
-  .header-bx2{
-    padding: 1rem 0.4rem 3rem 2rem;
   }
 
 }
