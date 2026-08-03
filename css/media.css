@@ -43,7 +43,7 @@
   }
 
   .casestudy-sec .heading-bx p , .ads-sec .heading-bx p{
-    padding: 0;
+    padding-left: 0;
   }
 
   .header-link-bx{
@@ -53,6 +53,8 @@
   .header-bx2{
     padding: 1rem 0.4rem 3rem 2rem;
   }
+
+   
 
 }
 
@@ -186,5 +188,9 @@
 
     .prss-title .faq-minus i {
         font-size: 1.3rem;
+    }
+
+    .sticky-card {
+        padding: 15px;
     }
 }
