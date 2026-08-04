@@ -166,9 +166,6 @@
 }
 
 @media screen and (max-width: 579px){
-    .prss-head {
-        font-size: 1.1rem;
-    }
 
     .prss-title .faq-plus i {
         font-size: 1.10rem;
@@ -181,7 +178,7 @@
     }
 
     .prss-head {
-        font-size: 1.3rem;
+        font-size: 1.10rem;
         display: flex;
         align-items: start;
         gap: 0.7rem;
