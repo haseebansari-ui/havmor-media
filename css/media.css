@@ -160,14 +160,14 @@
 }
 
 @media screen and (max-width: 579px){
-    .offer-content {
+    /* .offer-content {
         width: 95%;
         bottom: 12px;
-    }
+    } */
 
-    .other-srvc .offer-content {
+    /* .other-srvc .offer-content {
         width: 95%;
-    }
+    } */
 }
 
 @media screen and (max-width: 479px){
