@@ -239,6 +239,10 @@ nav ul li a{
     transition: var(--transition);
 }
 
+nav ul li a:last-child{
+    border: none;
+}
+
 nav ul li a:hover{
     background-image: linear-gradient(270deg, #d586e1 0%, #a886e1 14%, #6f75e4 28%, #6fb1e4 42%, #6fe4b7 56%, #98e46f 70%, #dee46f 79%, #e4a46f 93%, #e46f6f 100%);
 
@@ -729,6 +733,14 @@ footer{
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
+    border: 1px solid rgba(171, 1, 171, 0.702);
+    box-shadow: 0 0 10px rgba(171, 1, 171, 0.702);
+    transition: var(--transition);
+}
+
+.offer-img-bx:hover{
+    border: 1px solid rgba(171, 1, 171, 0.702);
+    box-shadow: 0 0 20px rgba(171, 1, 171, 0.702);
 }
 
 .offer-img-bx img{
@@ -745,17 +757,29 @@ footer{
 
 .offer-content{
     position: absolute;
-    bottom: 30px;
-    left: 50%;
-    height: 285px;
-    width: 500px;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background: var(--white-color);
     padding: 40px;
     border-radius: 0.8rem;
-    transform: translateX(-50%);
     text-align: center;
-    /* background: linear-gradient(357deg,rgb(248, 177, 239) 0%, rgb(254, 252, 255) 60%, rgba(254, 252, 255, 0.986) 100%); */
+    /* background: linear-gradient(357deg,rgba(67, 3, 97, 0.644) 0%, rgba(67, 3, 97, 0.589) 70%, rgba(254, 252, 255, 0.562) 100%); */
+    background: rgba(255, 255, 255, 0.478);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: var(--transition);
 }
+
+.offer-img-bx:hover .offer-content{
+    transform: translateY(0);
+} 
 
 .offer-title{
     font-weight: bold;
@@ -777,9 +801,9 @@ footer{
     font-weight: inherit;
 }
 
-.other-srvc .offer-content{
+/* .other-srvc .offer-content{
     width: 376px;
-}
+} */
 
 /* ---- Interactive Ads Section ---- */
 
