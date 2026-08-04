@@ -1346,6 +1346,7 @@ footer{
       border-radius: 16px;
       box-shadow: 0 15px 35px rgba(0,0,0,0.3);
       transition: transform 0.3s var(--transition-smooth);
+      display: none;
     }
 
     .widget-top-right {
@@ -1488,4 +1489,8 @@ footer{
 
     .btn-cta:hover .icon-arrow {
       transform: translateX(5px);
+    }
+
+    .casestudy-sec .mockup-dashboard .badge{
+        display: none;
     }

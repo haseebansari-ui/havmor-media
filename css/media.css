@@ -54,7 +54,13 @@
     padding: 1rem 0.4rem 3rem 2rem;
   }
 
-   
+   .floating-widget{
+    display: none;
+   }
+
+   .badge{
+    display: none;
+   }
 
 }
 
@@ -160,14 +166,13 @@
 }
 
 @media screen and (max-width: 579px){
-    /* .offer-content {
-        width: 95%;
-        bottom: 12px;
-    } */
+    .prss-head {
+        font-size: 1.1rem;
+    }
 
-    /* .other-srvc .offer-content {
-        width: 95%;
-    } */
+    .prss-title .faq-plus i {
+        font-size: 1.10rem;
+    }
 }
 
 @media screen and (max-width: 479px){
@@ -193,10 +198,6 @@
     .sticky-card {
         padding: 15px;
     }
-
-    /* .offer-content{
-        height: auto;
-    } */
 
     .cmp-contact-link .ft-mail {
         width: 275px;
