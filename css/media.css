@@ -62,6 +62,10 @@
     display: none;
    }
 
+   .cursor-dot, .cursor-ring{
+    display: none;
+   }
+
 }
 
 @media screen and (max-width: 767px){

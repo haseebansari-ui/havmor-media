@@ -1386,8 +1386,8 @@ footer{
       backdrop-filter: blur(8px);
     }
 
-    .text-accent { color: var(--secondary-color); }
-    .bg-accent { background-color: var(--secondary-color); }
+    .text-accent { color: var(--white-color); }
+    .bg-accent { background-color: var(--primary); }
 
     /* Floating Widgets with Parallax */
     .floating-widget {

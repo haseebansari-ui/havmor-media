@@ -179,7 +179,7 @@ function animateCursor(){
 animateCursor();
 
 
-const links = document.querySelectorAll("a, button, .btn, .card, .btn-cta");
+const links = document.querySelectorAll("button, .btn, .card, .card-content .btn-cta , .btn-all, .offer-main, .header-link-bx");
 
 links.forEach(item=>{
 
@@ -198,3 +198,60 @@ links.forEach(item=>{
     });
 
 });
+
+const linksDiv = document.querySelectorAll(".offer-link .btn-all");
+
+linksDiv.forEach(item=>{
+
+    item.addEventListener("mouseenter",()=>{
+
+        ring.style.background ="transparent";
+        ring.style.borderColor = "#ab01ab";
+        
+        dot.style.background = "#ab01ab";
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+
+        // ring.classList.remove("active");
+        // dot.classList.remove("active");
+
+        ring.style.background ="rgba(46, 46, 46, 0.12)";
+        ring.style.borderColor = "#ab01ab";
+        
+        dot.style.background = "#ab01ab";
+
+    });
+
+});
+
+
+const offerContentCard = document.querySelectorAll(".offer-content");
+
+offerContentCard.forEach(item=>{
+
+    item.addEventListener("mouseenter",()=>{
+
+        ring.style.background ="transparent";
+        ring.style.borderColor = "#fff";
+        
+        dot.style.background = "#fff";
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+
+        // ring.classList.remove("active");
+        // dot.classList.remove("active");
+
+        ring.style.background ="rgba(46, 46, 46, 0.12)";
+        ring.style.borderColor = "#ab01ab";
+        
+        dot.style.background = "#ab01ab";
+
+    });
+
+});
+
+
