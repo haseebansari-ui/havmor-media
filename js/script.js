@@ -139,4 +139,62 @@ document.querySelectorAll(".sticky-card").forEach((card) => {
             scrub: true,
         }
     })
-})
+});
+
+
+// custom cursor
+
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let ringX = 0;
+let ringY = 0;
+
+// Mouse Position
+document.addEventListener("mousemove",(e)=>{
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    dot.style.left = mouseX + "px";
+    dot.style.top = mouseY + "px";
+
+});
+
+// Smooth Ring Animation
+function animateCursor(){
+
+    ringX += (mouseX - ringX) * 0.10;
+    ringY += (mouseY - ringY) * 0.10;
+
+    ring.style.left = ringX + "px";
+    ring.style.top = ringY + "px";
+
+    requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
+
+
+const links = document.querySelectorAll("a, button, .btn, .card, .btn-cta");
+
+links.forEach(item=>{
+
+    item.addEventListener("mouseenter",()=>{
+
+        ring.classList.add("active");
+        dot.classList.add("active");
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+
+        ring.classList.remove("active");
+        dot.classList.remove("active");
+
+    });
+
+});
