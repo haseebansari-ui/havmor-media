@@ -167,6 +167,9 @@
         text-align: left;
     }
 
+    main{
+        background: none;
+    }
 }
 
 @media screen and (max-width: 579px){
