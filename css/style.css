@@ -1138,14 +1138,15 @@ footer{
 }
 
 .prss-head{
-    font-size: 1.2rem;
-    display: flex;  
+    font-size: 1.10rem;
+    display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
+    font-weight: bold;
 }
 
 .prss-head span{
-    font-size: 1.2rem;
+    font-size: 1.10rem;
 }
 
 .prss-title{
@@ -1179,7 +1180,7 @@ footer{
 }
 
 .prss-title .faq-minus i{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .prss-title .faq-plus i{
@@ -1813,3 +1814,105 @@ footer{
     margin-bottom: 0.5rem;
 }
 
+/* ---- About / why choose Us Section ----- */
+
+.abt-choose-sec{
+    background: rgba(253, 251, 255, 0.37);
+    backdrop-filter: blur(10px);    
+}
+
+.abt-choose-sec .heading-bx p{
+    margin-top: 4rem;
+    padding-left: 5rem;
+}
+
+.abt-choose-card-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 20px #cccccc;
+    border-radius: 10px;
+    background: var(--white-color);
+    transition: var(--transition);
+}
+
+.abt-choose-card-bx:hover{
+    box-shadow: 0 0 20px #f88cf8;
+    border: 1px solid #f88cf8;
+}
+
+.abt-choose-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt-choose-icon i{
+    background: var(--font-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.288));
+    transition: var(--transition);
+    font-size: 3.5rem;
+}
+
+.abt-choose-title{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* ---- About / Industries Section ----- */
+
+.abt-ind-sec{
+    background: rgba(253, 251, 255, 0.37);
+    backdrop-filter: blur(10px);  
+}
+
+.abt-ind-sec .heading-bx p{
+    padding-left: 400px;
+}
+
+/* ---- About / Result Section ---- */
+
+.abt-result-sec{
+    background: rgba(253, 251, 255, 0.37);
+    backdrop-filter: blur(10px);     
+}
+
+.abt-result-sec .heading-bx{
+    text-align: center;
+}
+
+.abt-result-sec .abt-choose-icon{
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-family: var(--oswald-font);
+}
+
+.abt-result-sec .abt-choose-icon span{
+    color: var(--primary);
+    font-size: 1.8rem;
+    padding-top: 0.8rem;
+}
+
+.abt-result-sec .abt-choose-title{
+    font-weight: inherit;
+    font-size: 1.2rem;
+}
+
+.abt-result-sec .abt-choose-card-bx {
+    height: 146px;
+}
+
+/* ---- About Faq Section ---- */
+
+.abt-faq .heading-bx{
+    text-align: center;
+}
