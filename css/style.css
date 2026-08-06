@@ -12,6 +12,7 @@
 
     --border-color: linear-gradient(295deg, transparent, #ab01ab80, transparent);
 
+    --Andika-font:"Andika", sans-serif;
     --oswald-font:"Oswald", sans-serif;
     --rubik-font:"Rubik", sans-serif;
     --transition: 0.3s ease-in-out;
@@ -53,6 +54,10 @@ h2{
     color: var(--black);
     margin-bottom: 1.5rem;
     font-family: var(--oswald-font);
+}
+
+.heading-bx h2{
+    margin-top: 2rem;
 }
 
 
@@ -176,6 +181,28 @@ small{
     font-weight: 500;
 }
 
+/* ----- Inner Banner Section ----- */
+
+.inn-banner {
+    background: rgba(253, 251, 255, 0.37);
+    backdrop-filter: blur(10px);}
+
+.inn-pad{
+    padding: 12rem 0 3rem;
+}
+
+.inner-title{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.4;
+    font-family: var(--Andika-font);
+}
+
+.inn-content-para p{
+    font-size: 1.3rem;
+    line-height: 1.6;
+    padding-top: 9rem;
+}
 
 
 /* ---- Header Section ---- */
@@ -1559,3 +1586,87 @@ footer{
     .casestudy-sec .mockup-dashboard .badge{
         display: none;
     }
+
+
+/* =========================
+    About Page Section 
+============================ */
+
+.inn-banner-stat-bx{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.inn-bann-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+    width: 300px;
+    border-radius: 40px;
+    border: 1px solid #979797;
+    font-family: var(--Andika-font);
+}
+
+.inn-bann-card p{
+    font-weight: bold;
+}
+
+.inn-bann-card p span i{
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+
+/* ---- About / who We Are Section ---- */
+
+
+.who-we-are-sec{
+    background: rgb(199 199 199 / 25%);
+}
+
+.who-we-are-sec .heading-bx p{
+    margin-top: 4rem;
+    padding-left: 2rem;
+}
+
+
+
+.who-we-are-card{
+    margin-bottom: 3rem;
+}
+
+.who-img-bx{
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 250px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.who-img-bx img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 10px #afafaf;
+    transform: scale(1);
+    transition: var(--transition);
+}
+
+.who-we-are-card:hover .who-img-bx img{
+    transform: scale(1.1);
+}
+
+.who-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.who-we-are-card:hover .who-title{
+    color: var(--primary);
+}
