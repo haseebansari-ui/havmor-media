@@ -154,6 +154,7 @@ let ringX = 0;
 let ringY = 0;
 
 // Mouse Position
+
 document.addEventListener("mousemove",(e)=>{
 
     mouseX = e.clientX;
@@ -163,6 +164,7 @@ document.addEventListener("mousemove",(e)=>{
     dot.style.top = mouseY + "px";
 
 });
+
 
 // Smooth Ring Animation
 function animateCursor(){
@@ -253,5 +255,11 @@ offerContentCard.forEach(item=>{
     });
 
 });
+
+
+
+// Copyright Year
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 
