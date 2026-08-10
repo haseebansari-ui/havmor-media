@@ -261,4 +261,12 @@
         width: 150px;
     }
 
+    .story-card-bx{
+        width: 100%;
+    }
+
+    .abt-choose-card-bx {
+        width: 330px;
+    }
+
 }
