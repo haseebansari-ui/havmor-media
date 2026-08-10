@@ -215,6 +215,7 @@ header{
     padding: 1rem 0;
     transition: 0.45s ease-in-out;
     z-index: 999;
+    border-bottom: 1px solid transparent;
 }
 
 /* header.active{
@@ -225,6 +226,7 @@ header{
     background-color: rgba(255, 251, 251, 0.569);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid #bdbdbd;
 }
 
 .header-flx-bx{
