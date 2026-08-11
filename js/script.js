@@ -103,13 +103,54 @@ gsap.to(".text", {
 /// accordian
 
 
-// const labels = document.querySelectorAll('.prss-title');
+const careerAccordions = document.querySelectorAll(".career-acc-bx");
+
+careerAccordions.forEach((accordion) => {
+
+    const accHeader = accordion.querySelector(".career-header");
+    const content = accordion.querySelector(".careers-cnct-bx");
+
+    accHeader.addEventListener("click", () => {
+
+        careerAccordions.forEach((item) => {
+
+            if (item !== accordion) {
+
+                item.classList.remove("active");
+
+                const otherContent =
+                    item.querySelector(".careers-cnct-bx");
+
+                otherContent.style.maxHeight = null;
+            }
+
+        });
+
+        accordion.classList.toggle("active");
+
+        if (accordion.classList.contains("active")) {
+
+            content.style.maxHeight =
+                content.scrollHeight + "px";
+
+        } else {
+
+            content.style.maxHeight = null;
+
+        }
+
+    });
+
+});
+
+
+// const labels = document.querySelectorAll('.career-header');
 
 // labels.forEach((item)=>{
 //   item.addEventListener("click", ()=>{
 //     const parent = item.parentElement;
 
-//     const closeAcc = document.querySelectorAll('.process-cntnt-bx');
+//     const closeAcc = document.querySelectorAll('.careers-cnct-bx');
 
 //     closeAcc.forEach((close)=>{
 //       close.addEventListener("click", () =>{
@@ -123,7 +164,7 @@ gsap.to(".text", {
 //     parent.classList.toggle('active');
     
 //   })
-// })
+// });
 
 
 // Case study Animation 

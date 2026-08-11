@@ -226,7 +226,7 @@ header{
     background-color: rgba(255, 251, 251, 0.569);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .header-flx-bx{
@@ -1061,7 +1061,7 @@ footer{
   animation-play-state: paused;
 } */
 .test-card3{
-    flex: 0 0 28rem;
+    flex: 0 0 31rem;
     height: auto;
     /* border:1px solid var(--bg-purple-shade2); */
     font-size: 3rem;
@@ -1085,10 +1085,41 @@ footer{
 
 .carousel-title{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: flex;
     align-items: center;
     gap: 2.3rem;
+    transition: var(--transition);
+    /* color: transparent;
+    -webkit-text-stroke: 2px var(--black); */
+}
+
+.carousel-title span i{
+    background: linear-gradient(
+        90deg,
+        #fff,
+        #fff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-text-stroke: 1px var(--black);
+}
+
+.carousel-title:hover{
+    color: var(--primary);
+}
+
+.mar-text{
+    color: transparent;
+    -webkit-text-stroke: 2px var(--black);
+    transition: var(--transition);
+}
+
+.mar-text:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary);
 }
 
 .carousel-title span i{
@@ -1192,11 +1223,6 @@ footer{
     z-index: 3;
 }
 
-
-/* .process-cntnt-bx.active .prss-title::before{
-    background: linear-gradient(45deg, transparent, var(--primary), transparent);
-} */
-
 .process-cntnt-bx:hover .prss-title::before{
     background: linear-gradient(45deg, transparent, var(--primary), transparent);
 }
@@ -1215,18 +1241,10 @@ footer{
     transition: var(--transition-smooth);
 }
 
-/* .process-cntnt-bx.active .prss-title .faq-minus{
-    display: block;
-} */
 
 .process-cntnt-bx:hover .prss-title .faq-minus{
     display: block;
 }
-
-/* .process-cntnt-bx.active .prss-title .faq-plus{
-    transition: var(--transition);
-    display: none;
-} */
 
 .process-cntnt-bx:hover .prss-title .faq-plus{
     transition: var(--transition-smooth);
@@ -1241,14 +1259,6 @@ footer{
     font-size: 1.5rem;
     transition: 0.5s ease-in-out;
 }
-
-/* .process-cntnt-bx.active .prss-ctnt{
-    padding: 1rem 2rem 2rem 2rem;
-    max-height: 300px;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s ease-in-out;
-} */
 
 .process-cntnt-bx:hover .prss-ctnt{
     padding: 1rem 0 2rem 2rem;
@@ -2025,4 +2035,170 @@ footer{
 
 .abt-faq .heading-bx{
     text-align: center;
+}
+
+/* ===============================
+        Careers Page
+================================ */
+
+
+
+
+.career-bann-bg{
+    background: rgba(255, 251, 251, 0.384);
+    backdrop-filter: blur(10px);
+    padding: 8rem 0 0;
+}
+
+.career-bann-sec .heading-bx{
+    margin-bottom: 0;
+}
+
+.career-bg-clr{
+    padding: 5rem 0;
+    background: rgba(255, 251, 251, 0.384);
+    backdrop-filter: blur(10px);
+}
+
+.career-bann-sec .heading-bx{
+    text-align: center;
+}
+
+.career-bann-title{
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.career-para-bx p{
+    font-weight: inherit;
+    margin-bottom: 1rem;   
+}
+
+.career-para-bx p:last-child{
+    margin-bottom: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.work-benefit-main{
+    border: 1px solid #c7c7c7;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--white-color);
+}
+
+.benefit-card-main{
+    margin-bottom: 1rem;
+}
+
+.benefit-card-bx{
+    margin-bottom: 1rem;
+}
+
+.benefit-main-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.benefit-title::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 2px;
+    width: 12px;
+    background: var(--black);
+}
+
+.benefit-card-bx p{
+    padding-left: 1.2rem;
+}
+
+/* ---- Career Accordion Box ---- */
+
+.career-acc-bx{
+    background: var(--white-color);
+    border-radius: 1rem;
+    border: 1px solid #c7c7c7;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.career-acc-bx.active{
+    padding-bottom: 2rem;
+    box-shadow: 0 0 20px #c7c7c7;
+}
+
+.career-header{
+    padding: 1rem 2rem;
+}
+
+.career-acc-bx.active .career-header{
+    border-bottom: 1px solid #c7c7c7;
+    padding: 1rem 2rem 0.8rem;
+}
+
+.careers-cnct-bx{
+    padding: 0 2rem 0 2rem;
+    max-height: 0;
+    transition: var(--transition);
+}
+
+.career-acc-bx.active .careers-cnct-bx{
+    padding: 0.8rem 2rem 2rem;
+    max-height: 800px;
+}
+
+.job-yr-ex{
+    display: flex;
+    justify-content: end;
+    color: var(--black);
+}
+
+.role-prize{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+}
+
+
+
+.role{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.prize{
+    color: var(--black);
+    font-weight: 600;    
+}
+
+.prize span i{
+    font-size: 0.8rem;
+    color: var(--black);
+}
+
+.requirement-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.careers-cnct-bx ul li{
+    margin-bottom: 0.2rem;
+}
+
+.careers-cnct-bx ul li:last-child{
+    margin-bottom: 0;
 }
