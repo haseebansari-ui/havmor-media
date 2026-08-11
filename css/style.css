@@ -2134,7 +2134,7 @@ footer{
 }
 
 .career-acc-bx.active{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     box-shadow: 0 0 20px #c7c7c7;
 }
 
@@ -2154,8 +2154,8 @@ footer{
 }
 
 .career-acc-bx.active .careers-cnct-bx{
-    padding: 0.8rem 2rem 2rem;
-    max-height: 800px;
+    padding: 0.8rem 2rem 0 2rem;
+    max-height: auto;
 }
 
 .job-yr-ex{
@@ -2170,8 +2170,6 @@ footer{
     align-items: center;
     padding: 0.2rem 0;
 }
-
-
 
 .role{
     font-size: 1.2rem;
@@ -2201,4 +2199,68 @@ footer{
 
 .careers-cnct-bx ul li:last-child{
     margin-bottom: 0;
+}
+
+.form-main-container{
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #c7c7c7;
+}
+
+.form-main-container p{
+    margin-bottom: 1rem;
+}
+
+.creer-input-bx{
+    margin-bottom: 1rem;
+}
+
+.creer-input-bx input{
+    display: block;
+    background: #f2f2f2;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.creer-input-bx sup{
+    color: #ff0000;
+}
+
+.cv-drop-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.cv-drop-bx svg{
+    color: rgba(15, 13, 21, 0.459);
+}
+
+.cv-main-bx sup{
+    color: #ff0000;
+}
+
+.cv-main-bx p{
+    color: rgba(15, 13, 21, 0.459);
+}
+
+.text-area{
+    margin-top: 1.5rem;
+}
+
+.text-area textarea{
+    background: #f2f2f2;
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    resize: none;
+    border-radius: 8px;
 }
