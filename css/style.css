@@ -2094,7 +2094,15 @@ footer{
 }
 
 .benefit-card-bx{
-    margin-bottom: 1rem;
+    background: #fff;
+    padding: 40px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #cfcfcf;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
 }
 
 .benefit-main-title{
@@ -2191,6 +2199,11 @@ footer{
 .form-field-bx .cv-upload{
     background: #ebebeb;
     border-bottom: none;
+    margin-top: 0.5rem;
+}
+
+.form-field-bx label{
+    font-size: 1.2rem;
 }
 
 .form-btn .btn-all{
