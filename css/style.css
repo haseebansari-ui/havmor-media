@@ -2135,3 +2135,81 @@ footer{
     text-align: center;
     margin-bottom: 5rem;
 }
+
+.form-container{
+    position: relative;
+    background: var(--white-color);
+    padding: 50px;
+    box-shadow: 0 0 20px #c7c7c7;
+    border-radius: 5px;
+    margin-top: 5rem;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.havmor-water-mark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+     background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ebebeb;
+    z-index: 2;
+}
+
+.form-bg-color{
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.form-field-bx input, textarea{
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #797979;
+    padding: 15px 15px;
+    /* border: 1px solid var(--bg-shade); */
+    display: block;
+}
+
+.form-field-bx input::placeholder{
+    color: #797979;
+}
+
+.form-field-bx textarea{
+    resize: none;
+}
+
+.form-field-bx .cv-upload{
+    background: #ebebeb;
+    border-bottom: none;
+}
+
+.form-btn .btn-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: inherit;
+    color: var(--white-color);
+}
+
+.form-btn .btn-all::before {
+  width: 160%;
+}
+
+.form-btn .btn-all:hover::before {
+  width: 0;
+  
+}
+
+.form-btn .btn-all:hover{
+    color: var(--primary);
+}
