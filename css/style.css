@@ -2147,8 +2147,8 @@ footer{
 
 .form-container{
     position: relative;
-    /* background: var(--white-color); */
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--white-color);
+    /* background: rgba(0, 0, 0, 0.5); */
     padding: 50px;
     box-shadow: 0 0 20px #c7c7c7;
     border-radius: 5px;
@@ -2184,18 +2184,18 @@ footer{
 .form-field-bx input, textarea{
     width: 100%;
     background: transparent;
-    /* border-bottom: 1px solid #797979; */
-    border-bottom: 1px solid var(--white-color);
+    border-bottom: 1px solid #797979;
+    /* border-bottom: 1px solid var(--white-color); */
     padding: 15px 15px;
     /* border: 1px solid var(--bg-shade); */
     display: block;
-    color: var(--white-color);
+    color: var(--black);
     font-size: 1.1rem;
 }
 
 .form-field-bx input::placeholder{
-    /* color: #797979; */
-    color: var(--white-color);
+    color: #797979;
+    /* color: var(--white-color); */
     font-size: 1.1rem;
 }
 
@@ -2204,7 +2204,7 @@ footer{
 }
 
 .form-field-bx textarea::placeholder{
-    color: var(--white-color);
+    color: #797979;
     font-size: 1.1rem;
 }
 
@@ -2212,11 +2212,12 @@ footer{
     background: #ebebeb;
     border-bottom: none;
     margin-top: 0.5rem;
+    width: 250px;
 }
 
 .form-field-bx label{
     font-size: 1.2rem;
-    color: var(--white-color);
+    color: var(--black);
 }
 
 .form-btn .btn-all{
