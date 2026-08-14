@@ -2167,10 +2167,10 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 10rem;
-     background: transparent;
+    background: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgba(235, 235, 235, 0.478);
+    -webkit-text-stroke: 1px rgb(235, 235, 235);
     z-index: 2;
 }
 
@@ -2212,7 +2212,7 @@ footer{
     background: #ebebeb;
     border-bottom: none;
     margin-top: 0.5rem;
-    width: 250px;
+    width: 260px;
 }
 
 .form-field-bx label{
@@ -2241,3 +2241,418 @@ footer{
     color: var(--primary);
 }
 
+
+/* ==========================
+    Login Form Page
+============================= */
+
+.grid-column-two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-content-main{
+    background: radial-gradient(circle at 15% 15%, rgba(128, 0, 128, 0.18), transparent 30%), radial-gradient(circle at 85% 85%, rgba(199, 62, 155, 0.14), transparent 30%), #08030b;
+    position: relative;
+    z-index: 1;
+    padding: 100px 50px;
+}
+
+.grid-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 55px 55px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+    z-index: 2;
+}
+
+
+.login-img-bx a{
+    display: block;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.548);
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.login-img-bx img{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.login-badge{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--white-color);
+    max-width: fit-content;
+    color: var(--white-color);
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.login-title{
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.login-title span{
+    font-size: 4rem;
+    font-weight: bold;
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.514);
+}
+
+.left-content-main p{
+    color: var(--white-color);
+    max-width: 500px;
+}
+
+
+/* =====================================================
+   MINI DASHBOARD
+===================================================== */
+
+.mini-dashboard {
+  width: 100%;
+
+  margin-top: 55px;
+
+  padding: 22px;
+
+  border:
+    1px solid rgba(255,255,255,0.09);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.025)
+    );
+
+  backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 25px 80px rgba(0,0,0,0.25);
+}
+
+.dashboard-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-top span {
+  display: block;
+
+  color: #aaa1ad;
+
+  font-size: 11px;
+  margin-bottom: 7px;
+}
+
+.dashboard-top strong {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 22px;
+  color: white;
+}
+
+.dashboard-icon {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: rgba(128,0,128,0.2);
+
+  color: #d18bd1;
+
+  font-size: 19px;
+}
+
+
+/* Chart */
+
+.chart {
+  position: relative;
+
+  height: 100px;
+
+  margin-top: 18px;
+
+  overflow: hidden;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 24px,
+      rgba(255,255,255,0.05) 25px
+    );
+}
+
+.chart-line {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  clip-path:
+    polygon(
+      0 80%,
+      12% 65%,
+      25% 72%,
+      38% 45%,
+      50% 55%,
+      64% 30%,
+      76% 40%,
+      88% 15%,
+      100% 5%,
+      100% 8%,
+      88% 20%,
+      76% 45%,
+      64% 35%,
+      50% 60%,
+      38% 50%,
+      25% 77%,
+      12% 70%,
+      0 85%
+    );
+
+  background:  rgba(199,62,155,0.7);
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(199,62,155,0.7)
+    );
+
+  animation: chartMove 4s ease-in-out infinite alternate;
+}
+
+@keyframes chartMove {
+
+  from {
+    transform: translateY(4px);
+  }
+
+  to {
+    transform: translateY(-4px);
+  }
+
+}
+
+
+.chart-point {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  box-shadow:
+    0 0 15px rgba(255,255,255,0.8);
+}
+
+.point-1 {
+  left: 24%;
+  top: 68%;
+}
+
+.point-2 {
+  left: 38%;
+  top: 45%;
+}
+
+.point-3 {
+  left: 63%;
+  top: 30%;
+}
+
+.point-4 {
+  left: 76%;
+  top: 39%;
+}
+
+.point-5 {
+  right: 0;
+  top: 4%;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 8px;
+
+  color: #716873;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.visual-features {
+  display: flex;
+  gap: 28px;
+
+  margin-top: 35px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #aaa0ac;
+
+  font-size: 11px;
+}
+
+.feature i {
+  color: #c982c9;
+
+  font-size: 15px;
+}
+
+/* ===========================
+     Form right side
+==============================*/
+
+.right-form{
+    padding: 100px;
+    background: rgba(232, 231, 243, 0.631);
+}
+
+.login-form-container .heading-bx{
+    text-align: center;
+}
+
+.login-form-container .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.login-form-container .heading-bx h2{
+    margin: 1rem 0;
+}
+
+.login-form-container .heading-bx p{
+    font-size: 1rem;
+}
+
+.login-form-input{
+    margin-bottom: 2rem;
+}
+
+.login-input input{
+    display: block;
+    padding: 15px 55px 15px 55px;
+    border: 1px solid #ebebeb;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.login-input{
+    position: relative;
+}
+
+.input-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-icon i{
+    font-size: 1.1rem;
+    color: #797878;
+}
+
+.eye-icon-bx{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.eye-icon i{
+    font-size: 1.1rem;
+    color: #797878;
+}
+
+.pass-bx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pass-bx .forget-link{
+    color: var(--primary);
+}
+
+.sign-in-btn{
+    width: 100%;
+    padding: 15px 0;
+    background: linear-gradient(135deg, #800080 0%, #9b2c9b 45%, #c73e9b 100%);
+    border-radius: 15px;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+
+.sign-in-btn i{
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+
+.sign-in-btn:hover{
+    background: linear-gradient(-135deg, #800080 0%, #9b2c9b 45%, #c73e9b 100%);
+}
+
+.create-acc{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.close-eye-icon{
+    display: none;
+}
+
+.close-eye-icon.active{
+    display: block;
+}
+
+.open-eye-icon.active{
+    display: none;
+}

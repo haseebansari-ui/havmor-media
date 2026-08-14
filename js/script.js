@@ -5,52 +5,106 @@
 
 const header = document.querySelector("header");
 
-window.addEventListener("scroll", () => {
+if(header) {
+    window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
     header.classList.add("h-scroll");
   } else {
     header.classList.remove("h-scroll");
   }
 });
+}
 
 
 const menueOpenBtn = document.querySelector(".menue-bar");
 const closeOpenBtn = document.querySelector(".close-menue");
 const openMenue = document.querySelector(".header-link-bx")
 
-if(menueOpenBtn){
-    menueOpenBtn.addEventListener('click', ()=>{
-        openMenue.classList.add('active');
-        // header.classList.add('active');
-    })
+if (menueOpenBtn && openMenue) {
+
+    menueOpenBtn.addEventListener("click", () => {
+        openMenue.classList.add("active");
+    });
+
 }
 
-if(closeOpenBtn){
-    closeOpenBtn.addEventListener('click', ()=>{
-        openMenue.classList.remove('active');
-        // header.classList.remove('active');
-    })
+if (closeOpenBtn && openMenue) {
+
+    closeOpenBtn.addEventListener("click", () => {
+        openMenue.classList.remove("active");
+    });
+
 }
 
 // Header Accordion
+
+// const accordions = document.querySelectorAll(".header-link-acc");
+
+// accordions.forEach((accordion) => {
+
+//     const title = accordion.querySelector(".header-link-title");
+//     const content = accordion.querySelector(".header-link-cnct");
+
+//     title.addEventListener("click", () => {
+
+//         // Close all other accordions
+//         accordions.forEach((item) => {
+
+//             if(item !== accordion){
+
+//                 item.classList.remove("active");
+
+//                 item.querySelector(".header-link-cnct").style.maxHeight = null;
+
+//             }
+
+//         });
+
+//         accordion.classList.toggle("active");
+
+//         if(content.style.maxHeight){
+
+//             content.style.maxHeight = null;
+
+//         }else{
+
+//             content.style.maxHeight = content.scrollHeight + "px";
+
+//         }
+
+//     });
+
+// });
+
 
 const accordions = document.querySelectorAll(".header-link-acc");
 
 accordions.forEach((accordion) => {
 
-    const title = accordion.querySelector(".header-link-title");
-    const content = accordion.querySelector(".header-link-cnct");
+    const title =
+        accordion.querySelector(".header-link-title");
+
+    const content =
+        accordion.querySelector(".header-link-cnct");
+
+    if (!title || !content) {
+        return;
+    }
 
     title.addEventListener("click", () => {
 
-        // Close all other accordions
         accordions.forEach((item) => {
 
-            if(item !== accordion){
+            if (item !== accordion) {
 
                 item.classList.remove("active");
 
-                item.querySelector(".header-link-cnct").style.maxHeight = null;
+                const otherContent =
+                    item.querySelector(".header-link-cnct");
+
+                if (otherContent) {
+                    otherContent.style.maxHeight = null;
+                }
 
             }
 
@@ -58,13 +112,14 @@ accordions.forEach((accordion) => {
 
         accordion.classList.toggle("active");
 
-        if(content.style.maxHeight){
+        if (content.style.maxHeight) {
 
             content.style.maxHeight = null;
 
-        }else{
+        } else {
 
-            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.maxHeight =
+                content.scrollHeight + "px";
 
         }
 
@@ -73,42 +128,111 @@ accordions.forEach((accordion) => {
 });
 
 
-
 // About us animation
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".text", {
+// gsap.to(".text", {
 
-    fontSize: "2rem",
+//     fontSize: "2rem",
 
-    ease: "none",
+//     ease: "none",
 
-    scrollTrigger: {
+//     scrollTrigger: {
 
-        trigger: ".about-sec",
+//         trigger: ".about-sec",
 
-        start: "top 70%",
+//         start: "top 70%",
 
-        end: "bottom 30%",
+//         end: "bottom 30%",
 
-        scrub: true
+//         scrub: true
 
-    }
+//     }
 
-});
+// });
+
+const aboutSection = document.querySelector(".about-sec");
+const aboutText = document.querySelector(".text");
+
+if (aboutSection && aboutText) {
+
+    gsap.to(aboutText, {
+
+        fontSize: "2rem",
+
+        ease: "none",
+
+        scrollTrigger: {
+            trigger: aboutSection,
+            start: "top 70%",
+            end: "bottom 30%",
+            scrub: true
+        }
+
+    });
+
+}
 
 
 
 /// accordian
 
 
-const careerAccordions = document.querySelectorAll(".career-acc-bx");
+// const careerAccordions = document.querySelectorAll(".career-acc-bx");
+
+// careerAccordions.forEach((accordion) => {
+
+//     const accHeader = accordion.querySelector(".career-header");
+//     const content = accordion.querySelector(".careers-cnct-bx");
+
+//     accHeader.addEventListener("click", () => {
+
+//         careerAccordions.forEach((item) => {
+
+//             if (item !== accordion) {
+
+//                 item.classList.remove("active");
+
+//                 const otherContent =
+//                     item.querySelector(".careers-cnct-bx");
+
+//                 otherContent.style.maxHeight = null;
+//             }
+
+//         });
+
+//         accordion.classList.toggle("active");
+
+//         if (accordion.classList.contains("active")) {
+
+//             content.style.maxHeight =
+//                 content.scrollHeight + "px";
+
+//         } else {
+
+//             content.style.maxHeight = null;
+
+//         }
+
+//     });
+
+// });
+
+const careerAccordions =
+    document.querySelectorAll(".career-acc-bx");
 
 careerAccordions.forEach((accordion) => {
 
-    const accHeader = accordion.querySelector(".career-header");
-    const content = accordion.querySelector(".careers-cnct-bx");
+    const accHeader =
+        accordion.querySelector(".career-header");
+
+    const content =
+        accordion.querySelector(".careers-cnct-bx");
+
+    if (!accHeader || !content) {
+        return;
+    }
 
     accHeader.addEventListener("click", () => {
 
@@ -121,7 +245,10 @@ careerAccordions.forEach((accordion) => {
                 const otherContent =
                     item.querySelector(".careers-cnct-bx");
 
-                otherContent.style.maxHeight = null;
+                if (otherContent) {
+                    otherContent.style.maxHeight = null;
+                }
+
             }
 
         });
@@ -185,122 +312,276 @@ document.querySelectorAll(".sticky-card").forEach((card) => {
 
 // custom cursor
 
+// const dot = document.querySelector(".cursor-dot");
+// const ring = document.querySelector(".cursor-ring");
+
+// let mouseX = 0;
+// let mouseY = 0;
+
+// let ringX = 0;
+// let ringY = 0;
+
+// // Mouse Position
+
+// document.addEventListener("mousemove",(e)=>{
+
+//     mouseX = e.clientX;
+//     mouseY = e.clientY;
+
+//     dot.style.left = mouseX + "px";
+//     dot.style.top = mouseY + "px";
+
+// });
+
+
+// // Smooth Ring Animation
+// function animateCursor(){
+
+//     ringX += (mouseX - ringX) * 0.10;
+//     ringY += (mouseY - ringY) * 0.10;
+
+//     ring.style.left = ringX + "px";
+//     ring.style.top = ringY + "px";
+
+//     requestAnimationFrame(animateCursor);
+// }
+
+// animateCursor();
+
+
+// const links = document.querySelectorAll("button, .btn, .card, .card-content .btn-cta , .btn-all, .offer-main, .header-link-bx");
+
+// links.forEach(item=>{
+
+//     item.addEventListener("mouseenter",()=>{
+
+//         ring.classList.add("active");
+//         dot.classList.add("active");
+
+//     });
+
+//     item.addEventListener("mouseleave",()=>{
+
+//         ring.classList.remove("active");
+//         dot.classList.remove("active");
+
+//     });
+
+// });
+
+// const linksDiv = document.querySelectorAll(".offer-link .btn-all");
+
+// linksDiv.forEach(item=>{
+
+//     item.addEventListener("mouseenter",()=>{
+
+//         ring.style.background ="transparent";
+//         ring.style.borderColor = "#ab01ab";
+        
+//         dot.style.background = "#ab01ab";
+
+//     });
+
+//     item.addEventListener("mouseleave",()=>{
+
+//         // ring.classList.remove("active");
+//         // dot.classList.remove("active");
+
+//         ring.style.background ="rgba(46, 46, 46, 0.12)";
+//         ring.style.borderColor = "#ab01ab";
+        
+//         dot.style.background = "#ab01ab";
+
+//     });
+
+// });
+
+
+// const offerContentCard = document.querySelectorAll(".offer-content");
+
+// offerContentCard.forEach(item=>{
+
+//     item.addEventListener("mouseenter",()=>{
+
+//         ring.style.background ="transparent";
+//         ring.style.borderColor = "#fff";
+        
+//         dot.style.background = "#fff";
+
+//     });
+
+//     item.addEventListener("mouseleave",()=>{
+
+//         // ring.classList.remove("active");
+//         // dot.classList.remove("active");
+
+//         ring.style.background ="rgba(46, 46, 46, 0.12)";
+//         ring.style.borderColor = "#ab01ab";
+        
+//         dot.style.background = "#ab01ab";
+
+//     });
+
+// });
+
+
 const dot = document.querySelector(".cursor-dot");
 const ring = document.querySelector(".cursor-ring");
 
-let mouseX = 0;
-let mouseY = 0;
+if (dot && ring) {
 
-let ringX = 0;
-let ringY = 0;
+    let mouseX = 0;
+    let mouseY = 0;
 
-// Mouse Position
-
-document.addEventListener("mousemove",(e)=>{
-
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-    dot.style.left = mouseX + "px";
-    dot.style.top = mouseY + "px";
-
-});
+    let ringX = 0;
+    let ringY = 0;
 
 
-// Smooth Ring Animation
-function animateCursor(){
+    // Mouse position
 
-    ringX += (mouseX - ringX) * 0.10;
-    ringY += (mouseY - ringY) * 0.10;
+    document.addEventListener("mousemove", (e) => {
 
-    ring.style.left = ringX + "px";
-    ring.style.top = ringY + "px";
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
-    requestAnimationFrame(animateCursor);
+        dot.style.left = mouseX + "px";
+        dot.style.top = mouseY + "px";
+
+    });
+
+
+    // Smooth ring animation
+
+    function animateCursor() {
+
+        ringX += (mouseX - ringX) * 0.10;
+        ringY += (mouseY - ringY) * 0.10;
+
+        ring.style.left = ringX + "px";
+        ring.style.top = ringY + "px";
+
+        requestAnimationFrame(animateCursor);
+
+    }
+
+    animateCursor();
+
+
+    // Cursor hover elements
+
+    const links = document.querySelectorAll(
+        "button, .btn, .card, .card-content .btn-cta, .btn-all, .offer-main, .header-link-bx"
+    );
+
+    links.forEach((item) => {
+
+        item.addEventListener("mouseenter", () => {
+
+            ring.classList.add("active");
+            dot.classList.add("active");
+
+        });
+
+        item.addEventListener("mouseleave", () => {
+
+            ring.classList.remove("active");
+            dot.classList.remove("active");
+
+        });
+
+    });
+
+
+    // Offer links
+
+    const linksDiv =
+        document.querySelectorAll(".offer-link .btn-all");
+
+    linksDiv.forEach((item) => {
+
+        item.addEventListener("mouseenter", () => {
+
+            ring.style.background = "transparent";
+            ring.style.borderColor = "#ab01ab";
+
+            dot.style.background = "#ab01ab";
+
+        });
+
+        item.addEventListener("mouseleave", () => {
+
+            ring.style.background =
+                "rgba(46, 46, 46, 0.12)";
+
+            ring.style.borderColor = "#ab01ab";
+
+            dot.style.background = "#ab01ab";
+
+        });
+
+    });
+
+
+    // Offer content cards
+
+    const offerContentCard =
+        document.querySelectorAll(".offer-content");
+
+    offerContentCard.forEach((item) => {
+
+        item.addEventListener("mouseenter", () => {
+
+            ring.style.background = "transparent";
+            ring.style.borderColor = "#fff";
+
+            dot.style.background = "#fff";
+
+        });
+
+        item.addEventListener("mouseleave", () => {
+
+            ring.style.background =
+                "rgba(46, 46, 46, 0.12)";
+
+            ring.style.borderColor = "#ab01ab";
+
+            dot.style.background = "#ab01ab";
+
+        });
+
+    });
+
 }
-
-animateCursor();
-
-
-const links = document.querySelectorAll("button, .btn, .card, .card-content .btn-cta , .btn-all, .offer-main, .header-link-bx");
-
-links.forEach(item=>{
-
-    item.addEventListener("mouseenter",()=>{
-
-        ring.classList.add("active");
-        dot.classList.add("active");
-
-    });
-
-    item.addEventListener("mouseleave",()=>{
-
-        ring.classList.remove("active");
-        dot.classList.remove("active");
-
-    });
-
-});
-
-const linksDiv = document.querySelectorAll(".offer-link .btn-all");
-
-linksDiv.forEach(item=>{
-
-    item.addEventListener("mouseenter",()=>{
-
-        ring.style.background ="transparent";
-        ring.style.borderColor = "#ab01ab";
-        
-        dot.style.background = "#ab01ab";
-
-    });
-
-    item.addEventListener("mouseleave",()=>{
-
-        // ring.classList.remove("active");
-        // dot.classList.remove("active");
-
-        ring.style.background ="rgba(46, 46, 46, 0.12)";
-        ring.style.borderColor = "#ab01ab";
-        
-        dot.style.background = "#ab01ab";
-
-    });
-
-});
-
-
-const offerContentCard = document.querySelectorAll(".offer-content");
-
-offerContentCard.forEach(item=>{
-
-    item.addEventListener("mouseenter",()=>{
-
-        ring.style.background ="transparent";
-        ring.style.borderColor = "#fff";
-        
-        dot.style.background = "#fff";
-
-    });
-
-    item.addEventListener("mouseleave",()=>{
-
-        // ring.classList.remove("active");
-        // dot.classList.remove("active");
-
-        ring.style.background ="rgba(46, 46, 46, 0.12)";
-        ring.style.borderColor = "#ab01ab";
-        
-        dot.style.background = "#ab01ab";
-
-    });
-
-});
 
 
 
 // Copyright Year
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearChange = document.getElementById("year");
 
+if (yearChange) {
+    yearChange.textContent = new Date().getFullYear();
+}
+
+// Login Form
+
+const showHide = document.querySelector('.eye-icon-bx');
+const showPass = document.querySelector('.close-eye-icon');
+const hidePass = document.querySelector('.open-eye-icon');
+const inputPass = document.querySelector('.input-pss-field');
+
+
+if(showHide){
+    showHide.addEventListener("click", ()=>{
+        if(inputPass.type === "password"){
+            inputPass.type = "text";
+            hidePass.classList.add('active');
+            showPass.classList.add('active');
+        }else{
+            inputPass.type = "password";
+            hidePass.classList.remove('active');
+            showPass.classList.remove('active');
+        }
+    })
+}
 
