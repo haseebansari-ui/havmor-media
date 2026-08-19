@@ -2540,9 +2540,21 @@ footer{
      Form right side
 ==============================*/
 
+
 .right-form{
     padding: 100px;
-    background: rgba(232, 231, 243, 0.631);
+    background: radial-gradient(circle at 20% 20%, rgba(199, 62, 155, 0.18), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-width{
+    width: 530px;
+    background: var(--white-color);
+    padding: 50px;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(232, 231, 243, 0.631);
 }
 
 .login-form-container .heading-bx{

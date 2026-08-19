@@ -59,185 +59,10 @@
 
     <section class="login-sec signup-sec">
 
-        <div class="grid-column-two">
+        <div class="">
 
 
-            <!-- ============================
-                 LEFT CONTENT
-            ============================= -->
-
-            <div class="left-content-main">
-
-                <div class="grid-overlay"></div>
-
-
-                <div class="login-content-bx">
-
-
-                    <!-- Logo -->
-
-                    <div class="login-img-bx">
-
-                        <a href="index.html">
-
-                            <img
-                                src="./img/havmor-logo.png"
-                                alt="Havmor Media">
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- Badge -->
-
-                    <div class="login-badge">
-
-                        AI-POWERED GROWTH PLATFORM
-
-                    </div>
-
-
-                    <!-- Heading -->
-
-                    <div class="login-title">
-
-                        Build your
-                        <span>growth.</span>
-
-                        <br>
-
-                        Scale smarter.
-
-                    </div>
-
-
-                    <p>
-
-                        Create your account and unlock
-                        intelligent performance marketing,
-                        real-time analytics and powerful
-                        campaign optimization.
-
-                    </p>
-
-
-                    <!-- Dashboard -->
-
-                    <div class="mini-dashboard">
-
-
-                        <div class="dashboard-top">
-
-                            <div>
-
-                                <span>
-                                    Campaign Performance
-                                </span>
-
-                                <strong>
-                                    +38.6%
-                                </strong>
-
-                            </div>
-
-
-                            <div class="dashboard-icon">
-
-                                <i class="ri-line-chart-line"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="chart">
-
-                            <div class="chart-line"></div>
-
-                            <div
-                                class="chart-point point-1">
-                            </div>
-
-                            <div
-                                class="chart-point point-2">
-                            </div>
-
-                            <div
-                                class="chart-point point-3">
-                            </div>
-
-                            <div
-                                class="chart-point point-4">
-                            </div>
-
-                            <div
-                                class="chart-point point-5">
-                            </div>
-
-                        </div>
-
-
-                        <div class="chart-labels">
-
-                            <span>Mon</span>
-                            <span>Tue</span>
-                            <span>Wed</span>
-                            <span>Thu</span>
-                            <span>Fri</span>
-
-                        </div>
-
-
-                    </div>
-
-
-                    <!-- Features -->
-
-                    <div class="visual-features">
-
-
-                        <div class="feature">
-
-                            <i class="ri-sparkling-2-line"></i>
-
-                            <span>
-                                AI-powered optimization
-                            </span>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <i class="ri-bar-chart-grouped-line"></i>
-
-                            <span>
-                                Real-time analytics
-                            </span>
-
-                        </div>
-
-
-                        <div class="feature">
-
-                            <i class="ri-global-line"></i>
-
-                            <span>
-                                Global campaign reach
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-
+            
             <!-- ============================
                  RIGHT SIGNUP FORM
             ============================= -->
@@ -245,7 +70,7 @@
             <div class="right-form">
 
 
-                <div class="login-form-container signup-form-container">
+                <div class="signup-form-container container-width">
 
 
                     <!-- Heading -->
@@ -270,10 +95,7 @@
 
                     <!-- Signup Form -->
 
-                    <form
-                        action="#"
-                        id="form"
-                        novalidate>
+                    <form action="#" id="form" novalidate>
 
 
                         <!-- First Name -->
@@ -294,10 +116,7 @@
                                 </span>
 
 
-                                <input
-                                    type="text"
-                                    id="firstname-input"
-                                    placeholder="John">
+                                <input type="text" id="firstname-input" placeholder="John">
 
 
                             </div>
@@ -323,10 +142,7 @@
                                 </span>
 
 
-                                <input
-                                    type="email"
-                                    id="email-input"
-                                    placeholder="you@company.com">
+                                <input type="email" id="email-input" placeholder="you@company.com" />
 
 
                             </div>
@@ -337,55 +153,29 @@
                         <!-- Password -->
 
                         <div class="login-form-input">
-
-                            <label for="password-input">
-                                Password
-                            </label>
-
-
+                            <div class="pass-bx">
+                                <label for="log-pass"> Password </label>
+                            </div>
+                            
                             <div class="login-input">
+                                <span class="input-icon lock-icon"><i class="ri-lock-line input-icon"></i></span>
+                                <input type="password" placeholder="Password" class="input-pss-field" id="log-pass" />
 
-                                <span class="input-icon">
-
-                                    <i class="ri-lock-line"></i>
-
-                                </span>
-
-
-                                <input
-                                    type="password"
-                                    id="password-input"
-                                    class="input-pss-field"
-                                    placeholder="Create a password">
-
-
-                                <div
-                                    class="eye-icon-bx signup-eye">
-
-                                    <span class="show-eye">
-
-                                        <i class="ri-eye-line"></i>
-
+                                <div class="eye-icon-bx">
+                                    <span class="close-eye-icon"> <i class="ri-eye-line"></i>
                                     </span>
-
-
-                                    <span class="hide-eye">
-
-                                        <i class="ri-eye-off-line"></i>
-
+                                    <span class="open-eye-icon"> <i class="ri-eye-off-line"></i>
                                     </span>
 
                                 </div>
-
-
+                                
                             </div>
-
                         </div>
 
 
                         <!-- Repeat Password -->
 
-                        <div class="login-form-input">
+                        <!-- <div class="login-form-input">
 
                             <label for="repeat-password-input">
                                 Confirm password
@@ -401,15 +191,11 @@
                                 </span>
 
 
-                                <input
-                                    type="password"
-                                    id="repeat-password-input"
-                                    placeholder="Confirm your password">
-
+                                <input type="password" id="repeat-password-input" placeholder="Confirm your password">
 
                             </div>
 
-                        </div>
+                        </div> -->
 
 
                         <!-- Error Message -->
@@ -422,14 +208,10 @@
 
                         <!-- Terms -->
 
-                        <div class="signup-terms">
+                        <div class="signup-terms mb-3">
 
-                            <label>
-
-                                <input
-                                    type="checkbox"
-                                    id="terms-checkbox">
-
+                            <label> <input type="checkbox" id="terms-checkbox">
+                                
                                 <span>
 
                                     I agree to the
