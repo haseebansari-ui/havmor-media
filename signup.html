@@ -44,13 +44,25 @@
 
 <body>
 
-
+    
     <!-- ================================
-         CUSTOM CURSOR
+        CUSTOM CURSOR
     ================================= -->
 
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+
+    <!-- ================================
+        
+    ================================= -->
+
+    <!-- <div class="background-animation">
+        <div class="gradient-orb"></div>
+    </div> -->
+
+    <div class="background-animation">
+        <div class="gradient-orb"></div>
+    </div>
 
 
     <!-- ================================
@@ -96,24 +108,15 @@
 
                         <div class="login-form-input">
 
-                            <label for="firstname-input">
-                                First name
-                            </label>
-
+                            <label for="name-input"> Name </label>
 
                             <div class="login-input">
-
                                 <span class="input-icon">
-
                                     <i class="ri-user-line"></i>
-
                                 </span>
-
-
-                                <input type="text" id="firstname-input" placeholder="John">
-
-
+                                <input type="text" id="name-input" placeholder="John Doe" onkeyup="validateName()">
                             </div>
+                            <p id="err-name"></p>
 
                         </div>
 
@@ -122,26 +125,40 @@
 
                         <div class="login-form-input">
 
-                            <label for="email-input">
-                                Email address
-                            </label>
-
+                            <label for="email-input"> Email address </label>
 
                             <div class="login-input">
 
                                 <span class="input-icon">
-
                                     <i class="ri-mail-line"></i>
-
                                 </span>
 
-
-                                <input type="email" id="email-input" placeholder="you@company.com" />
-
+                                <input type="email" id="email-input" placeholder="you@company.com" onkeyup="validateSignupEmail()" />
 
                             </div>
+                            <p id="err-email"></p>
 
                         </div>
+
+                        <!-- Mobile -->
+
+                        <div class="login-form-input">
+
+                            <label for="mobile-input"> Mobile no. </label>
+
+                            <div class="login-input">
+
+                                <span class="input-icon">
+                                    <i class="ri-phone-line"></i>
+                                </span>
+
+                                <input type="tel" id="mobile-input" placeholder="Enter your mobile no." onkeyup="validateMobile()"  />
+
+                            </div>
+                            <p id="err-mobile"></p>
+
+                        </div>
+
 
 
                         <!-- Password -->
@@ -153,17 +170,17 @@
                             
                             <div class="login-input">
                                 <span class="input-icon lock-icon"><i class="ri-lock-line input-icon"></i></span>
-                                <input type="password" placeholder="Password" class="input-pss-field" id="log-pass" />
+                                <input type="password" placeholder="Password" class="input-pss-field" id="signup-pass" onkeyup="validateSignupPassword()" />
 
                                 <div class="eye-icon-bx">
                                     <span class="close-eye-icon"> <i class="ri-eye-line"></i>
                                     </span>
                                     <span class="open-eye-icon"> <i class="ri-eye-off-line"></i>
                                     </span>
-
                                 </div>
                                 
                             </div>
+                            <p id="err-pass"></p>
                         </div>
 
 
@@ -192,21 +209,11 @@
                         </div> -->
 
 
-                        <!-- Error Message -->
-
-                        <div
-                            class="signup-error-message"
-                            id="error-message">
-                        </div>
-
-
                         <!-- Terms -->
 
                         <div class="signup-terms mb-3">
 
-                            <label> <input type="checkbox" id="terms-checkbox">
-                                
-                                <span>
+                            <label> <input type="checkbox" id="terms-checkbox"> <span>
 
                                     I agree to the
                                     <a href="#">
@@ -216,7 +223,6 @@
                                     <a href="#">
                                         Privacy Policy
                                     </a>
-
                                 </span>
 
                             </label>
@@ -226,18 +232,12 @@
 
                         <!-- Submit -->
 
-                        <button
-                            type="submit"
-                            class="sign-in-btn signup-btn">
-
+                        <button type="submit" class="sign-in-btn signup-btn">
+                            
                             Create account
-
                             <span>
-
                                 <i class="ri-arrow-right-line"></i>
-
                             </span>
-
                         </button>
 
 

@@ -563,7 +563,7 @@ if (yearChange) {
     yearChange.textContent = new Date().getFullYear();
 }
 
-// Login Form
+// Form Password Hide & show (Login & Signup)
 
 const showHide = document.querySelector('.eye-icon-bx');
 const showPass = document.querySelector('.close-eye-icon');
@@ -583,5 +583,211 @@ if(showHide){
             showPass.classList.remove('active');
         }
     })
+};
+
+
+// Form validation
+
+const errName = document.getElementById("err-name");
+const errEmail = document.getElementById("err-email");
+const errMobile = document.getElementById("err-mobile");
+const errPassword = document.getElementById("err-pass");
+const form = document.getElementById("form");
+
+
+
+function validateName(){
+    const inputName = document.getElementById('name-input');
+    const nameValue = inputName.value.trim();
+    
+
+    if(nameValue.length === 0){
+        errName.innerText = "Enter your name";        
+        inputName.style.border = "1px solid #ff0000";
+        return false;
+    }
+
+    if(!nameValue.match(/^[a-zA-Z ]+$/)){
+        errName.innerText = "Name should contain letters only";
+        inputName.style.border = "1px solid #ff0000";
+        return false;
+    }
+
+    errName.innerText = "";
+    inputName.style.border = "1px solid #27c93f";
+    return true;
+
 }
 
+function validateSignupEmail(){
+    const emailInput = document.getElementById('email-input');
+    const emailValue = emailInput.value.trim();
+
+    if(emailValue.length === 0 ){
+        errEmail.innerText = "Email is Required";
+        emailInput.style.border = "1px solid #ff0000";
+        return false;
+        
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailPattern.test(emailValue)){
+        errEmail.innerText = "Please enter a valid email address";
+        emailInput.style.border = "1px solid red";
+        return false;
+    }
+
+    errEmail.innerText = "";
+    emailInput.style.border = "1px solid #27c93f";
+    return true;
+
+}
+
+function validateMobile(){
+    const mobileInput = document.getElementById("mobile-input");
+    const mobileValue = mobileInput.value.trim();
+
+    if(mobileValue.length === 0){
+        errMobile.innerText = "Mobile no. is required";
+        mobileInput.style.border = "1px solid #ff0000";
+        return false
+    }
+
+    const mobilePattern = /^[0-9]+$/;
+
+    if(!mobilePattern.test(mobileValue)){
+        errMobile.innerText = "Mobile no. should contain number's only";
+        mobileInput.style.border = "1px solid #ff0000";
+        return false
+    }
+
+    if(mobileValue.length < 10){
+        errMobile.innerText = "Mobile no. should contain 10 number's only";
+        mobileInput.style.border = "1px solid #ff0000";
+        return false
+    }
+
+    errMobile.innerText = "";
+    mobileInput.style.border = "1px solid #27c93f";
+    return true;
+
+}
+
+
+function validateSignupPassword(){
+    const signupPassInput = document.getElementById("signup-pass");
+    const signupValue = signupPassInput.value.trim();
+
+    // if(signupValue === 0){
+    //     errPassword.innerText = "Password is Required";
+    //     signupPassInput.style.border = "1px solid #ff0000";
+    //     return false
+    // }
+ 
+    
+    if(signupValue.length < 8){
+        errPassword.innerText = "Password must have at least 8 characters";
+        signupPassInput.style.border = "1px solid #ff0000";
+        return false
+    }
+
+    errPassword.innerText = "";
+    signupPassInput.style.border = "1px solid #27c93f";
+    return true;
+
+}
+
+if(form){
+    form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+
+        const nameValid = validateName();
+        const signupEmailValidate = validateSignupEmail();
+        const mobileValidate = validateMobile();
+        const signupPassValidate = validateSignupPassword();
+        
+
+        if(!nameValid || !signupEmailValidate || !mobileValidate || !signupPassValidate){
+            return;
+        }
+
+        window.window.location.href = "login.html";
+        
+    })
+
+
+
+
+}
+
+
+const loginFormValidation = document.getElementById('login-form');
+
+
+
+function loginValidateEmail(){
+    const logEmailInput = document.getElementById('log-email');
+    const logEmailvalue = logEmailInput.value.trim();
+
+    if(logEmailvalue.length === 0){
+        errEmail.innerText = "Email is Required";
+        logEmailInput.style.border = "1px solid #ff0000";
+        return false;    
+    }
+
+    const loginEmailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!loginEmailPattern.test(logEmailvalue)){
+        errEmail.innerText = "Please enter a valid email address";
+        logEmailInput.style.border = "1px solid red";
+        return false;
+    }
+
+    errEmail.innerText = "";
+    logEmailInput.style.border = "1px solid #27c93f";
+    return true;
+}
+
+function logPasswordValidate(){
+    const logPasswordInput = document.getElementById('log-pass');
+    const logPasswordValue = logPasswordInput.value.trim();
+
+    // if(logPasswordValue === 0){
+    //     errPassword.innerText = "Password must ";
+    //     logPasswordInput.style.border = "1px solid #ff0000";
+    //     return false
+    // }
+
+    if(logPasswordValue.length < 8){
+        errPassword.innerText = "Password must have at least 8 characters";
+        logPasswordInput.style.border = "1px solid #ff0000";
+        return false
+    }
+
+    errPassword.innerText = "";
+    logPasswordInput.style.border = "1px solid #27c93f";
+    return true;
+}
+
+
+if(loginFormValidation){
+    loginFormValidation.addEventListener('submit', (e)=>{
+        e.preventDefault();
+
+        const loginEmailValidate = loginValidateEmail();
+        const loginPasswordValidate = logPasswordValidate();
+
+        if(!loginEmailValidate || !loginPasswordValidate){
+            return;
+        }
+        
+
+        window.window.location.href = "index.html";
+        
+    })
+
+
+
+
+}

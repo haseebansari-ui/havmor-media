@@ -29,16 +29,23 @@
                         <h2>Welcome back.</h2>
                         <p>Sign in to access your performance dashboard.</p>
                     </div>
-                    <form action="#">
+
+                    <form action="#" id="login-form">
+
+                        <!-- Email -->
                         <div class="login-form-input">
                             <label for="log-email">Email address</label>
                             <div class="login-input">
                                 <span class="input-icon mail-icon"><i class="ri-mail-line input-icon"></i></span>
-                                <input type="email" placeholder="you@gmail.com" id="log-email" />
+                                <input type="email" placeholder="you@gmail.com" id="log-email" onkeyup="loginValidateEmail()" />
                             </div>
+                            <p id="err-email"></p>
                         </div>
 
+                        <!-- Password -->
+
                         <div class="login-form-input">
+
                             <div class="pass-bx">
                                 <label for="log-pass"> Password </label>
                                 <a href="#" class="forget-link">Forget Password?</a>
@@ -46,7 +53,7 @@
                             
                             <div class="login-input">
                                 <span class="input-icon lock-icon"><i class="ri-lock-line input-icon"></i></span>
-                                <input type="password" placeholder="Password" class="input-pss-field" id="log-pass" />
+                                <input type="password" placeholder="Password" class="input-pss-field" id="log-pass" onkeyup="logPasswordValidate()" />
 
                                 <div class="eye-icon-bx">
                                     <span class="close-eye-icon"> <i class="ri-eye-line"></i>
@@ -57,6 +64,7 @@
                                 </div>
                                 
                             </div>
+                            <p id="err-pass"></p>
                         </div>
 
                         <button type="submit" class="sign-in-btn">Sign in <span> <i class="ri-arrow-right-line"></i> </span> </button>
