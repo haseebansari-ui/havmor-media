@@ -668,6 +668,15 @@ function validateMobile(){
         return false
     }
 
+    if (mobileValue.length === 10) {
+
+        errMobile.innerText = "";
+
+        mobileInput.style.border = "1px solid #27c93f";
+
+        return true;
+    }
+
     errMobile.innerText = "";
     mobileInput.style.border = "1px solid #27c93f";
     return true;
