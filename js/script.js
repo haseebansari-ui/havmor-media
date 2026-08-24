@@ -735,6 +735,7 @@ const loginFormValidation = document.getElementById('login-form');
 
 
 
+
 function loginValidateEmail(){
     const logEmailInput = document.getElementById('log-email');
     const logEmailvalue = logEmailInput.value.trim();
@@ -793,7 +794,7 @@ if(loginFormValidation){
         
 
         window.window.location.href = "index.html";
-        
+            
     })
 
 
