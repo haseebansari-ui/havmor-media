@@ -688,11 +688,11 @@ function validateSignupPassword(){
     const signupPassInput = document.getElementById("signup-pass");
     const signupValue = signupPassInput.value.trim();
 
-    // if(signupValue === 0){
-    //     errPassword.innerText = "Password is Required";
-    //     signupPassInput.style.border = "1px solid #ff0000";
-    //     return false
-    // }
+    if(signupValue.length === 0){
+        errPassword.innerText = "Password is Required";
+        signupPassInput.style.border = "1px solid #ff0000";
+        return false
+    }
  
     
     if(signupValue.length < 8){
@@ -730,11 +730,9 @@ if(form){
 
 }
 
+//  Login form validation 
 
 const loginFormValidation = document.getElementById('login-form');
-
-
-
 
 function loginValidateEmail(){
     const logEmailInput = document.getElementById('log-email');
@@ -763,11 +761,11 @@ function logPasswordValidate(){
     const logPasswordInput = document.getElementById('log-pass');
     const logPasswordValue = logPasswordInput.value.trim();
 
-    // if(logPasswordValue === 0){
-    //     errPassword.innerText = "Password must ";
-    //     logPasswordInput.style.border = "1px solid #ff0000";
-    //     return false
-    // }
+    if(logPasswordValue.length === 0){
+        errPassword.innerText = "Password is Required ";
+        logPasswordInput.style.border = "1px solid #ff0000";
+        return false
+    }
 
     if(logPasswordValue.length < 8){
         errPassword.innerText = "Password must have at least 8 characters";
@@ -797,7 +795,6 @@ if(loginFormValidation){
             
     })
 
-
-
-
 }
+
+
