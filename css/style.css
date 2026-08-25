@@ -3661,3 +3661,517 @@ background-size:
 .architechture-sec .heading-bx{
     text-align: center;
 }
+
+
+/* ========================
+    Case Study Page
+=========================== */
+
+.counter-main-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.counter-card {
+    text-align: center;
+}
+
+.case-stat-num{
+    font-size: 3.7rem;
+    font-weight: bold;
+    font-family: var(--oswald-font);
+}
+
+.counter-card p{
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.portfolio-performance p{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}
+
+/* ---- Case Study / Featured Case Study Section ---- */
+
+.feature-case-bg{
+    background: var(--white-color);
+    padding: 40px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+
+.feature-case-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-case-title{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.finvest-title{
+    font-weight: 500;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+.feature-heading{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+}
+
+.feature-tag-group ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.feature-tag-group ul li{
+    padding: 8px 15px;
+    background: #ebebeb;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.feature-matrix{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 2rem 0;
+}
+
+
+.feature-matrix-num{
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.feature-matrix-card p{
+    color: #777;
+}
+
+.feature-matrix-card{
+    text-align: center;
+}
+
+.dashboard-preview {
+    background: #0D0D11;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    overflow: hidden;
+}
+
+.dashboard-topbar {
+    background: #16161D;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dash-dot.red {
+    background: #FF5F56;
+}
+
+.dash-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dash-dot.yellow {
+    background: #FFBD2E;
+}
+
+.dash-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dash-dot.green {
+    background: #27C93F;
+}
+
+.dash-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dash-title {
+    font-size: 0.75rem;
+    color: #8E8E93;
+    font-weight: 600;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dashboard-body {
+    padding: 24px;
+}
+
+.dash-metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.dash-card {
+    background: #1A1A24;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.d-label {
+    display: block;
+    font-size: 0.65rem;
+    color: #8E8E93;
+    font-weight: 700;
+}
+
+.d-val {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+    margin: 4px 0;
+}
+
+.d-sub.positive {
+    color: #10B981;
+}
+
+.d-sub {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.dash-card {
+    background: #1A1A24;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dash-chart-box {
+    background: #1A1A24;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chart-label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #8E8E93;
+    margin-bottom: 12px;
+}
+
+.live-tag {
+    color: #10B981;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pulse-ring {
+    width: 6px;
+    height: 6px;
+    background: #10B981;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #10B981;
+}
+
+.svg-container {
+    width: 100%;
+    height: auto;
+}
+
+.dash-svg {
+    width: 100%;
+    height: auto;
+}
+
+.chart-label-row span{
+    font-size: 0.7rem;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #800080 0%, #9B2C9B 45%, #C73E9B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ---- Case Study / All Case Study Section ---- */
+
+.main-case-bg-clr {
+    background: var(--white-color);
+    padding: 40px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    transition: var(--transition);
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+}
+
+.main-case-bg-clr:hover{
+    border-color: var(--primary);
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #8000803f;
+}
+
+.main-case-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.main-case-title{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.main-case-title2{
+    font-weight: 500;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+.main-case-heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0 1rem;
+}
+
+
+.main-case-matrix{
+   display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 1rem 0;
+}
+
+.main-case-matrix-title{
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.main-case-matrix-bx p{
+    color: #777;
+}
+
+.main-matrix-tag-group ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.main-matrix-tag-group ul li{
+    padding: 8px 15px;
+    background: #ebebeb;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* ---- Case Study / Payscale Section ---- */
+
+.pay-scale-sec .heading-bx{
+    text-align: center;
+}
+
+.pay-scale-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #3b3838;
+}
+
+.pay-scale-title span i{
+    font-size: 1.5rem;
+}
+
+.pay-scale-sec .heading-bx h2{
+    margin: 1rem 0 3rem;
+    line-height: 1.5;
+}
+
+.heading-bx .main-matrix-tag-group ul{
+    justify-content: center;
+}
+
+.heading-bx .main-matrix-tag-group ul li{
+    padding: 8px 20px;
+}
+
+.details-matrix-main{
+    background: linear-gradient(135deg, #800080 0%, #9B2C9B 45%, #C73E9B 100%);
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+.deatil-matrix-bx {
+    text-align: center;
+    color: var(--white-color);
+    border-left: 1px solid #c5c3c3;
+    padding: 20px;
+}
+
+.border-left{
+    border-left: none;
+}
+
+.deatil-matrix-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--oswald-font);
+}
+
+
+/* ---- Case Study / Payscale Challange Section ---- */
+
+.payscale-challenge .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.pay-challenge-heading{
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.payscale-challenge-content .para-cnct{
+    font-size: 1.10rem;
+    margin-bottom: 1.5rem;
+}
+
+.payscale-challenge-bx{
+    display: flex;
+    gap: 1rem;
+    /* margin-bottom: 1rem; */
+    padding: 1.5rem 0;
+    border-top: 1px solid #3535356c;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.pay-chl-num{
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.pay-chl-content-title{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+/* ---- Case Study / Payscale Strategy Section ---- */
+
+.payscale-strategy .heading-bx small{
+    padding: 0;
+    border: none;
+}
+
+.payscale-strategy-bg-clr{
+    background: #F9F8FC;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+}
+
+.payscale-strategy-icon{
+    height: 50px;
+    width: 50px;
+    background: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+}
+
+.pay-str-bg-clr{
+    background:  linear-gradient(135deg, #800080 0%, #9B2C9B 45%, #C73E9B 100%);
+    border: 1px solid var(--primary);
+}
+
+.payscale-strategy-bx .pay-str-bg-clr span i{
+    color: var(--white-color);
+}
+
+.payscale-strategy-icon span i{
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.payscale-strategy-bx{
+    text-align: center;
+}
+
+
+.payscale-strategy-bx p{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
+
+/* .payscale-strategy-card{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: #6e3838;
+    position: relative;
+    z-index: 3;
+}
+
+.payscale-strategy-card::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 1px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.184);
+    z-index: -1;
+} */
