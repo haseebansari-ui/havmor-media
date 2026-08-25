@@ -2698,7 +2698,7 @@ footer{
     position: relative;
     overflow: hidden;
 
-    background:
+    /* background:
         radial-gradient(
             circle at 20% 20%,
             rgba(199, 62, 156, 0.075),
@@ -2718,7 +2718,9 @@ footer{
             90deg,
             rgba(17, 24, 39, 0.021) 1px,
             transparent 1px
-        );
+        ); */
+
+        background: radial-gradient(circle at 20% 20%, rgb(181 178 180 / 20%), transparent 100%), radial-gradient(circle at 80% 30%, rgb(157 155 157 / 29%), transparent 30%), linear-gradient(180deg, rgba(255, 174, 0, 0.041), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.021) 1px, transparent 1px);
 }
 
 
@@ -3269,18 +3271,60 @@ footer{
 
 
 .product-inn-sec.inn-pad{
-    padding: 12rem 0 5rem;
+    padding: 10rem 0 3rem;
 }
 
 .product-list main{
     position: relative;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px; */
+    /* background-image:
+    radial-gradient(
+        circle at 20% 20%,
+        rgba(199, 62, 156, 0.075),
+        transparent 55%
+    ),
+    radial-gradient(
+        circle at 80% 30%,
+        rgba(128, 0, 128, 0.10),
+        transparent 45%
+    ),
+    linear-gradient(
+        180deg,
+        rgba(255, 174, 0, 0.041),
+        rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.055) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.055) 1px,
+        transparent 1px
+    );
+
+background-size:
+    auto,
+    auto,
+    auto,
+    40px 40px,
+    40px 40px; */
+
+    background-image: radial-gradient(circle at 20% 20%, rgb(183 183 183 / 18%), transparent 55%), radial-gradient(circle at 80% 30%, rgb(173 171 173 / 10%), transparent 45%), linear-gradient(180deg, rgb(177 177 176 / 4%), rgba(255, 255, 255, 0)), linear-gradient(to right, rgb(0 0 0 / 6%) 1px, transparent 1px), linear-gradient(to bottom, rgb(0 0 0 / 6%) 1px, transparent 1px);
+
+    background-size:
+    auto,
+    auto,
+    auto,
+    40px 40px,
+    40px 40px; 
 }
 
-.product-inn-sec{
+/* .product-inn-sec{
     background: radial-gradient(circle at 20% 20%, rgba(199, 62, 156, 0.075), transparent 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.123), transparent 30%), linear-gradient(180deg, rgba(255, 174, 0, 0.041), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.021) 1px, transparent 1px);
-}
+} */
 
 .product-inn-sec .heading-bx{
     text-align: center;
@@ -3580,9 +3624,6 @@ footer{
     height: 700px;
 }
 
-.product-list-sec.sec-padding{
-    padding: 5rem;
-}
 
 .product-list-sec .heading-bx {
     text-align: center;

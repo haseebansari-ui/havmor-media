@@ -42,7 +42,7 @@
 </head>
 
 
-<body>
+<body class="product-list">
 
     
     <!-- ================================
@@ -52,213 +52,205 @@
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
 
-    <!-- ================================
-        
-    ================================= -->
+    <main>
 
-    <!-- <div class="background-animation">
-        <div class="gradient-orb"></div>
-    </div> -->
+        <!-- ================================
+            SIGNUP SECTION
+        ================================= -->
 
-    <div class="background-animation">
-        <div class="gradient-orb"></div>
-    </div>
+        <section class="login-sec signup-sec">
 
+            <div>
 
-    <!-- ================================
-         SIGNUP SECTION
-    ================================= -->
-
-    <section class="login-sec signup-sec">
-
-        <div>
-
-            <div class="right-form">
+                <div class="right-form">
 
 
-                <div class="login-form-container signup-form-container container-width">
+                    <div class="login-form-container signup-form-container container-width">
 
 
-                    <!-- Heading -->
+                        <!-- Heading -->
 
-                    <div class="heading-bx">
+                        <div class="heading-bx">
 
-                        <small>
-                            CREATE ACCOUNT
-                        </small>
+                            <small>
+                                CREATE ACCOUNT
+                            </small>
 
-                        <h2>
-                            Start growing.
-                        </h2>
+                            <h2>
+                                Start growing.
+                            </h2>
 
-                        <p>
-                            Create your account to access
-                            your performance dashboard.
-                        </p>
-
-                    </div>
-
-
-                    <!-- Signup Form -->
-
-                    <form action="#" id="form" novalidate>
-
-
-                        <!-- First Name -->
-
-                        <div class="login-form-input">
-
-                            <label for="name-input"> Name </label>
-
-                            <div class="login-input">
-                                <span class="input-icon">
-                                    <i class="ri-user-line"></i>
-                                </span>
-                                <input type="text" id="name-input" placeholder="John Doe" onkeyup="validateName()">
-                            </div>
-                            <p id="err-name"></p>
+                            <p>
+                                Create your account to access
+                                your performance dashboard.
+                            </p>
 
                         </div>
 
 
-                        <!-- Email -->
+                        <!-- Signup Form -->
 
-                        <div class="login-form-input">
-
-                            <label for="email-input"> Email address </label>
-
-                            <div class="login-input">
-
-                                <span class="input-icon">
-                                    <i class="ri-mail-line"></i>
-                                </span>
-
-                                <input type="email" id="email-input" placeholder="you@company.com" onkeyup="validateSignupEmail()" />
-
-                            </div>
-                            <p id="err-email"></p>
-
-                        </div>
-
-                        <!-- Mobile -->
-
-                        <div class="login-form-input">
-
-                            <label for="mobile-input"> Mobile no. </label>
-
-                            <div class="login-input">
-
-                                <span class="input-icon">
-                                    <i class="ri-phone-line"></i>
-                                </span>
-
-                                <input type="tel" id="mobile-input" placeholder="Enter your mobile no." onkeyup="validateMobile()" maxlength="10"  />
-
-                            </div>
-                            <p id="err-mobile"></p>
-
-                        </div>
+                        <form action="#" id="form" novalidate>
 
 
+                            <!-- First Name -->
 
-                        <!-- Password -->
+                            <div class="login-form-input">
 
-                        <div class="login-form-input">
-                            <div class="pass-bx">
-                                <label for="log-pass"> Password </label>
-                            </div>
-                            
-                            <div class="login-input">
-                                <span class="input-icon lock-icon"><i class="ri-lock-line input-icon"></i></span>
-                                <input type="password" placeholder="Password" class="input-pss-field" id="signup-pass" onkeyup="validateSignupPassword()" />
+                                <label for="name-input"> Name </label>
 
-                                <div class="eye-icon-bx">
-                                    <span class="close-eye-icon"> <i class="ri-eye-line"></i>
+                                <div class="login-input">
+                                    <span class="input-icon">
+                                        <i class="ri-user-line"></i>
                                     </span>
-                                    <span class="open-eye-icon"> <i class="ri-eye-off-line"></i>
+                                    <input type="text" id="name-input" placeholder="John Doe" onkeyup="validateName()">
+                                </div>
+                                <p id="err-name"></p>
+
+                            </div>
+
+
+                            <!-- Email -->
+
+                            <div class="login-form-input">
+
+                                <label for="email-input"> Email address </label>
+
+                                <div class="login-input">
+
+                                    <span class="input-icon">
+                                        <i class="ri-mail-line"></i>
                                     </span>
+
+                                    <input type="email" id="email-input" placeholder="you@company.com" onkeyup="validateSignupEmail()" />
+
+                                </div>
+                                <p id="err-email"></p>
+
+                            </div>
+
+                            <!-- Mobile -->
+
+                            <div class="login-form-input">
+
+                                <label for="mobile-input"> Mobile no. </label>
+
+                                <div class="login-input">
+
+                                    <span class="input-icon">
+                                        <i class="ri-phone-line"></i>
+                                    </span>
+
+                                    <input type="tel" id="mobile-input" placeholder="Enter your mobile no." onkeyup="validateMobile()" maxlength="10"  />
+
+                                </div>
+                                <p id="err-mobile"></p>
+
+                            </div>
+
+
+
+                            <!-- Password -->
+
+                            <div class="login-form-input">
+                                <div class="pass-bx">
+                                    <label for="log-pass"> Password </label>
                                 </div>
                                 
-                            </div>
-                            <p id="err-pass"></p>
-                        </div>
+                                <div class="login-input">
+                                    <span class="input-icon lock-icon"><i class="ri-lock-line input-icon"></i></span>
+                                    <input type="password" placeholder="Password" class="input-pss-field" id="signup-pass" onkeyup="validateSignupPassword()" />
 
-
-                        <!-- Repeat Password -->
-
-                        <!-- <div class="login-form-input">
-
-                            <label for="repeat-password-input">
-                                Confirm password
-                            </label>
-
-
-                            <div class="login-input">
-
-                                <span class="input-icon">
-
-                                    <i class="ri-shield-check-line"></i>
-
-                                </span>
-
-
-                                <input type="password" id="repeat-password-input" placeholder="Confirm your password">
-
+                                    <div class="eye-icon-bx">
+                                        <span class="close-eye-icon"> <i class="ri-eye-line"></i>
+                                        </span>
+                                        <span class="open-eye-icon"> <i class="ri-eye-off-line"></i>
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                <p id="err-pass"></p>
                             </div>
 
-                        </div> -->
+
+                            <!-- Repeat Password -->
+
+                            <!-- <div class="login-form-input">
+
+                                <label for="repeat-password-input">
+                                    Confirm password
+                                </label>
 
 
-                        <!-- Terms -->
+                                <div class="login-input">
 
-                        <div class="signup-terms mb-3">
+                                    <span class="input-icon">
 
-                            <label> <input type="checkbox" id="terms-checkbox"> <span>
+                                        <i class="ri-shield-check-line"></i>
 
-                                    I agree to the
-                                    <a href="#">
-                                        Terms of Service
-                                    </a>
-                                    and
-                                    <a href="#">
-                                        Privacy Policy
-                                    </a>
+                                    </span>
+
+
+                                    <input type="password" id="repeat-password-input" placeholder="Confirm your password">
+
+                                </div>
+
+                            </div> -->
+
+
+                            <!-- Terms -->
+
+                            <div class="signup-terms mb-3">
+
+                                <label> <input type="checkbox" id="terms-checkbox"> <span>
+
+                                        I agree to the
+                                        <a href="#">
+                                            Terms of Service
+                                        </a>
+                                        and
+                                        <a href="#">
+                                            Privacy Policy
+                                        </a>
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- Submit -->
+
+                            <button type="submit" class="sign-in-btn signup-btn">
+                                
+                                Create account
+                                <span>
+                                    <i class="ri-arrow-right-line"></i>
                                 </span>
-
-                            </label>
-
-                        </div>
+                            </button>
 
 
-                        <!-- Submit -->
+                            <!-- Login -->
 
-                        <button type="submit" class="sign-in-btn signup-btn">
-                            
-                            Create account
-                            <span>
-                                <i class="ri-arrow-right-line"></i>
-                            </span>
-                        </button>
+                            <p class="create-acc">
 
+                                Already have an account?
 
-                        <!-- Login -->
+                                <a
+                                    href="login.html"
+                                    class="create-acc-link">
 
-                        <p class="create-acc">
+                                    Sign in
 
-                            Already have an account?
+                                </a>
 
-                            <a
-                                href="login.html"
-                                class="create-acc-link">
-
-                                Sign in
-
-                            </a>
-
-                        </p>
+                            </p>
 
 
-                    </form>
+                        </form>
+
+
+                    </div>
 
 
                 </div>
@@ -266,11 +258,9 @@
 
             </div>
 
-
-        </div>
-
-    </section>
-
+        </section>
+    
+    </main>    
 
     <!-- GSAP -->
 
