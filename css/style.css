@@ -3680,12 +3680,12 @@ background-size:
 
 .case-stat-num{
     font-size: 3.7rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: var(--oswald-font);
 }
 
 .counter-card p{
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     color: #777;
 }
 
@@ -3703,6 +3703,7 @@ background-size:
     padding: 40px;
     border: 1px solid #ebebeb;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 }
 
 .feature-case-header{
@@ -4168,6 +4169,7 @@ background-size:
     border: 1px solid #ebebeb;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    height: 315px;
 }
 
 .execution-header{
@@ -4200,4 +4202,67 @@ background-size:
     font-size: 0.8rem;
     font-weight: 500;
     border-radius: 5px;
+}
+
+
+/* ---- Case Study / Impact Section ---- */
+
+.impact-sec .heading-bx{
+    text-align: center;
+}
+
+.impact-sec .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.performance-chart-box {
+    background: var(--white-color);
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.03);
+    margin-top: 4rem;
+}
+
+.chart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.chart-heading {
+    font-size: 1.1rem;
+    color: var(--black);
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+
+.chart-badge {
+    font-size: 0.75rem;
+    background: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.chart-canvas-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.results-svg {
+    width: 100%;
+    height: auto;
+}
+
+.chart-months {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #6B6B6B;
+    margin-top: 8px;
+    padding: 0 10px;
 }
