@@ -4266,3 +4266,217 @@ background-size:
     margin-top: 8px;
     padding: 0 10px;
 }
+
+/* ============================
+    Programatic Page
+=============================== */
+    
+
+/* ---- Programatic Inn-Banner ---- */
+
+.programmatic-bann-sec .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.programmatic-bann-sec .heading-bx h2{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.programmatic-bann-sec .heading-bx h2 span{
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-weight: 500;
+    background: linear-gradient(135deg, #800080 0%, #9B2C9B 45%, #C73E9B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.programmatic-bann-sec .heading-bx p{
+    font-weight: inherit;
+    font-size: 1.10rem;
+}
+
+.srvc-bann-link{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.inn-ban-link{
+    padding: 15px 0;
+    background: linear-gradient(135deg, #800080 0%, #9b2c9b 45%, #c73e9b 100%);
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: var(--transition);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.inn-ban-link:hover{
+    background: linear-gradient(-135deg, #800080 0%, #9b2c9b 45%, #c73e9b 100%);
+    color: var(--white-color);
+}
+
+.inn-ban-link2{
+    padding: 15px 0;
+    border-radius: 5px;
+    transition: var(--transition);
+    color: var(--black);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #acabab;
+    box-shadow: 0px 0px 20px transparent;
+}
+
+.inn-ban-link2:hover{
+    color: var(--black);
+    border: 1px solid var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+}
+
+.interactive-viewport {
+    width: 100%;
+    min-height: 420px;
+    border: 1px solid #ebebeb;
+    background: #fbfbfb;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    border-radius: 15px !important;
+}
+
+/* ---- Capabilities Section ---- */
+
+
+
+.srvc-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.srvc-card{
+    padding: 25px;
+    border: 1px solid #cccccc;
+    height: 250px;
+}
+
+.cap-sec .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.cap-sec .heading-bx h2{
+    margin-top: 1rem;
+}
+
+/* ---- How It Work Section ---- */
+
+.how-work-sec .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.how-work-sec .heading-bx h2{
+    margin-top: 1rem;
+}
+
+.how-work-num {
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: var(--oswald-font);
+}
+
+.how-work-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem;
+}
+
+.how-work-bx p{
+    color: #777;
+}
+
+
+
+/* ---- Data Engine Section ---- */
+
+.data-engine-sec.sec-padding{
+    padding: 5rem 0;
+}
+
+.data-engine-sec{
+    background: rgb(38, 37, 46);
+}
+
+.text-color{
+    color:#888787;
+}
+
+.bg-black {
+    background: rgba(0, 0, 0, 0.822);
+}
+
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.border .small, small {
+    font-size: .875em;
+}
+
+
+.data-engine-sec .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.data-engine-sec .heading-bx h2{
+    color: var(--white-color);
+    margin-top: 1rem;
+}
+
+.data-engine-sec .heading-bx p{
+  color:#888787;
+  font-weight: inherit;
+  font-size: 1.10rem;
+}
+
+/* ---- Programmatic / Why choose us Section ---- */
+
+.srvc-choose-us-sec .heading-bx small{
+    border: none;
+    padding: 0;
+}
+
+.srvc-choose-us-sec .heading-bx h2{
+    margin-top: 1rem;
+}
+
+.list-unstyled li div{
+    font-size: 1.1rem !important;
+}
+
+.list-unstyled li div strong{
+    font-size: 1.1rem !important;
+}
+
+.srvc-choose-us-sec.sec-padding{
+    padding: 5rem 0;
+}
