@@ -4542,3 +4542,16 @@ background-size:
     border: 1px solid var(--primary);
     box-shadow: 0px 0px 20px rgba(236, 165, 236, 0.733);
 }
+
+
+/* ========================
+    Mobile Marketing Page
+=========================== */
+
+.mobile-cap-sec .srvc-card{
+    height: 270px;
+}
+
+.mobile-case-study .srvc-case-study-content{
+    height: inherit;
+}
