@@ -3682,6 +3682,7 @@ background-size:
     font-size: 3.7rem;
     /* font-weight: bold; */
     font-family: var(--oswald-font);
+    color: var(--primary);
 }
 
 .counter-card p{
@@ -4565,4 +4566,14 @@ background-size:
 
 .mobile-case-study .srvc-case-study-content{
     height: inherit;
+}
+
+/* ========================
+    Lead Generation Page
+=========================== */
+
+/* Lead Generation / Capabilities Section */
+
+.lead-cap-sec .srvc-card{
+    height: 242px;
 }
