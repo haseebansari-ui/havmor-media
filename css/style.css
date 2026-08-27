@@ -3377,10 +3377,24 @@ background-size:
     box-shadow: 0 0px 40px rgba(0, 0, 0, 0.089);
 }
 
+
+
 .product-list-card .product-num{
     color: var(--primary);
     font-size: larger;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prdt-card-badge{
+    background: rgba(235, 235, 235, 0.62);
+    border: 1px solid #ebebeb;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 .product-list-card .product-card-tag{
@@ -3402,7 +3416,9 @@ background-size:
 .product-list-card .product-link{
     color: var(--primary);
     display: block;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 25px;
+    border-top: 1px solid #ebebeb;
 }
 
 .product-link:hover{
@@ -3527,7 +3543,7 @@ background-size:
 
 .product-card-bg{
     background: var(--white-color);
-    padding: 50px 25px;
+    padding: 30px 25px;
     border: 1px solid #ebebeb;
     border-radius: 1rem;
 }
@@ -3563,6 +3579,13 @@ background-size:
 
 .product-card-bg{
     box-shadow: 0 0px 40px rgba(0, 0, 0, 0.089);
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.product-card-bg:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;;
+    border: 1px solid #800080;
 }
 
 .product-dash-board-card{
