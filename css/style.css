@@ -4374,7 +4374,18 @@ background-size:
     border: 1px solid #cccccc;
     height: 250px;
     border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0 0 0 / 0.1);
+    transition: var(--transition);
+    transform: translateY(0px);
 }
+
+.srvc-card:hover{
+    border: 1px solid var(--primary);
+    box-shadow: 0px 0px 20px rgba(236, 165, 236, 0.733);
+    transform: translateY(-10px);
+}
+
 
 .cap-sec .heading-bx small{
     border: none;
