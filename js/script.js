@@ -798,3 +798,21 @@ if(loginFormValidation){
 }
 
 
+ // 4. Social & Influencer Flywheel Node Switcher
+  const creatorNodes = document.querySelectorAll(".creator-node");
+  creatorNodes.forEach((node) => {
+    node.addEventListener("mouseenter", () => {
+      creatorNodes.forEach(n => n.classList.remove("active-node"));
+      node.classList.add("active-node");
+      const engValue = node.getAttribute("data-engagement");
+      const engOutput = document.getElementById("creator-live-engagement");
+      if (engOutput) engOutput.innerText = engValue;
+    });
+  });
+
+
+
+  
+
+
+
