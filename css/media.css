@@ -299,12 +299,12 @@
     }
 
     .what-we-offer .heading-bx h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .video-sec .heading-bx h2{
         font-size: 2rem;
-
+        text-align: center;
     }
 }
 
