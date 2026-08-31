@@ -234,6 +234,10 @@
     .srvc-case-study-title{
         font-size: 1.7rem;
     }
+
+    .pro-counter.sec-padding{
+        padding: 0rem 0;
+    }
 }
 
 @media screen and (max-width: 767px){
