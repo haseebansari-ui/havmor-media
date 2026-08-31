@@ -411,6 +411,10 @@
         height: inherit;
     }
 
+    .chart-badge{
+        font-size: 0.60rem;
+        padding: 4px 7px;
+    }
 }
 
 @media screen and (max-width: 579px){
