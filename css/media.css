@@ -246,6 +246,15 @@
     .programmatic-bann-sec .heading-bx p{
         font-size: 1rem;
     }
+
+    .deatil-matrix-bx{
+        border-left: none;
+    }
+
+    .execution-card{
+        height: 265px;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -388,6 +397,14 @@
     .srvc-case-study-title {
         font-size: 1.4rem;
         margin-bottom: 1rem;
+    }
+
+    .feature-tag-group ul{
+        flex-wrap: wrap;
+    }
+
+    .execution-card{
+        height: inherit;
     }
 
 }
