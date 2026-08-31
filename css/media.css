@@ -399,6 +399,10 @@
         margin-bottom: 1rem;
     }
 
+    .heading-bx .main-matrix-tag-group ul{
+        flex-wrap: wrap;
+    }
+
     .feature-tag-group ul{
         flex-wrap: wrap;
     }
