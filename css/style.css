@@ -739,14 +739,14 @@ footer{
 
 
 .hero-content-bx h1{
-    /* font-size: 3rem;
-    padding-right: 1rem; */
-    font-size: 4.5rem;
-    padding-right: 0rem;
+    /* font-size: 3rem;*/
+    padding-right: 1rem; 
+    font-size: 4rem;
+    padding-right: 1.3rem;
     font-weight: 500;
 }
 .hero-sec.sec-padding{
-    padding: 10rem 0 3rem;
+    padding: 13rem 0 8rem;
 }
 
 .hero-stat-title{
@@ -764,6 +764,14 @@ footer{
 .hero-stats-content-bx {
     border-bottom: 1px solid #adb3bf;
     margin-bottom: 2rem;
+}
+
+.hero-link .btn-all{
+    margin-top: 4rem;
+}
+
+.hero-stat-card2 p br{
+    display: none;
 }
 
 /* ------  About Us Section ----- */
@@ -2722,7 +2730,7 @@ footer{
             transparent 1px
         ); */
 
-        background: radial-gradient(circle at 20% 20%, rgb(181 178 180 / 20%), transparent 100%), radial-gradient(circle at 80% 30%, rgb(157 155 157 / 29%), transparent 30%), linear-gradient(180deg, rgba(255, 174, 0, 0.041), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.021) 1px, transparent 1px);
+        /* background: radial-gradient(circle at 20% 20%, rgb(181 178 180 / 20%), transparent 100%), radial-gradient(circle at 80% 30%, rgb(157 155 157 / 29%), transparent 30%), linear-gradient(180deg, rgba(255, 174, 0, 0.041), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.021) 1px, transparent 1px); */
 }
 
 
@@ -3174,9 +3182,9 @@ footer{
     padding: 5rem 0;
 }
 
-.contact-form-sec{
+/* .contact-form-sec{
     background: rgba(243, 240, 240, 0.851);
-}
+} */
 
 .cnct-form-input input, .cnct-form-input label, .cnct-form-input textarea {
     display: block;
@@ -3194,12 +3202,9 @@ footer{
     resize: none;
 }
 
-.cnct-form-bg-clr{
-    background: var(--white-color);
+/* .cnct-form-bg-clr{
     padding: 20px 50px;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px #ebebeb;
-}
+} */
 
 .cnct-form-input select{
     color: rgb(118, 118, 118);
@@ -3264,6 +3269,14 @@ footer{
     font-family: var(--Andika-font);
     font-weight: 600;
     margin-top: 2rem;
+}
+
+
+.contact-main-bg-clr{
+    background: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #ebebeb;
+    padding: 20px 50px;
 }
 
 /* ========================
@@ -4458,7 +4471,8 @@ background-size:
 }
 
 .data-engine-sec{
-    background: rgb(38, 37, 46);
+    /* background: rgb(38, 37, 46); */
+    background: rgb(233 231 231 / 54%);
 }
 
 .text-color{
@@ -4485,7 +4499,7 @@ background-size:
 }
 
 .data-engine-sec .heading-bx h2{
-    color: var(--white-color);
+    /* color: var(--white-color); */
     margin-top: 1rem;
 }
 
