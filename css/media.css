@@ -170,6 +170,70 @@
         font-size: 1rem;
     }
 
+    .programmatic-bann-sec .heading-bx h2{
+        font-size: 3rem;
+    }
+
+    .programmatic-bann-sec .heading-bx h2 span{
+        font-size: 3rem;
+    }
+
+    .programmatic-bann-sec .heading-bx{
+        text-align: center;
+    }
+
+    .srvc-bann-link{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .interactive-viewport{
+        margin-top: 5rem;
+    }
+
+    .cap-sec .heading-bx{
+        text-align: center;
+    }
+
+    .srvc-case-study-content{
+        height: inherit;
+    }
+
+    .cap-sec .heading-bx h2{
+        font-size: 2rem;
+    }
+
+    .case-stat-num{
+        font-size: 3rem;
+    }
+
+    .how-work-sec .heading-bx h2{
+        font-size: 2rem;
+    }
+
+    .how-work-title {
+        font-size: 1.3rem;
+    }
+
+    .how-work-num{
+        font-size: 1.3rem;
+    }
+
+    .data-engine-sec .heading-bx h2{
+        font-size: 2rem;
+    }
+
+    .srvc-choose-us-sec .heading-bx h2{
+        font-size: 2rem;
+    }
+
+    .srvc-case-study .heading-bx h2{
+        font-size: 2rem;
+    }
+
+    .srvc-case-study-title{
+        font-size: 1.7rem;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -308,6 +372,12 @@
     .product-inn-sec .heading-bx h2 span{
         font-size: 2rem;
     }
+
+    .srvc-case-study-title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 579px){
@@ -357,6 +427,11 @@
     .havmor-water-mark{
         text-align: center;
     }
+
+    .case-stat-num {
+        font-size: 2rem;
+    }
+    
 }
 
 @media screen and (max-width: 479px){
