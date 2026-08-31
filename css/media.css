@@ -154,6 +154,10 @@
         width: 100%;
     }
 
+    .product-list-card .product-card-title{
+        font-size: 1.3rem;
+    }
+
 }
 
 @media screen and (max-width: 767px){
