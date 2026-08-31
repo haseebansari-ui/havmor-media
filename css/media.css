@@ -317,6 +317,10 @@
         font-size: 2rem;
         text-align: center;
     }
+
+    .vissn-missn-btn-bx .btn-all{
+        margin: 2rem auto 0;
+    }
 }
 
 @media screen and (max-width: 479px){
