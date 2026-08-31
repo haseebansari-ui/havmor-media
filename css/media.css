@@ -286,7 +286,11 @@
         text-align: center;
     }
 
-    h2{
+    .heading-bx h2{
+        font-size: 1.8rem;
+    }
+
+    .what-we-offer .heading-bx h2{
         font-size: 1.8rem;
     }
 }
