@@ -416,6 +416,10 @@
         padding: 4px 7px;
         display: none;
     }
+
+    .abt-choose-title{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 579px){
