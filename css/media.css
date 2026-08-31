@@ -255,6 +255,14 @@
         height: 265px;
     }
 
+    .container-width{
+        width: 100%;
+    }
+
+    .right-form{
+        padding:50px;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -420,6 +428,10 @@
     .abt-choose-title{
         font-size: 1.2rem;
     }
+
+    .right-form{
+        padding:30px;
+    }
 }
 
 @media screen and (max-width: 579px){
@@ -526,6 +538,10 @@
 
     .form-container{
         padding: 50px 25px;
+    }
+
+    .right-form{
+        padding:10px;
     }
 
 }
