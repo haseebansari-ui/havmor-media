@@ -131,6 +131,10 @@
         display: none;
     }
 
+    .video-sec .heading-bx{
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -160,6 +164,10 @@
 
     .video-sec .heading-bx h2{
         font-size: 2.5rem;
+    }
+
+    .video-sec .heading-bx h2 br{
+        display: none;
     }
 
     .video-bx {
@@ -287,11 +295,16 @@
     }
 
     .heading-bx h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .what-we-offer .heading-bx h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+
+    .video-sec .heading-bx h2{
+        font-size: 2rem;
+
     }
 }
 
