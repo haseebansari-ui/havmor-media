@@ -238,6 +238,10 @@
     .pro-counter.sec-padding{
         padding: 0rem 0;
     }
+
+    .mobile-cap-sec .srvc-card{
+        height: 225px;
+    }
 }
 
 @media screen and (max-width: 767px){
