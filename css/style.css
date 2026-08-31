@@ -3370,6 +3370,7 @@ background-size:
     justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .product-mini-list ul li{
