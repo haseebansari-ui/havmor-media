@@ -432,6 +432,10 @@
     .right-form{
         padding:30px;
     }
+
+    .container-width{
+        padding: 50px 20px;
+    }
 }
 
 @media screen and (max-width: 579px){
