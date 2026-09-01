@@ -2102,11 +2102,7 @@ footer{
     right: 265px;
     height: 61px;
     width: 60px;
-    
 }
-
-
-
 
 /* ---- About / Industries Section ----- */
 
@@ -2667,7 +2663,45 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+.form-main-bx{
+    position: relative;
+}
+
+.form-heading{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    font-size: 12rem;
+    padding-top: 15rem;
+    font-weight: bold;
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #e4e4e4;
+}
+
+/* .right-form::before{
+    content: 'Havmor Media';
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    color: #000;
+    font-size: 12rem;
+    z-index: -1;
+    font-weight: bold;
+    padding-top: 13rem;
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px rgba(184, 183, 183, 0.308);
+} */
 
 .container-width{
     width: 530px;
