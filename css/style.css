@@ -2011,62 +2011,100 @@ footer{
 }
 
 
-.why-choose-main{
+.why-choose-main ul{
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-bottom: 2rem;
+    justify-content: center;
+    gap: 1.5rem 1.5rem;
+    flex-wrap: wrap;
 }
 
-.why-choose-main2{
+.why-choose-main ul li{
+    padding: 15px 25px;
+    border: 1px solid grey;
+    border-radius: 5rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
-    justify-content: end;
-    margin-bottom: 2rem;
-}
-
-.why-choose-bx-1{
-    height: 100px;
-    width: 650px;
-    border: 1px solid var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 3rem;
-    border-radius: 0 3rem 3rem 0;
-    border-left: none;
-    padding-right: 4rem;
+    justify-content: space-between;
+    gap: 1rem;
+    box-shadow: 0 0 10px transparent;
     transition: var(--transition);
 }
 
-.why-choose-bx-1:hover{
-    width: 700px;
+.why-choose-main ul li:hover{
+    border-color: var(--primary);
+    box-shadow: 0 0 10px rgba(209, 1, 209, 0.702);
+    color: var(--primary);
 }
 
-.why-choose-bx-2{
-    height: 100px;
-    width: 650px;
-    border: 1px solid var(--black);
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    border-radius: 3rem 0 0 3rem;
-    border-right: none;
-    padding-left: 4rem;
-    transition: var(--transition);
+.why-choose-main ul li:nth-child(2){
+    background: rgb(208, 217, 226);
 }
 
-.why-choose-bx-2:hover{
-    width: 700px;
+.why-choose-main ul li:hover:nth-child(2){
+    border-color: var(--primary);
 }
 
-.why-choose-title{
-    font-size: 2rem;
+.why-choose-main ul li:nth-child(4){
+    background: rgb(208, 217, 226);
 }
 
-.why-choose-icon span i{
-    font-size: 3rem;
+
+.why-choose-main ul li:nth-child(6){
+    background: gray;
+    background: rgb(208, 217, 226);
 }
+
+.why-choose-main ul li:nth-child(8){
+    background: rgb(208, 217, 226);
+}
+
+.why-choose-main ul li:nth-child(10){
+    background: rgb(208, 217, 226);
+}
+
+.why-choose-main ul li span i{
+    font-size: 1.8rem;
+}
+
+.why-choose-main ul li:hover span i{
+    color: var(--primary);
+}
+
+.sec-badge{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--black);
+    font-family: var(--Andika-font);
+    position: relative;
+}
+
+.sec-badge span{
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.choose-heading-img {
+    position: absolute;
+    top: -13px;
+    left: 380px;
+    height: 61px;
+    width: 60px;
+    /* transform: rotate(92deg); */
+}
+
+.choose-heading-img2{
+    position: absolute;
+    bottom: -28px;
+    right: 265px;
+    height: 61px;
+    width: 60px;
+    
+}
+
 
 
 
@@ -4585,20 +4623,6 @@ background-size:
     border: none;
     padding: 0;
 } */
-
-.sec-badge{
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    color: #474747;
-    font-family: var(--Andika-font);
-}
-
-.sec-badge span{
-    font-size: 4rem;
-    font-weight: 500;
-    font-style: italic;
-}
 
 .srvc-choose-us-sec .heading-bx h2{
     margin-top: 1rem;
