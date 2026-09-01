@@ -1949,6 +1949,15 @@ footer{
 
 /* ---- About / why choose Us Section ----- */
 
+
+.why-choose-sec.inn-pad{
+    padding: 5rem 0;
+}
+
+.why-choose-sec .heading-bx{
+    text-align: center;
+}
+
 .abt-choose-sec{
     background: rgba(253, 251, 255, 0.37);
     backdrop-filter: blur(10px);    
@@ -2000,6 +2009,66 @@ footer{
     font-weight: 500;
     font-size: 1.3rem;
 }
+
+
+.why-choose-main{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 2rem;
+}
+
+.why-choose-main2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+
+.why-choose-bx-1{
+    height: 100px;
+    width: 650px;
+    border: 1px solid var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3rem;
+    border-radius: 0 3rem 3rem 0;
+    border-left: none;
+    padding-right: 4rem;
+    transition: var(--transition);
+}
+
+.why-choose-bx-1:hover{
+    width: 700px;
+}
+
+.why-choose-bx-2{
+    height: 100px;
+    width: 650px;
+    border: 1px solid var(--black);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 3rem 0 0 3rem;
+    border-right: none;
+    padding-left: 4rem;
+    transition: var(--transition);
+}
+
+.why-choose-bx-2:hover{
+    width: 700px;
+}
+
+.why-choose-title{
+    font-size: 2rem;
+}
+
+.why-choose-icon span i{
+    font-size: 3rem;
+}
+
+
 
 /* ---- About / Industries Section ----- */
 
@@ -4512,9 +4581,23 @@ background-size:
 
 /* ---- Programmatic / Why choose us Section ---- */
 
-.srvc-choose-us-sec .heading-bx small{
+/* .srvc-choose-us-sec .heading-bx small{
     border: none;
     padding: 0;
+} */
+
+.sec-badge{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #474747;
+    font-family: var(--Andika-font);
+}
+
+.sec-badge span{
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .srvc-choose-us-sec .heading-bx h2{
