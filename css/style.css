@@ -1287,6 +1287,23 @@ footer{
     transition: 0.5s ease-in-out;
 }
 
+.sub-title{
+    font-weight: 600;
+    color: var(--black);
+    font-family: var(--Andika-font);
+    font-size: 1.7rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sub-title span i{
+    font-size: 1.7rem;
+}
+
+
+
 /* ---- Trusted Client Section ---- */
 
 /* --- Marquee Scroll --- */
@@ -1350,8 +1367,29 @@ footer{
 
 /* ---- Casestudy Section ---- */
 
+
+.casestudy-sec .heading-bx small{
+    border: none;
+    color: #3b3838;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+
+.casestudy-sec small span i{
+    font-size: 1.7rem;
+}
+
+.casestudy-sec .heading-bx{
+    text-align: center;
+}
+
 .casestudy-sec .heading-bx h2{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .casestudy-sec .heading-bx p{
