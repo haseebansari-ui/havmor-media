@@ -2099,7 +2099,7 @@ footer{
 .choose-heading-img2{
     position: absolute;
     bottom: -28px;
-    right: 265px;
+    right: 314px;
     height: 61px;
     width: 60px;
 }
@@ -3813,6 +3813,16 @@ background-size:
     font-weight: inherit;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.product-list-card-img img{
+    width: 60%;
+    margin: 2.5rem auto; 
+    display: block;
+}
+
+.product-list-card{
+    text-align: center;
 }
 
 
