@@ -1292,10 +1292,9 @@ footer{
     color: var(--black);
     font-family: var(--Andika-font);
     font-size: 1.7rem;
-    font-style: italic;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .sub-title span i{
@@ -3592,6 +3591,11 @@ background-size:
     border-radius: 5px;
     font-size: 0.8rem;
     font-weight: 600;
+    color: var(--primary);
+}
+
+.prdt-card-badge:hover{
+    color: var(--primary);
 }
 
 .product-list-card .product-card-tag{
@@ -3606,20 +3610,26 @@ background-size:
     margin-bottom: 0.5rem;
 }
 
-.product-list-card .product-list-card p{
+.product-list-card p{
     margin-bottom: 0.5rem;
 }
 
 .product-list-card .product-link{
     color: var(--primary);
     display: block;
-    margin-top: 2rem;
-    padding-top: 25px;
-    border-top: 1px solid #ebebeb;
 }
 
 .product-link:hover{
     color: var(--primary);
+}
+
+.product-list-card-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 25px;
+    border-top: 1px solid #ebebeb;
 }
 
 .saas-window {
@@ -3865,6 +3875,11 @@ background-size:
 
 .product-list-card{
     text-align: center;
+    transform: scale(1);
+}
+
+.product-list-card:hover{
+    transform: scale(1.02);
 }
 
 
