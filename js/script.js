@@ -425,133 +425,200 @@ document.querySelectorAll(".sticky-card").forEach((card) => {
 // });
 
 
-const dot = document.querySelector(".cursor-dot");
-const ring = document.querySelector(".cursor-ring");
+// const dot = document.querySelector(".cursor-dot");
+// const ring = document.querySelector(".cursor-ring");
 
-if (dot && ring) {
+// if (dot && ring) {
 
-    let mouseX = 0;
-    let mouseY = 0;
+//     let mouseX = 0;
+//     let mouseY = 0;
 
-    let ringX = 0;
-    let ringY = 0;
-
-
-    // Mouse position
-
-    document.addEventListener("mousemove", (e) => {
-
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-
-        dot.style.left = mouseX + "px";
-        dot.style.top = mouseY + "px";
-
-    });
+//     let ringX = 0;
+//     let ringY = 0;
 
 
-    // Smooth ring animation
+//     // Mouse position
 
-    function animateCursor() {
+//     document.addEventListener("mousemove", (e) => {
 
-        ringX += (mouseX - ringX) * 0.10;
-        ringY += (mouseY - ringY) * 0.10;
+//         mouseX = e.clientX;
+//         mouseY = e.clientY;
 
-        ring.style.left = ringX + "px";
-        ring.style.top = ringY + "px";
+//         dot.style.left = mouseX + "px";
+//         dot.style.top = mouseY + "px";
 
-        requestAnimationFrame(animateCursor);
+//     });
 
+
+//     // Smooth ring animation
+
+//     function animateCursor() {
+
+//         ringX += (mouseX - ringX) * 0.10;
+//         ringY += (mouseY - ringY) * 0.10;
+
+//         ring.style.left = ringX + "px";
+//         ring.style.top = ringY + "px";
+
+//         requestAnimationFrame(animateCursor);
+
+//     }
+
+//     animateCursor();
+
+
+//     // Cursor hover elements
+
+//     const links = document.querySelectorAll(
+//         "button, .btn, .card, .card-content .btn-cta, .btn-all, .offer-main, .header-link-bx"
+//     );
+
+//     links.forEach((item) => {
+
+//         item.addEventListener("mouseenter", () => {
+
+//             ring.classList.add("active");
+//             dot.classList.add("active");
+
+//         });
+
+//         item.addEventListener("mouseleave", () => {
+
+//             ring.classList.remove("active");
+//             dot.classList.remove("active");
+
+//         });
+
+//     });
+
+
+//     // Offer links
+
+//     const linksDiv =
+//         document.querySelectorAll(".offer-link .btn-all");
+
+//     linksDiv.forEach((item) => {
+
+//         item.addEventListener("mouseenter", () => {
+
+//             ring.style.background = "transparent";
+//             ring.style.borderColor = "#ab01ab";
+
+//             dot.style.background = "#ab01ab";
+
+//         });
+
+//         item.addEventListener("mouseleave", () => {
+
+//             ring.style.background =
+//                 "rgba(46, 46, 46, 0.12)";
+
+//             ring.style.borderColor = "#ab01ab";
+
+//             dot.style.background = "#ab01ab";
+
+//         });
+
+//     });
+
+
+//     // Offer content cards
+
+//     const offerContentCard =
+//         document.querySelectorAll(".offer-content");
+
+//     offerContentCard.forEach((item) => {
+
+//         item.addEventListener("mouseenter", () => {
+
+//             ring.style.background = "transparent";
+//             ring.style.borderColor = "#fff";
+
+//             dot.style.background = "#fff";
+
+//         });
+
+//         item.addEventListener("mouseleave", () => {
+
+//             ring.style.background =
+//                 "rgba(46, 46, 46, 0.12)";
+
+//             ring.style.borderColor = "#ab01ab";
+
+//             dot.style.background = "#ab01ab";
+
+//         });
+
+//     });
+
+// }
+
+
+const bubbleContainer = document.querySelector(".cursor-bubbles");
+
+let lastBubbleTime = 0;
+
+document.addEventListener("mousemove", (e) => {
+
+    const currentTime = Date.now();
+
+    /*
+       Creates bubbles only every 50ms.
+       This prevents too many bubbles.
+    */
+
+    if (currentTime - lastBubbleTime < 50) {
+        return;
     }
 
-    animateCursor();
+    lastBubbleTime = currentTime;
 
 
-    // Cursor hover elements
+    /* Create bubble */
 
-    const links = document.querySelectorAll(
-        "button, .btn, .card, .card-content .btn-cta, .btn-all, .offer-main, .header-link-bx"
-    );
+    const bubble = document.createElement("span");
 
-    links.forEach((item) => {
-
-        item.addEventListener("mouseenter", () => {
-
-            ring.classList.add("active");
-            dot.classList.add("active");
-
-        });
-
-        item.addEventListener("mouseleave", () => {
-
-            ring.classList.remove("active");
-            dot.classList.remove("active");
-
-        });
-
-    });
+    bubble.classList.add("cursor-bubble");
 
 
-    // Offer links
+    /* Cursor position */
 
-    const linksDiv =
-        document.querySelectorAll(".offer-link .btn-all");
-
-    linksDiv.forEach((item) => {
-
-        item.addEventListener("mouseenter", () => {
-
-            ring.style.background = "transparent";
-            ring.style.borderColor = "#ab01ab";
-
-            dot.style.background = "#ab01ab";
-
-        });
-
-        item.addEventListener("mouseleave", () => {
-
-            ring.style.background =
-                "rgba(46, 46, 46, 0.12)";
-
-            ring.style.borderColor = "#ab01ab";
-
-            dot.style.background = "#ab01ab";
-
-        });
-
-    });
+    bubble.style.left = e.clientX + "px";
+    bubble.style.top = e.clientY + "px";
 
 
-    // Offer content cards
+    /* Random movement */
 
-    const offerContentCard =
-        document.querySelectorAll(".offer-content");
+    const moveX = (Math.random() - 0.5) * 60;
+    const moveY = (Math.random() - 0.5) * 60;
 
-    offerContentCard.forEach((item) => {
 
-        item.addEventListener("mouseenter", () => {
+    bubble.style.setProperty("--move-x", moveX + "px");
+    bubble.style.setProperty("--move-y", moveY + "px");
 
-            ring.style.background = "transparent";
-            ring.style.borderColor = "#fff";
 
-            dot.style.background = "#fff";
+    /* Random size */
 
-        });
+    const size = Math.random() * 8 + 6;
 
-        item.addEventListener("mouseleave", () => {
+    bubble.style.width = size + "px";
+    bubble.style.height = size + "px";
 
-            ring.style.background =
-                "rgba(46, 46, 46, 0.12)";
 
-            ring.style.borderColor = "#ab01ab";
+    /* Add bubble */
 
-            dot.style.background = "#ab01ab";
+    bubbleContainer.appendChild(bubble);
 
-        });
 
-    });
+    /* Remove after animation */
 
-}
+    setTimeout(() => {
+
+        bubble.remove();
+
+    }, 1200);
+
+});
 
 
 
