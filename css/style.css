@@ -4579,13 +4579,13 @@ background-size:
 
 .programmatic-bann-sec .heading-bx h2{
     margin-top: 1rem;
-    font-size: 4rem;
+    /* font-size: 4rem; */
     font-weight: bold;
 }
 
 .programmatic-bann-sec .heading-bx h2 span{
     margin-top: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     background: linear-gradient(135deg, #800080 0%, #9B2C9B 45%, #C73E9B 100%);
     -webkit-background-clip: text;
