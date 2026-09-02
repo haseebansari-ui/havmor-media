@@ -790,6 +790,7 @@ footer{
 .hero-content-bx h1{
     padding-right: 1rem; 
     font-size: 3.9rem;
+    font-weight: bold;
     padding-right: 1.3rem;
     font-family: var(--space-font);
 }
