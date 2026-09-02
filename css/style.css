@@ -2168,14 +2168,37 @@ footer{
     padding:0 2rem;
 }
 
-.vissn-missn-btn-bx .btn-all{
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    margin-top: 4rem;
-    font-size: 1rem;
+.vissn-missn-btn-bx .animated-link-all{
+    margin: 3rem 0 0;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    width: 180px;
+    padding: 10px 30px;
+}
+
+.vissn-missn-btn-bx .animated-link-all .arr-1 {
+    right: 25px;
+}
+
+.vissn-missn-btn-bx .animated-link-all:hover .arr-1 {
+    right: -34px;
+}
+
+.vissn-missn-btn-bx .animated-link-all .arr-2 {
+    left: -25%;
+}
+
+.vissn-missn-btn-bx .animated-link-all:hover .arr-2 {
+    left: 12px;
+}
+
+
+.vissn-missn-btn-bx .animated-link-all .link-text{
+    transform: translateX(0);
+}
+
+.vissn-missn-btn-bx .animated-link-all:hover .link-text{
+    transform: translateX(10px);
 }
 
 /* ---- About / Company Values Section ----- */
