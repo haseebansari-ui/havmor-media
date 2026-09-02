@@ -788,11 +788,10 @@ footer{
 
 
 .hero-content-bx h1{
-    /* font-size: 3rem;*/
     padding-right: 1rem; 
-    font-size: 4rem;
+    font-size: 3.9rem;
     padding-right: 1.3rem;
-    font-weight: 500;
+    font-family: var(--space-font);
 }
 .hero-sec.sec-padding{
     padding: 13rem 0 8rem;
@@ -803,7 +802,7 @@ footer{
     color:var(--black);
     color: #8b008b;
     font-weight: bold;
-    font-family: var(--oswald-font);
+    font-family: var(--space-font);
 }
 
 .hero-stat-card p{
@@ -857,7 +856,7 @@ footer{
     margin-bottom:25px;
     transform-origin:center center;
     will-change:transform;
-
+    font-family: var(--space-font);
 }
 
 .text br{
