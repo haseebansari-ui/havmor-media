@@ -2240,6 +2240,7 @@ footer{
 
 .why-choose-sec .heading-bx{
     text-align: center;
+    margin-bottom: 15rem;
 }
 
 .abt-choose-sec{
@@ -2357,12 +2358,12 @@ footer{
 }
 
 .sec-badge{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     text-align: center;
     color: var(--black);
-    font-family: var(--Andika-font);
     position: relative;
+    text-transform: uppercase;
 }
 
 .sec-badge span{
@@ -2374,18 +2375,45 @@ footer{
 .choose-heading-img {
     position: absolute;
     top: -13px;
-    left: 380px;
-    height: 61px;
-    width: 60px;
-    /* transform: rotate(92deg); */
+    right: 300px;
+    height: 75px;
+    width: 75px;
 }
+
+.choose-heading-img img{
+    width: 75%;
+    height: 75px;
+    object-fit: cover;    
+}
+
 
 .choose-heading-img2{
     position: absolute;
-    bottom: -28px;
-    right: 314px;
-    height: 61px;
-    width: 60px;
+    bottom: -90px;
+    left: 245px;
+    height: 75px;
+    width: 75px;
+}
+
+.choose-heading-img2 img{
+    width: 75%;
+    height: 75px;
+    object-fit: cover;
+}
+
+.choose-us-img img{
+    width: 100%;
+}
+
+.choose-us-img{
+    position: absolute;
+    bottom: -180px;
+    left: 432px;
+    height: 220px;
+    width: 267px;
+    transform: rotate(-5deg);
+    background: var(--white-color);
+    padding: 10px;
 }
 
 /* ---- About / Industries Section ----- */
@@ -4141,6 +4169,8 @@ background-size:
 .prdt-width-card3 .product-list-card{
     width: 600px;
 }
+
+
 
 /* ---- Product page ARCHITECTURE Section ---- */
 
