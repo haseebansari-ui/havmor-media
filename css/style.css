@@ -1373,8 +1373,12 @@ footer{
     height: 350px;
     width: 800px;
     border-radius: 1rem;
-    border: 1px solid rgba(59, 59, 59, 0.192);
+    border: 4px solid #800080;
     overflow: hidden;
+}
+
+.video-bx:hover{
+    box-shadow: 0 0 30px rgba(133, 13, 133, 0.589);
 }
 
 .video-bx video{
@@ -4601,6 +4605,13 @@ background-size:
 
 /* ---- Case Study / Payscale Challange Section ---- */
 
+.payscale-challenge{
+    background: url("../img/pay-challenge-bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .payscale-challenge .heading-bx small{
     border: none;
     padding: 0;
@@ -4622,8 +4633,8 @@ background-size:
     gap: 1rem;
     /* margin-bottom: 1rem; */
     padding: 1.5rem 0;
-    border-top: 1px solid #3535356c;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #cbcacad6;
+
 }
 
 .pay-chl-num{
@@ -5044,6 +5055,11 @@ background-size:
 
 .srvc-choose-us-sec.sec-padding{
     padding: 5rem 0;
+}
+
+.srvc-choose-us-sec .heading-bx small{
+    border: none;
+    padding: 0;
 }
 
 /* ---- Programmatic / Case Study Section ---- */
