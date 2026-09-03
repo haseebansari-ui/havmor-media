@@ -2973,6 +2973,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--space-font);
 }
 
 /* .right-form::before{
@@ -4131,6 +4132,15 @@ background-size:
     transform: scale(1.02);
 }
 
+.prdt-width-card3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prdt-width-card3 .product-list-card{
+    width: 600px;
+}
 
 /* ---- Product page ARCHITECTURE Section ---- */
 
