@@ -1578,6 +1578,7 @@ footer{
     justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
+    font-family: var(--rubik-font);
 }
 
 
