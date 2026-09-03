@@ -2369,6 +2369,9 @@ footer{
     color: var(--black);
     position: relative;
     text-transform: uppercase;
+    font-family: var(--rubik-font);
+    transform: rotate(-45deg);
+    transform: rotate(-7deg);
 }
 
 .sec-badge span{
