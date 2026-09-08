@@ -942,6 +942,55 @@ iframe{
 }
 
 
+/* footer / tabbers ( iFrame )  */
+
+.locations-section {
+    width: 100%;
+}
+
+.location-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.location-tab {
+    padding: 12px 28px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #555;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.location-tab.active {
+    background: #800080;
+    color: #fff;
+    border-color: #800080;
+}
+
+.location-map {
+    width: 100%;
+}
+
+.map-content {
+    display: none;
+}
+
+.map-content.active {
+    display: block;
+}
+
+.map-content iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+}
+
+
+
 /* --- Animated Circle --- */
 
 .background-animation{

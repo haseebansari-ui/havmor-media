@@ -563,7 +563,31 @@ if(loginFormValidation){
 
 
 
-// Home Page product Section
+// Footer Tabbers
+
+const locationTabs = document.querySelectorAll(".location-tab");
+const mapContents = document.querySelectorAll(".map-content");
+
+locationTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+        const location = tab.dataset.location;
+
+        // Remove active from tabs
+        locationTabs.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        // Remove active from maps
+        mapContents.forEach(map => {
+            map.classList.remove("active");
+        });
+
+        // Activate selected tab
+        tab.classList.add("active");
+        document.getElementById(location).classList.add("active");
+    });
+});
 
 
 
