@@ -5387,7 +5387,16 @@ background-size:
     transform: rotate(45deg);
 }
 
+.hm-product-sec .heading-bx{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 .hm-product-sec .heading-bx h2{
     margin-top: 2rem;
 }
 
+.hm-product-sec .heading-bx small{
+    padding: 0;
+    border: 0;
+}
