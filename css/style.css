@@ -758,20 +758,20 @@ footer{
 .get-quote-bx{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 3rem;
 }
 
 .our-presecnce{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     padding-right: 5rem;
 }
 
 .presence-bx{
-    height: 128px;
-    width: 140px;
+    height: 200px;
+    width: 250px;
     border: 1px solid #cfcfcf;
     display: flex;
     align-items: center;
@@ -812,7 +812,7 @@ footer{
 }
 
 .presence-cnct p{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-align: center;
     font-weight: 500;
 }
@@ -822,16 +822,18 @@ footer{
 }
 
 .presence-title{
-    font-size: 1.8rem;
+    font-size: 2.7rem;
     text-align: center;
     font-weight: bold;
     padding-right: 82px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     font-family: var(--space-font);
 }
 
 .presence-icon svg{
     color: var(--primary);
+    height: 80px;
+    width: 80px;
 }
 
 .presence-bx:hover .presence-icon svg{
@@ -860,6 +862,9 @@ footer{
     font-size: 7rem;
     font-weight: 600;
     line-height: 1;
+    text-align: center;
+    letter-spacing: 8px;
+    margin-bottom: 5rem;
 }
 
 .cmp-add-info{
