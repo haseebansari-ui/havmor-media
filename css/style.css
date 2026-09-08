@@ -324,13 +324,13 @@ main{
 }
 
 small{
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--primary);
+    /* padding: 0.5rem 1rem; */
+    /* border: 1px solid var(--primary); */
     border-radius: 2rem;
     color: var(--primary);
     font-weight: 600;
     font-family: var(--space-font);
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 /* ----- Inner Banner Section ----- */
@@ -920,6 +920,25 @@ footer{
 
 .social-links ul li a:hover i{
     color: var(--white-color);
+}
+
+
+.address{
+    margin-bottom: 2rem;
+}
+
+.floor{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.address p{
+    color: #777;
+    padding-right: 145px;
+}
+
+iframe{
+    width: 98%;
 }
 
 
