@@ -759,7 +759,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .our-presecnce{
@@ -822,11 +822,12 @@ footer{
 }
 
 .presence-title{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     padding-right: 82px;
     margin-bottom: 1rem;
+    font-family: var(--space-font);
 }
 
 .presence-icon svg{
