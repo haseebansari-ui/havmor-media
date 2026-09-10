@@ -5241,7 +5241,9 @@ background-size:
 }
 
 .bg-black {
-    background: rgba(0, 0, 0, 0.822);
+    /* background: rgba(0, 0, 0, 0.822); */
+    background: rgb(219 219 219 / 84%);
+    border: 1px solid #ebebeb;
 }
 
 
