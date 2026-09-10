@@ -4030,6 +4030,7 @@ background-size:
 
 .product-inn-sec .heading-bx{
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .product-inn-sec .heading-bx h2{
@@ -5234,6 +5235,8 @@ background-size:
 .data-engine-sec{
     /* background: rgb(38, 37, 46); */
     background: rgb(233 231 231 / 54%);
+    border-radius: 3rem 0 3rem 0rem;
+    border: 1px solid #9f9f9f;
 }
 
 .text-color{
@@ -5243,9 +5246,16 @@ background-size:
 .bg-black {
     /* background: rgba(0, 0, 0, 0.822); */
     background: rgb(219 219 219 / 84%);
-    border: 1px solid #ebebeb;
+    
 }
 
+.data-engine-card{
+    border-radius: 1rem !important;
+}
+
+.data-engine-card.border-secondary{
+    border: 1px solid #c5c5c5 !important;
+}
 
 .text-uppercase {
     text-transform: uppercase !important;
