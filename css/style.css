@@ -867,6 +867,11 @@ footer{
     margin-bottom: 5rem;
 }
 
+
+.cmp-contact-info{
+    padding-left: 240px;
+}
+
 .cmp-add-info{
     margin-bottom: 1rem;
 }
@@ -888,6 +893,11 @@ footer{
 .cmp-contact-link .ft-get-quote:last-child{
     margin: 1rem 0;
     width: 250px;
+}
+
+
+.social-links{
+    padding-left: 240px;
 }
 
 .social-links ul{
