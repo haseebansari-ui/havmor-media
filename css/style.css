@@ -5483,3 +5483,89 @@ background-size:
     padding: 0;
     border: 0;
 }
+
+
+/* ============================
+    Branding & Creative
+=============================== */
+
+/* ---- Branding & Creative Inn-Banner ---- */
+
+.branding-creative-sec{
+    background: url("../img/brand-bg.jpg");
+    background-size: 47%;
+    background-repeat: no-repeat;
+    background-position: 90% 17%;
+    background-color: var(--white-color);
+}
+
+.branding-creative-sec.programmatic-bann-sec .heading-bx h2{
+    font-size: 5rem;
+}
+
+.branding-creative-sec.programmatic-bann-sec .heading-bx h2 span{
+    font-size: 5rem;
+}
+
+.brand-icon svg{
+    width: 50px;
+    height: 50px;
+}
+
+.branding-creative-sec{
+    position: relative;
+    z-index: 1;
+}
+
+.brand-cap-sec{
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /* background: #ebebeb; */
+    z-index: 5;
+}
+
+.branding-creative-sec.programmatic-bann-sec.inn-pad{
+    padding: 8rem 0 30rem;
+}
+
+.brand-icon span i{
+    font-size: 3.5rem;
+    color: var(--white-color);
+}
+
+.brand-card-bx{
+    text-align: center;
+    padding: 50px 40px;
+    color: var(--white-color);
+}
+
+.brand-title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: var(--space-font);
+    margin-bottom: 0.8rem;
+}
+
+.brand-card-bx p{
+    font-size: 1.2rem;
+}
+
+.brand-flex-bx{
+    display: flex;
+    align-items: center;
+}
+
+.bg-cl1{
+    background: #800080;
+}
+
+.bg-cl2{
+    background: #A855F7;
+}
+
+.bg-cl3{
+    background: #D946EF;
+}
