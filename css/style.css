@@ -580,7 +580,7 @@ nav ul li .header-link-acc .header-link-title:hover span {
     color: var(--white-color);
     padding: 0 2rem 0 3rem;
     font-weight: bold;
-    margin: 0.8rem 0 0.5rem;
+    margin: 0.8rem 0;
 }
 
 .sub-header-link-title:hover span{
