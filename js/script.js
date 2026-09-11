@@ -590,6 +590,27 @@ locationTabs.forEach(tab => {
 });
 
 
+// Footer Tabbers
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab-btn");
+  const panes = document.querySelectorAll(".tab-pane");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // 1. Remove "active" class from all buttons and content panes
+      tabs.forEach(t => t.classList.remove("active"));
+      panes.forEach(p => p.classList.remove("active"));
+
+      // 2. Add "active" class to the clicked button
+      tab.classList.add("active");
+
+      // 3. Find and activate the matching content panel using the data attribute
+      const targetId = tab.getAttribute("data-tab");
+      document.getElementById(targetId).classList.add("active");
+    });
+  });
+});
 
 
   
