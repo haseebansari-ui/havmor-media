@@ -1002,6 +1002,16 @@ iframe{
 .tab-pane {
   display: none;
   padding: 20px;
+  animation: identifier 2s;
+}
+
+@keyframes identifier {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .tab-pane.active {
