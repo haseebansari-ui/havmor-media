@@ -727,7 +727,7 @@ footer{
 .copy-right{
     text-align: center;
     font-weight: bold;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     padding: 2rem 0;
     border-top: 1px solid #adb2b9;
     color: var(--black);
