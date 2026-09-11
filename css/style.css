@@ -888,11 +888,14 @@ footer{
 .cmp-contact-link .ft-get-quote{
     margin: 0;
     width: 300px;
+    border-radius: 0.5rem;
 }
 
 .cmp-contact-link .ft-get-quote:last-child{
     margin: 1rem 0;
-    width: 250px;
+    width: 300px;
+    justify-content: inherit;
+    gap: 1rem;
 }
 
 
