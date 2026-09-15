@@ -978,24 +978,50 @@ iframe{
 .tab-menu{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0rem;
+    justify-content: center;
+    /* border-bottom: 1px solid #ccc; */
     margin-bottom: 1.5rem;
+    padding: 2rem;
+}
+
+.tab-menue-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 /* Individual Tab Buttons */
 
 .tab-btn{
-    padding: 12px 30px;
-    font-size: 1.4rem;
+    /* padding: 12px 30px; */
+    font-size: 2rem;
     background: transparent;
     font-weight: 500;
+    font-family: var(--space-font);
     color: #777;
+    height: 200px;
+    width: 235px;
+    background: #ebebeb;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: var(--transition);
+    box-shadow: 0 0 20px transparent;
+    border: 1px solid transparent;
+}
+
+.tab-btn:hover{
+    color: var(--primary);
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.651);
 }
 
 /* Active Tab Styling */
 .tab-btn.active {
     color: var(--primary);
+    border: 1px solid rgba(128, 0, 128, 0.651);
 }
 
 /* Content Panel Visibility Rules */
@@ -1271,7 +1297,7 @@ iframe{
 
 .offer-img-bx{
     width: 100%;
-    height: 537px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
@@ -1287,7 +1313,7 @@ iframe{
 
 .offer-img-bx img{
     width: 100%;
-    height: 537px;
+    height: 300px;
     object-fit: cover;
     transform:scale(1);
     transition: var(--transition);
@@ -5611,8 +5637,15 @@ background-size:
 }
 
 .hm-product-sec .heading-bx small{
-    padding: 0;
-    border: 0;
+    border: none;
+    color: #3b3838;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-family: var(--rubik-font);
 }
 
 
@@ -5700,4 +5733,85 @@ background-size:
 
 .brand-img-bx img{
     width: 100%;
+}
+
+
+
+/* ---- Attributed Client Section ---- */
+
+/* .att-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background: var(--white-color);
+    box-shadow: 0 0 20px #ccc;
+}
+
+.att-bx img{
+    width: 50%;
+    height: 100px;
+    object-fit: fill;
+} */
+
+.att-bx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    padding: 20px 31px;
+    background: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    border-radius: 1rem;
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+.att-bx:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(241, 78, 206, 0.698);
+}
+
+.att-bx img {
+    width: 150px;
+    height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.att-client-flx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 2rem;
+    flex-wrap: balance;
+}
+
+.att-client{
+    background: rgb(233 231 231 / 54%);
+    border-radius: 3rem 0 3rem 0rem;
+    border: 1px solid #9f9f9f;
+}
+
+.att-client .heading-bx{
+    text-align: center;
+}
+
+.att-client .heading-bx small{
+    border: none;
+    color: #3b3838;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-family: var(--rubik-font);
+}
+
+.att-client.sec-padding{
+    padding: 5rem 0;
 }
