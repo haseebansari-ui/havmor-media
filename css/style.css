@@ -5597,13 +5597,9 @@ background-size:
 .prdt-pg-link i{
     font-size: 1.3rem;
     color: var(--primary);
-    transform: rotate(45deg);
     transition: var(--transition);
 }
 
-.prdt-pg-link:hover i{
-    transform: rotate(0);
-}
 
 .hm-product-sec .heading-bx{
     text-align: center;
