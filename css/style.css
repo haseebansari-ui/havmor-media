@@ -985,7 +985,8 @@ iframe{
     justify-content: center;
     /* border-bottom: 1px solid #ccc; */
     margin-bottom: 1.5rem;
-    padding: 2rem;
+    padding: 4rem;
+
 }
 
 .tab-menue-bx{
@@ -1004,8 +1005,8 @@ iframe{
     font-weight: 500;
     font-family: var(--space-font);
     color: #777;
-    height: 200px;
-    width: 235px;
+    /* height: 200px;
+    width: 235px; */
     background: #ebebeb;
     border-radius: 1rem;
     display: flex;
@@ -1060,7 +1061,8 @@ iframe{
     margin-bottom:1rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #777;
+    /* color: #777; */
+    color: var(--black);
 }
 
 .tab-content-phone-num .ft-get-quote{
@@ -1068,7 +1070,8 @@ iframe{
     margin: 0.5rem 0 1.7rem;
     padding: 0;
     font-size: 1.1rem;
-    color: #777;
+    /* color: #777; */
+    color: var(--black);
 }
 
 .tab-content-phone-num .ft-get-quote:hover{
@@ -1090,7 +1093,9 @@ iframe{
 
 
 .tab-content-wrapper{
-    background: var(--white-color);
+    background: rgb(255 255 255 / 0%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 /* --- Animated Circle --- */
