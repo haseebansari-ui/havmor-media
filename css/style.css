@@ -959,6 +959,10 @@ iframe{
 
 /* Container Layout */
 .tabs-container {
+    background: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   font-family: sans-serif;
   /* max-width: 600px; */
   margin: 20px auto;
@@ -1084,6 +1088,10 @@ iframe{
     font-family: var(--space-font);
 }
 
+
+.tab-content-wrapper{
+    background: var(--white-color);
+}
 
 /* --- Animated Circle --- */
 
@@ -5787,7 +5795,7 @@ background-size:
     align-items: center;
     justify-content: center;
     gap: 2rem 2rem;
-    flex-wrap: balance;
+    flex-wrap: wrap-reverse;
 }
 
 .att-client{
