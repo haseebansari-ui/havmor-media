@@ -846,7 +846,7 @@ footer{
     justify-content: space-between;
     width: 190px;
     padding: 0.5rem 2rem;
-    background: radial-gradient(circle at 20% 20%, rgb(199 62 155 / 44%), #f70cc573 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
+    background: radial-gradient(circle at 20% 20%, rgb(199 62 155 / 44%), #f766d873 100%), radial-gradient(circle at 80% 30%, rgba(128, 0, 128, 0.14), transparent 30%), linear-gradient(180deg, rgba(255, 176, 0, 0.08), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
     border-radius: 3rem;
     color: var(--black);
     margin: 5rem 0 ;
