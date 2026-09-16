@@ -3184,27 +3184,25 @@ iframe{
 
 .home-pg-redirect{
     position: absolute;
-    top:50px;
-    left: 50px;
+    top: -15px;
+    left: -29px;
     z-index: 10;
 }
 
 .home-pg-redirect a{
-    padding: 12px 40px;
+    padding: 10px 20px;
     border-radius: 5px;
-    background: #f5f4f4;
-    color: var(--black);
+    /* background: #f5f4f4; */
+    color: var(--primary);
     font-weight: bold;
     font-family: var(--space-font);
-    font-size: 1.1rem;
-    box-shadow: 0 0 20px rgba(32, 32, 32, 0.247);
+    /* box-shadow: 0 0 20px rgba(32, 32, 32, 0.247); */
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .home-pg-redirect a:hover{
     color: var(--black);
-    border: 1px solid var(--black);
 }
 
 .grid-column-two{
@@ -3566,6 +3564,8 @@ iframe{
 
 .login-form-container .heading-bx{
     text-align: center;
+    position: relative;
+    padding-top: 1.5rem;
 }
 
 .login-form-container .heading-bx small{
