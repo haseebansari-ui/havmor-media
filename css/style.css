@@ -2640,8 +2640,12 @@ iframe{
 /* ---- About / Vission & Mission Section ----- */
 
 .vissn-missn-sec{
-    background: rgba(253, 251, 255, 0.37);
-    backdrop-filter: blur(10px);
+    /* background: rgba(253, 251, 255, 0.37);
+    backdrop-filter: blur(10px); */
+    background: url("../img/sec-bg-img.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .vissn-missn-sec .heading-bx{
@@ -2668,7 +2672,11 @@ iframe{
 }
 
 .vissn-missn-content-bx {
-    padding:0 2rem;
+    padding:2rem;
+    background: rgba(253, 251, 255, 0.37);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid #ccc;
 }
 
 .vissn-missn-btn-bx .animated-link-all{
