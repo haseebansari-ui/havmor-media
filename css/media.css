@@ -263,6 +263,33 @@
         padding:50px;
     }
 
+    .hero-link .animated-link-all {
+        margin: 3rem auto 0;
+        width: 190px;
+    }
+
+    .offer-content{
+        padding: 25px;
+    }
+
+    .offer-title{
+        font-size: 1.5rem;
+    }
+
+    .offer-content p {
+        margin-bottom: 0;
+        font-size: inherit;
+    }
+
+    .offer-link .animated-link-all{
+        padding: 6px 32px;
+        width: 154px;
+        font-size: inherit;  
+    }
+
+    .animated-link-all{
+        box-shadow: 0 0 0 1px var(--primary);
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -546,6 +573,10 @@
 
     .right-form{
         padding:10px;
+    }
+
+    .tab-menue-bx{
+        gap: 2rem;
     }
 
 }
