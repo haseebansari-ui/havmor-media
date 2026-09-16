@@ -5937,57 +5937,6 @@ background-size:
 
 /* ---- Attributed Client Section ---- */
 
-/* .att-bx{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    background: var(--white-color);
-    box-shadow: 0 0 20px #ccc;
-}
-
-.att-bx img{
-    width: 50%;
-    height: 100px;
-    object-fit: fill;
-} */
-
-.att-bx {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    padding: 20px 31px;
-    background: var(--white-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
-    border-radius: 1rem;
-    transform: translateY(0);
-    transition: var(--transition);
-}
-
-.att-bx:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(241, 78, 206, 0.698);
-}
-
-.att-bx img {
-    width: 150px;
-    height: 80px;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-}
-
-.att-client-flx{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem 2rem;
-    flex-wrap: wrap-reverse;
-}
-
 .att-client{
     background: rgb(233 231 231 / 54%);
     border-radius: 3rem 0 3rem 0rem;
@@ -6012,4 +5961,103 @@ background-size:
 
 .att-client.sec-padding{
     padding: 5rem 0;
+}
+
+.carousel-att-client {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    /* Optional fade on both sides */
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 5%,
+        #000 95%,
+        transparent
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 5%,
+        #000 95%,
+        transparent
+    );
+
+    padding: 10px 0;
+}
+
+.group-att-client {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 25px;
+
+    flex-shrink: 0;
+
+    /* Move from right to left */
+    animation: marquee-att-client 30s linear infinite;
+}
+
+.test-card-att-client {
+    flex: 0 0 auto;
+}
+
+.ads-img-bx-att-client {
+    width: 200px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white-color);
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: var(--transition);
+}
+
+.ads-img-bx-att-client:hover{
+    transform: scale(1.1);
+    border: 1px solid var(--primary);
+}
+
+.ads-img-bx-att-client img {
+    width: 150px;
+    height: 80px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =========================
+   MARQUEE ANIMATION
+========================= */
+
+@keyframes marquee-att-client {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 25px));
+    }
+
+}
+
+
+/* =========================
+   PAUSE ON HOVER
+========================= */
+
+.carousel-att-client:hover .group-att-client {
+    animation-play-state: paused;
 }
