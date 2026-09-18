@@ -610,4 +610,12 @@
         gap: 2rem;
     }
 
+    .branding-creative-sec.programmatic-bann-sec.inn-pad {
+        padding: 8rem 0 71rem;
+    }
+
+    .brand-cap-sec.sec-padding {
+        padding: 3rem 0 66rem;
+    }
+
 }
