@@ -611,11 +611,21 @@
     }
 
     .branding-creative-sec.programmatic-bann-sec.inn-pad {
-        padding: 8rem 0 71rem;
+        padding: 8rem 0 75rem;
     }
 
     .brand-cap-sec.sec-padding {
-        padding: 3rem 0 66rem;
+        padding: 3rem 0 65rem;
     }
 
+}
+
+@media screen and (max-width: 380px){
+        .branding-creative-sec.programmatic-bann-sec.inn-pad {
+        padding: 8rem 0 70rem;
+    }
+
+    .brand-cap-sec.sec-padding {
+        padding: 3rem 0 65rem;
+    }
 }
