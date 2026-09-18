@@ -298,6 +298,21 @@
     .sub-title{
         justify-content: center;
     }
+
+    .branding-creative-sec.programmatic-bann-sec .heading-bx h2, .branding-creative-sec.programmatic-bann-sec .heading-bx h2 span{
+        font-size: 3rem;
+    }
+
+    .brand-cap-sec.sec-padding{
+        padding: 3rem 0 55rem;
+    }
+
+    .branding-creative-sec.programmatic-bann-sec.inn-pad {
+        padding: 8rem 0 58rem;
+    }
+    footer{
+        padding: 0 1rem 1rem;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -523,6 +538,14 @@
 
     .case-stat-num {
         font-size: 2rem;
+    }
+
+    .branding-creative-sec.programmatic-bann-sec.inn-pad {
+        padding: 8rem 0 65rem;
+    }
+
+    .brand-cap-sec.sec-padding {
+        padding: 3rem 0 60rem;
     }
     
 }
