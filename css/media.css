@@ -290,6 +290,14 @@
     .animated-link-all{
         box-shadow: 0 0 0 1px var(--primary);
     }
+
+    .faq-sec .heading-bx{
+        text-align: center;
+    }
+
+    .sub-title{
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -365,10 +373,6 @@
 
     .cmp-add-link .ft-get-quote{
         margin: 0 0 3rem;
-    }
-
-    .copy-right{
-        margin-top: 2rem;
     }
 
     .hero-abt-btn .btn-all{
