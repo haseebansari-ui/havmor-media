@@ -313,6 +313,10 @@
     footer{
         padding: 0 1rem 1rem;
     }
+
+    .pay-scale-sec .heading-bx h2{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -485,6 +489,22 @@
 
     .ft-bg-color {
         padding: 2rem 0 0;
+    }
+
+    .payscale-challenge .heading-bx{
+        text-align: center;
+    }
+
+    .payscale-strategy .heading-bx{
+        text-align: center;
+    }
+
+    .payscale-execution-sec .heading-bx{
+        text-align: center;
+    }
+
+    .payscale-challenge-content .para-cnct{
+        text-align: center;
     }
 }
 
