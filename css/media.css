@@ -317,6 +317,64 @@
     .pay-scale-sec .heading-bx h2{
         font-size: 2rem;
     }
+
+    .why-choose-sec .heading-bx h2{
+        font-size: 3rem;
+    }
+
+    .why-choose-sec .heading-bx h2 span{
+        font-size: 3rem;
+    }
+
+    .choose-heading-img {
+        top: -13px;
+        right: 605px;
+        height: 45px;
+        width: 45px;
+    }
+
+    .choose-heading-img img{
+        width: 33px;
+        height: 45px;
+    }
+
+    .choose-heading-img2{
+        bottom: -36px;
+        left: 563px;
+        height: 45px;
+        width: 45px;
+    }
+
+    .choose-heading-img2 img{
+        width: 33px;
+        height: 45px;
+    }
+
+    .choose-us-img{
+        bottom: -191px;
+        left: 224px;
+    }
+
+    .why-choose-main ul li{
+        font-size: 1.2rem;
+    }
+
+    .cnct-form-bg-clr .heading-bx p br{
+        display: none;
+    }
+
+    .cnct-form-bg-clr .mb-5{
+        margin-bottom: 1.5rem !important;
+    }
+
+    .contact-us-sec.inn-pad {
+        padding: 8rem 0 3rem;
+    }
+
+    .contact-form-sec.sec-padding {
+        padding: 3rem 0;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -506,6 +564,25 @@
     .payscale-challenge-content .para-cnct{
         text-align: center;
     }
+
+    .choose-us-img {
+        height: 190px;
+        width: 246px;
+        bottom: -161px;
+        left: 133px;
+    }
+
+    .choose-heading-img2{
+        left: 460px;
+    }
+
+    .choose-heading-img{
+        right: 469px;
+    }
+
+    .contact-main-bg-clr {
+        padding: 20px 20px;
+    }
 }
 
 @media screen and (max-width: 579px){
@@ -568,6 +645,13 @@
         padding: 3rem 0 60rem;
     }
     
+    .choose-heading-img2 {
+        left: 410px;
+    }
+
+        .choose-heading-img {
+        right: 431px;
+    }
 }
 
 @media screen and (max-width: 479px){
