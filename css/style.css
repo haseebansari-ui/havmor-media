@@ -2653,8 +2653,6 @@ iframe{
 /* ---- About / Vission & Mission Section ----- */
 
 .vissn-missn-sec{
-    /* background: rgba(253, 251, 255, 0.37);
-    backdrop-filter: blur(10px); */
     background: url("../img/sec-bg-img.png");
     background-size: cover;
     background-position: 50% 50%;
@@ -4300,7 +4298,6 @@ iframe{
     padding: 40px;
     border-radius: 10px;
     color: var(--white-color);
-    margin-top: 3rem;
 }
 
 .contact-growth-title{
