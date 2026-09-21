@@ -3755,6 +3755,29 @@ iframe{
         /* background: radial-gradient(circle at 20% 20%, rgb(181 178 180 / 20%), transparent 100%), radial-gradient(circle at 80% 30%, rgb(157 155 157 / 29%), transparent 30%), linear-gradient(180deg, rgba(255, 174, 0, 0.041), rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(17, 24, 39, 0.021) 1px, transparent 1px); */
 }
 
+.contact-location-bx{
+    background: rgb(229 229 229 / 51%);
+    padding: 20px 30px;
+    border-radius: 1rem;
+    border: 1px solid rgba(97, 97, 97, 0.623);
+    margin: 0 0 2rem 0;
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+.contact-location-bx:hover{
+    border: 1px solid rgba(97, 97, 97, 0.514);
+    box-shadow: 0 10px 30px rgba(97, 97, 97, 0.308);
+    transform: translateY(-10px);
+}
+
+.contact-info-main p{
+    margin-bottom: 2rem;
+}
+
+.contact-info-main .contact-info-bx p{
+    margin: 0;
+}
 
 /* ================================
    CONTENT
