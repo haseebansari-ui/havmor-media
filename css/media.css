@@ -375,6 +375,10 @@
         padding: 3rem 0;
     }
 
+    .social-links ul{
+        margin: 2rem 0 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 767px){
