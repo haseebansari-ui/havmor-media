@@ -359,6 +359,11 @@ small{
 }
 
 
+.mr-bt{
+    margin-bottom: 2rem !important;
+}
+
+
 /* ---- Header Section ---- */
 
 header{
