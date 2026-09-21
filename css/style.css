@@ -2690,6 +2690,14 @@ iframe{
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     border: 1px solid #ccc;
+    transform: translateY(0);
+    transition: var(--transition);
+}
+
+.vissn-missn-content-bx:hover{
+    border: 1px solid #f56cb3;
+    box-shadow: 0 0 20px #f56cb3;
+    transform: translateY(-10px);
 }
 
 .vissn-missn-btn-bx .animated-link-all{
