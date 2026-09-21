@@ -617,6 +617,11 @@
         padding: 6px 30px;
         width: 178px;
     }
+
+    .hero-abt-btn .animated-link-all{
+        padding: 6px 30px;
+        
+    }
 }
 
 @media screen and (max-width: 579px){
