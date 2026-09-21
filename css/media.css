@@ -375,10 +375,6 @@
         padding: 3rem 0;
     }
 
-    /* .social-links ul{
-        margin: 2rem 0;
-    } */
-
 }
 
 @media screen and (max-width: 767px){
@@ -595,6 +591,18 @@
 
     .programmatic-bann-sec .heading-bx h2 span {
         font-size: 2rem;
+    }
+
+    .contact-us-sec .heading-bx h2{
+        font-size: 2rem;
+    }
+
+    .contact-us-sec .heading-bx h2 span{
+        font-size: 2rem;
+    }
+
+    .contact-us-sec .heading-bx small{
+        font-size: 1.2rem;
     }
 
 }
