@@ -626,6 +626,11 @@
         height: inherit;
         padding: 30px 20px;
     }
+
+    .srvc-card{
+        height: inherit;
+        padding: 40px 30px;
+    }
 }
 
 @media screen and (max-width: 579px){
