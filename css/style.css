@@ -2694,7 +2694,7 @@ iframe{
 
 .vissn-missn-content-bx:hover{
     border: 1px solid #f56cb3;
-    box-shadow: 0 10px 20px #f56cb3;
+    box-shadow: 0 10px 20px rgba(245, 108, 179, 0.459);
     transform: translateY(-10px);
 }
 
@@ -5687,6 +5687,10 @@ background-size:
     border-radius: 3px;
     display: inline-block;
     margin-bottom: 1rem;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .srvc-case-study-title{
@@ -5720,6 +5724,9 @@ background-size:
     transition: var(--transition);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .srvc-case-study-content:hover{
