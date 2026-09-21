@@ -521,6 +521,7 @@
 
     .feature-tag-group ul{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .execution-card{
@@ -630,6 +631,31 @@
     .srvc-card{
         height: inherit;
         padding: 30px;
+    }
+
+    .feature-matrix{
+        justify-content: center;
+    }
+
+    .main-case-matrix{
+        justify-content: center;
+    }
+
+    .main-matrix-tag-group ul{
+        justify-content: center;
+    }
+
+    .execution-header{
+        justify-content: center;
+    }
+
+    .execution-tag-group ul{
+        justify-content: center;
+    }
+
+    .execution-card p{
+        text-align: center
+        ;
     }
 }
 
