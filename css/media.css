@@ -613,6 +613,9 @@
         font-size: 1rem;
     }
 
+    .hero-link .animated-link-all{
+        padding: 6px 30px;
+    }
 }
 
 @media screen and (max-width: 579px){
