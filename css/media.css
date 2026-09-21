@@ -619,8 +619,12 @@
     }
 
     .hero-abt-btn .animated-link-all{
-        padding: 6px 30px;
-        
+        padding: 6px 30px;        
+    }
+
+    .who-we-are-card{
+        height: inherit;
+        padding: 30px 20px;
     }
 }
 
