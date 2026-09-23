@@ -686,6 +686,10 @@
     .step-content-h{
         width: 61%;
     }
+
+    .offer-img-bx{
+        height: 360px;
+    }
 }
 
 @media screen and (max-width: 579px){
