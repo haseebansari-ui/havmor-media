@@ -656,6 +656,36 @@
     .execution-card p{
         text-align: center;
     }
+
+    .process-horizontal-container {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+    .process-horizontal-container::before {
+        top: 24px;
+        bottom: 24px;
+        left: 23px; /* Aligns with badge center in vertical layout */
+        right: auto;
+        width: 2px;
+        height: auto;
+        background: linear-gradient(90deg, #a9048d 0%, #8b047f 100%);
+      }
+
+    .process-step-h {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .step-marker-h {
+        margin-bottom: 0;
+    }
+
+    .step-content-h{
+        width: 61%;
+    }
 }
 
 @media screen and (max-width: 579px){
@@ -765,6 +795,10 @@
         width: 195px;
         bottom: -117px;
         left: 104px;
+    }
+
+    .step-content-h{
+        width: 100%;
     }
 
 }

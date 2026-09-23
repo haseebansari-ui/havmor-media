@@ -1631,93 +1631,89 @@ iframe{
 }
 
 .ads-sec .heading-bx h2{
-    margin-top: 2rem;
+    margin: 2rem 0 3rem;
 }
 
-/* Process Horizontal Wrapper */
-    .process-horizontal-container {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto 3rem;
-    }
+/* ---- Process section ---- */
 
-    /* Horizontal Connecting Line (Desktop) */
-    .process-horizontal-container::before {
-      content: "";
-      position: absolute;
-      top: 24px; /* Aligns with the vertical center of the 48px circle badge */
-      left: 40px; /* Starts inside the first badge */
-      right: 40px; /* Ends inside the last badge */
-      height: 2px;
-      background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%); /* Vibrant gradient line */
-      z-index: 1;
-    }
+.process-horizontal-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 3rem;
+}
 
-    /* Individual Step Layout */
-    .process-step-h {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1;
-      text-align: center;
-      z-index: 2;
-    }
+.process-horizontal-container::before {
+    content: "";
+    position: absolute;
+    top: 24px; 
+    left: 40px;
+    right: 40px; 
+    height: 2px;
+    background: linear-gradient(90deg, #a9048d 0%, #8b047f 100%);
+    z-index: 1;
+}
 
-    /* Badge / Step Marker */
-    .step-marker-h {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: #0f172a; /* Matches body background to hide line behind circle */
-      border: 2px solid #38bdf8;
-      color: #38bdf8;
-      font-weight: 700;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
-      margin-bottom: 20px;
-      flex-shrink: 0;
-    }
+.process-step-h {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    z-index: 2;
+}
 
-    /* Content Card */
-    .step-content-h {
-      background-color: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 12px;
-      padding: 20px 16px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
+.step-marker-h {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #950395;
+    border: 2px solid #bb03bb;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
 
-    .step-content-h:hover {
-      transform: translateY(-4px);
-      border-color: #475569;
-    }
+.step-content-h {
+    background-color: #800080;
+    border: 1px solid #800080;
+    border-radius: 12px;
+    padding: 20px 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
 
-    /* Typography */
-    .step-content-h h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 8px;
-      line-height: 1.3;
-    }
+.step-content-h:hover {
+    transform: translateY(-4px);
+    border-color: #800080;
+}
 
-    .step-content-h p {
-      font-size: 0.875rem;
-      color: #94a3b8;
-      line-height: 1.5;
-    }
+.step-content-h h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.step-content-h p {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
 
 /* ----- Carousel Right to Left ----- */
 
