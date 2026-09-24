@@ -420,6 +420,9 @@
         z-index: 2;
         background: #800080;
         height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
@@ -1072,6 +1075,22 @@
         z-index: -1;
         transform: rotate(45deg);
         border-radius: 5px;
+    }
+
+    .num1 {
+        top: 22px;
+    }
+
+    .num2 {
+        top: 154px;
+    }
+
+    .num3 {
+        top: 283px;
+    }
+
+    .num4 {
+        top: 414px;
     }
 
 }
