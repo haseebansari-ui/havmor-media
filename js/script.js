@@ -246,11 +246,6 @@ document.addEventListener("mousemove", (e) => {
 
     const currentTime = Date.now();
 
-    /*
-       Creates bubbles only every 50ms.
-       This prevents too many bubbles.
-    */
-
     if (currentTime - lastBubbleTime < 50) {
         return;
     }
@@ -258,20 +253,14 @@ document.addEventListener("mousemove", (e) => {
     lastBubbleTime = currentTime;
 
 
-    /* Create bubble */
-
     const bubble = document.createElement("span");
 
     bubble.classList.add("cursor-bubble");
 
 
-    /* Cursor position */
-
     bubble.style.left = e.clientX + "px";
     bubble.style.top = e.clientY + "px";
 
-
-    /* Random movement */
 
     const moveX = (Math.random() - 0.5) * 60;
     const moveY = (Math.random() - 0.5) * 60;
@@ -281,20 +270,13 @@ document.addEventListener("mousemove", (e) => {
     bubble.style.setProperty("--move-y", moveY + "px");
 
 
-    /* Random size */
-
     const size = Math.random() * 8 + 6;
 
     bubble.style.width = size + "px";
     bubble.style.height = size + "px";
 
 
-    /* Add bubble */
-
     bubbleContainer.appendChild(bubble);
-
-
-    /* Remove after animation */
 
     setTimeout(() => {
 
@@ -611,6 +593,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
 
 
 
