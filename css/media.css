@@ -1048,7 +1048,8 @@
         width: 73px;
         height: 73px;
         /* background: #800080; */
-        background: linear-gradient(135deg, #8f5a39 0%, #8f5a39 25%, #a66a3f 50%, #8f5a39 75%, #8f5a39 100%);
+        background: rgb(246, 247, 252);
+        border: 1px solid #777;
         z-index: -1;
         transform: rotate(45deg);
         border-radius: 5px;
