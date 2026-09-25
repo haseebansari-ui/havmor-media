@@ -1742,22 +1742,23 @@ iframe{
 
 .adv-process-card{
     /* background: #800080; */
-    background: rgb(246, 247, 252);
+    /* background: rgb(246, 247, 252); */
     padding: 10px 40px 10px 20px;
     position: relative;
     z-index: revert-layer;
+    background: #f0f0f0;
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
     border-left: 1px solid #777;
     transition: var(--transition);
 }
 
-.adv-process-card:hover{
+/* .adv-process-card:hover{
     background: var(--primary);
     border-top: 1px solid var(--primary);
     border-bottom: 1px solid var(--primary);
     border-left: 1px solid var(--primary);
-}
+} */
 
 .adv-process-card::before{
     content: '';
@@ -1767,16 +1768,23 @@ iframe{
     height: 57px;
     width: 58px;
     /* background: #800080; */
-    background: rgb(246, 247, 252);
+    /* background: rgb(246, 247, 252); */
     z-index: -1;
     transform: rotate(46deg);
+    background: #f0f0f0;
     border: 1px solid #777;
     transition: var(--transition);
 }
 
-.adv-process-card:hover::before{
+/* .adv-process-card:hover::before{
     background: var(--primary);
      border: 1px solid var(--primary);
+} */
+
+.adv-process-card:hover,
+.adv-process-card:hover::before {
+    background: #800080;
+    border-color: #800080;
 }
 
 .process-tile{
