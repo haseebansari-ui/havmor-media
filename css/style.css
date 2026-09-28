@@ -15,6 +15,7 @@
     --Andika-font:"Andika", sans-serif;
     --oswald-font:"Oswald", sans-serif;
     --rubik-font:"Rubik", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
     --transition: 0.3s ease-in-out;
     --transition2: .35s ease;
     --transition:0.45s ease-in-out ;
@@ -54,7 +55,7 @@ h2{
     font-weight: 600;
     color: var(--black);
     margin-bottom: 1.5rem;
-    font-family: var(--space-font);
+    font-family: var(--poppins-font);
 }
 
 .heading-bx h2{
@@ -331,7 +332,7 @@ small{
     border-radius: 2rem;
     color: var(--primary);
     font-weight: 600;
-    font-family: var(--space-font);
+    font-family: var(--poppins-font);
     font-size: 1.4rem;
 }
 
@@ -1399,10 +1400,10 @@ iframe{
 
 .hero-content-bx h1{
     padding-right: 1rem; 
-    font-size: 3.6rem;
-    font-weight: bold;
+    font-size: 3.4rem;
+    font-weight: 600;
     padding-right: 1.3rem;
-    font-family: var(--space-font);
+    font-family: var(--poppins-font);
 }
 .hero-sec.sec-padding{
     padding: 13rem 0 8rem;
@@ -1464,14 +1465,14 @@ iframe{
 }
 
 .text{
-    font-size:8rem;
-    font-weight:bolder;
+    font-size: 6rem;
+    font-weight:600;
     line-height:1;
     color:#121212;
     margin-bottom:25px;
     transform-origin:center center;
     will-change:transform;
-    font-family: var(--space-font);
+    font-family: var(--poppins-font);
 }
 
 .text br{
@@ -1737,7 +1738,7 @@ iframe{
     transform: translate(-50%, -50%);
     width: 900px;
     /* background: #800080; */
-    background: #777;
+    background: #970397;
 }
 
 .adv-process-card{
@@ -1746,7 +1747,8 @@ iframe{
     padding: 10px 40px 10px 20px;
     position: relative;
     z-index: revert-layer;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    background: linear-gradient(96deg, #f1bef1, #fbf2f8, #f1bef1);
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
     border-left: 1px solid #777;
@@ -1771,7 +1773,7 @@ iframe{
     /* background: rgb(246, 247, 252); */
     z-index: -1;
     transform: rotate(46deg);
-    background: #f0f0f0;
+    background: #f5c6f5;
     border: 1px solid #777;
     transition: var(--transition);
 }
@@ -1781,12 +1783,15 @@ iframe{
      border: 1px solid var(--primary);
 } */
 
-.adv-process-card:hover,
-.adv-process-card:hover::before {
-    background: #800080;
+.adv-process-card:hover{
+    background: linear-gradient(96deg, #f1bef1, #fbf2f8, #f1bef1);
     border-color: #800080;
 }
 
+.adv-process-card:hover::before{
+    background: #f1bef1;
+    border-color: #800080;
+}
 .process-tile{
     /* color: var(--white-color); */
     color: var(--black);
@@ -1797,7 +1802,7 @@ iframe{
 }
 
 .adv-process-card:hover .process-tile{
-    color: var(--white-color);
+    color: var(--black);
 }
 
 .step-num{
@@ -1808,7 +1813,7 @@ iframe{
     width: 50px;
     border-radius: 100%;
     /* background: #800080; */
-    background: #ccc;
+    background: linear-gradient(96deg, #f1bef1, #fbf2f8, #f1bef1);
     border: 1px solid #777;
     color: #000;
     font-weight: bold;
@@ -2292,7 +2297,7 @@ iframe{
     justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
-    font-family: var(--rubik-font);
+    font-family: var(--poppins-font);
 }
 
 
@@ -6212,7 +6217,7 @@ background-size:
     justify-content: center;
     gap: 0.5rem;
     font-weight: bold;
-    font-family: var(--rubik-font);
+    font-family: var(--poppins-font);
 }
 
 .att-client.sec-padding{

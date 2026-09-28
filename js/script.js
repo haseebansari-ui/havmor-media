@@ -145,7 +145,7 @@ if (aboutSection && aboutText) {
 
     gsap.to(aboutText, {
 
-        fontSize: "2rem",
+        fontSize: "1.7rem",
 
         ease: "none",
 
