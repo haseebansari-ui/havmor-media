@@ -494,6 +494,34 @@
         /* left: 2px; */
     }
 
+    .contact-info-pg{
+        display: none;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .att-client .heading-bx small{
+        font-size: 1.5rem;
+    }
+
+    .hm-product-sec .heading-bx small{
+        font-size: 1.5rem;
+    }
+
+    .casestudy-sec .heading-bx small{
+        font-size: 1.5rem;
+    }
+
+    .sub-title{
+        font-size: 1.5rem;
+    }
+
+    small{
+        font-size: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 767px){
