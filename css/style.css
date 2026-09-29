@@ -1533,6 +1533,7 @@ iframe{
     transform: translateY(100%);
     transition: var(--transition);
     color: var(--white-color);
+    z-index: 3;
 }
 
 .offer-img-bx:hover .offer-content{
@@ -1591,6 +1592,30 @@ iframe{
 .offer-link .animated-link-all:active {
   box-shadow: none;
   border: none;
+}
+
+.offer-main-title {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 2;
+
+    color: #800080;
+    font-family: var(--poppins-font);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+    /* text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35); */
+
+    transition: var(--transition);
+}
+
+.offer-img-bx:hover .offer-main-title {
+    opacity: 0;
+    transform: translate(-50%, 20px);
 }
 
 
