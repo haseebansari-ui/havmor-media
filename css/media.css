@@ -414,86 +414,8 @@
     }
 
 
-    /* Process cards */
-    .adv-process-card {
-        width: 549px;
-        padding: 15px 30px 15px 20px;
-        position: relative;
-        z-index: revert-layer;
-        /* background: #800080; */
-        background: rgb(246, 247, 252);
-        border-top: 1px solid #777;
-        border-bottom: 1px solid #777;
-        border-left: 1px solid #777;
-        height: 78px;
-        display: flex;
-        align-items: center;
-    }
-
-
-    /* Keep the arrow shape */
-    .adv-process-card::before {
-        content: '';
-        position: absolute;
-        top: 10px;
-        right: -30px;
-        width: 58px;
-        height: 58px;
-        background: rgb(246, 247, 252);
-        border: 1px solid #777;
-        /* background: linear-gradient(135deg, #8f5a39 0%, #8f5a39 25%, #a66a3f 50%, #8f5a39 75%, #8f5a39 100%); */
-        z-index: -1;
-        transform: rotate(45deg);
-        border-radius: 5px;
-    }
-
-
-    /* Process text */
-    .process-tile {
-        color: #000;
-    }
-
-
-    /* Step numbers */
-    .step-num {
-        /* background: #800080; */
-        background: rgb(246, 247, 252);
-        color: #000;
-        z-index: 5;
-        border: 1px solid #777;
-
-    }
-
-
-    /* Reset desktop positions */
-    .num1,
-    .num2,
-    .num3,
-    .num4 {
-        top: auto;
-        left: 0;
-    }
-
-    .num1 {
-        top: 8px;
-        /* left: 2px; */
-    }
-
-    .num2 {
-        top: 120px;
-        /* left: 2px; */
-    }
-
-    .num3 {
-        top: 227px;
-        /* left: 2px; */
-    }
-
-    .num4 {
-        top: 335px;
-        /* left: 2px; */
-    }
-
+    
+    
     .contact-info-pg{
         display: none;
     }
