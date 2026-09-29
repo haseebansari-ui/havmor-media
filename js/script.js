@@ -596,9 +596,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    initPageLoader();
+});
 
 
+function initPageLoader() {
+    const loader = document.querySelector(".page-loader");
 
+    if (!loader) {
+        return;
+    }
+
+    window.addEventListener("load", function () {
+        window.setTimeout(function () {
+            loader.classList.add("loaded");
+        }, 350);
+    });
+}
 
   
 
