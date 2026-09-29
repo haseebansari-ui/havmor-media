@@ -1597,19 +1597,17 @@ iframe{
 .offer-main-title {
     position: absolute;
     left: 50%;
-    bottom: 35px;
+    top: 25px;
     transform: translateX(-50%);
     width: 90%;
     z-index: 2;
-
-    color: #800080;
     font-family: var(--poppins-font);
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-
-    /* text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35); */
-
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #800080;
     transition: var(--transition);
 }
 
