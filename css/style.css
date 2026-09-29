@@ -1377,8 +1377,9 @@ iframe{
     padding-right: 1.3rem;
     font-family: var(--poppins-font);
 }
+
 .hero-sec.sec-padding{
-    padding: 13rem 0 8rem;
+    padding: 13rem 0 3rem;
 }
 
 .hero-stat-card{
