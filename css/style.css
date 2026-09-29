@@ -66,10 +66,10 @@ h2{
 
 .contact-info-pg{
     position: fixed;
-    top: 319px;
-    right: -209px;
-    height: 50px;
-    width: 471px;
+    top: 339px;
+    right: -245px;
+    height: auto;
+    width: 515px;
     z-index: 1200;
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ h2{
 }
 
 .contact-info-pg a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--black);
 }
