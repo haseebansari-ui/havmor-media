@@ -412,9 +412,6 @@
 
         z-index: 0;
     }
-
-
-    
     
     .contact-info-pg{
         display: none;
@@ -764,9 +761,9 @@
         height: 360px;
     }
 
-    .adv-process-card {
+    /* .adv-process-card {
         width: 389px;
-    }
+    } */
 }
 
 @media screen and (max-width: 579px){
@@ -882,10 +879,6 @@
         width: 100%;
     }
 
-    .adv-process-card {
-        width: 267px;
-    }
-
 }
 
 @media screen and (max-width: 479px){
@@ -978,48 +971,7 @@
         display: none;
     }
 
-    .adv-process-card {
-        width: 200px;
-    }
-
-    .process-tile br{
-        display: none;
-    }
-
-    .adv-process-card{
-        height: 100px;
-    }
-
-    .adv-process-card::before {
-        content: '';
-        position: absolute;
-        top: 13px;
-        right: -35px;
-        width: 73px;
-        height: 73px;
-        /* background: #800080; */
-        background: rgb(246, 247, 252);
-        border: 1px solid #777;
-        z-index: -1;
-        transform: rotate(45deg);
-        border-radius: 5px;
-    }
-
-    .num1 {
-        top: 22px;
-    }
-
-    .num2 {
-        top: 154px;
-    }
-
-    .num3 {
-        top: 283px;
-    }
-
-    .num4 {
-        top: 414px;
-    }
+   
 
 }
 
