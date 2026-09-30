@@ -1610,7 +1610,8 @@ iframe{
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    color: #800080;
+    /* color: #800080; */
+    color: var(--black);
     transition: var(--transition);
 }
 

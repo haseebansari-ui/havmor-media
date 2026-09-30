@@ -443,6 +443,7 @@
 
     .offer-main-title{
         bottom: 38%;
+        color: var(--black);
     }
 
 }
