@@ -1602,7 +1602,8 @@ iframe{
 .offer-main-title {
     position: absolute;
     left: 50%;
-    bottom: 38%;
+    top: 35px;
+    /* bottom: 38%; */
     transform: translateX(-50%);
     width: 90%;
     z-index: 2;
