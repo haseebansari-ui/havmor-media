@@ -1478,6 +1478,10 @@ iframe{
 
 /* ---- What We Offer Section ---- */
 
+.what-we-offer .heading-bx{
+    text-align: center;
+}
+
 .what-we-offer{
     /* background: var(--bg-shade); */
     background: rgb(199 199 199 / 25%);
@@ -1598,7 +1602,7 @@ iframe{
 .offer-main-title {
     position: absolute;
     left: 50%;
-    bottom: 40px;
+    bottom: 38%;
     transform: translateX(-50%);
     width: 90%;
     z-index: 2;
